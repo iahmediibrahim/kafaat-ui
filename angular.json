@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "kafaat-ng-app-sass": {
+    "kafaat-ui": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/kafaat-ng-app-sass",
+            "outputPath": "dist/kafaat-ui",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -70,18 +70,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "kafaat-ng-app-sass:build"
+            "browserTarget": "kafaat-ui:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "kafaat-ng-app-sass:build:production"
+              "browserTarget": "kafaat-ui:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "kafaat-ng-app-sass:build"
+            "browserTarget": "kafaat-ui:build"
           }
         },
         "test": {
@@ -118,18 +118,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "kafaat-ng-app-sass:serve"
+            "devServerTarget": "kafaat-ui:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "kafaat-ng-app-sass:serve:production"
+              "devServerTarget": "kafaat-ui:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "kafaat-ng-app-sass",
+  "defaultProject": "kafaat-ui",
   "cli": {
     "analytics": false
   },
