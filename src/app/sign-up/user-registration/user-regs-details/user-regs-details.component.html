@@ -1,0 +1,924 @@
+<div class="container mt-5 mb-2">
+  <div class="row">
+    <div class="col-md-6">
+      <h4 class="text-primary mb-3" dir="ltr"><span class="font-roboto">Hazem</span> إكمال الملف الشخصي الخاص بـ</h4>
+      <p class="text-muted">البيانات الاختيارية ستكون ملحقة بكلمة (اختياري) باقي البيانات مطلوبة</p>
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-5 d-flex justify-content-between">
+          <span class="font-bold">نسبة اكتمال الملف</span>
+          <strong class="text-success font-roboto">25%</strong>
+        </div>
+        <div class="col-md-7">
+          <div class="progress mt-2" style="height: 10px;">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25"
+              aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mt-2 mb-5">
+  <div class="row">
+
+    <!-- personal info -->
+    <div class="col-md-12">
+      <section class="personal-info">
+        <div class="header">
+          <h4 class="py-4 pr-5 m-0">
+            <span class="ml-2">
+              <i class="fa fa-file-text-o" aria-hidden="true"></i>
+            </span>
+            البيانات الشخصية</h4>
+          <p class="status">
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+          </p>
+        </div>
+        <div class="body">
+          <form #form="ngForm">
+            <!-- basic info section -->
+            <section class="section py-4 pr-5">
+
+              <div class="row">
+                <div class="form-group col-md-4">
+                  <label for="firstName">الإسم الأول</label>
+                  <input class="form-control" type="text" required ngModel name="firstName" #firstName="ngModel">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="middleName">اسم الأب</label>
+                  <input class="form-control" type="text" required ngModel name="middleName" #middleName="ngModel">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="lastName">إسم العائلة</label>
+                  <input class="form-control" type="text" required ngModel name="lastName" #lastName="ngModel">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-8">
+                  <label for="id">رقم الهوية</label>
+                  <input class="form-control" type="number" required ngModel name="id" #id="ngModel">
+                </div>
+                <div class="form-group col">
+                  <label>تاريخ إصدار الهوية</label>
+                  <div class="d-flex">
+                    <div class="input-group ml-2">
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>مايو</option>
+                        <option>مايو</option>
+                        <option>مايو</option>
+
+                      </select>
+                      <span class="select-arrow position-absolute">
+                        <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                    </div>
+                    <div class="input-group">
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>2010</option>
+                        <option>2011</option>
+                        <option>2012</option>
+                        <option>2013</option>
+                        <option>2014</option>
+                      </select>
+                      <span class="select-arrow position-absolute">
+                        <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-8">
+                  <label for="id">تاريخ الميلاد</label>
+                  <div class="d-flex">
+                    <div class="input-group ml-2">
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>يوم</option>
+                        <option>يوم</option>
+                        <option>يوم</option>
+
+                      </select>
+                      <span class="select-arrow position-absolute">
+                        <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                    </div>
+                    <div class="input-group ml-2">
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>شهر</option>
+                        <option>شهر</option>
+                        <option>شهر</option>
+                      </select>
+                      <span class="select-arrow position-absolute">
+                        <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                    </div>
+                    <div class="input-group ml-2">
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>سنة</option>
+                        <option>سنة</option>
+                        <option>سنة</option>
+                      </select>
+                      <span class="select-arrow position-absolute">
+                        <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                    </div>
+                    <div class="input-group ml-2">
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>هجري</option>
+                        <option>هجري</option>
+                        <option>هجري</option>
+                      </select>
+                      <span class="select-arrow position-absolute">
+                        <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group col">
+                  <div>
+                    <label>الجنس</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline ml-4">
+                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline1">ذكر</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline2">أنثى</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-8">
+                  <label for="id">العنوان</label>
+                  <div class="row">
+                    <div class="form-group col-md-8 pl-0">
+                      <div class="input-group">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>المدينة</option>
+                          <option>المدينة</option>
+                          <option>المدينة</option>
+                        </select>
+                        <span class="select-arrow position-absolute">
+                          <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <div class="input-group">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>المنطقة</option>
+                          <option>المنطقة</option>
+                          <option>المنطقة</option>
+                        </select>
+                        <span class="select-arrow position-absolute">
+                          <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- email info section -->
+            <section class="section py-4 pr-5">
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="email">البريد الالكتروني</label>
+                  <input class="form-control" type="email" required ngModel name="email" #email="ngModel">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="email">رقم الجوال</label>
+                  <div>
+                    <ngx-intl-tel-input dir="ltr" [cssClass]="'form-control font-roboto'"
+                      [preferredCountries]="preferredCountries" [enableAutoCountrySelect]="false"
+                      [enablePlaceholder]="true" [searchCountryFlag]="true"
+                      [searchCountryField]="[SearchCountryField.Iso2, SearchCountryField.Name]"
+                      [selectFirstCountry]="false" [selectedCountryISO]="CountryISO.India" [maxLength]="15"
+                      [tooltipField]="TooltipLabel.Name" [phoneValidation]="true" [separateDialCode]="separateDialCode"
+                      name="phone">
+                    </ngx-intl-tel-input>
+                    <span class="text-muted d-inline-block mt-2 mb-4"> سيصلك كود على رقم الجوال الذي ستدخله لتفعيل
+                      حساب</span>
+                  </div>
+
+                </div>
+                <div class="col-md-3">
+                  <button class="btn btn-outline-dark btn-lg btn-block" style="margin-top: 2rem;">تأكيد</button>
+                </div>
+                <div class="col-md-6">
+                  <label for="phoneNumber">رقم الهاتف (اختياري)</label>
+                  <input class="form-control" type="text" required ngModel name="phoneNumber" #phoneNumber="ngModel">
+                </div>
+                <div class="col-md-8">
+                  <div class="form-row my-3">
+                    <div class="form-group col">
+                      <div>
+                        <label>الحالة الإجتماعية</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline ml-4">
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                          class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline1">متزوج</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                          class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline2">أعزب</label>
+                      </div>
+                    </div>
+                    <div class="form-group col">
+                      <div>
+                        <label>الحالة الوظيفية</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline ml-4">
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                          class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline1">غير موظف</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                          class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline2">موظف</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row my-3">
+                    <div class="form-group col">
+                      <div>
+                        <label>هل لديك رخصة قيادة</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline ml-4">
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                          class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline1">نعم</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                          class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline2">لا</label>
+                      </div>
+                    </div>
+                    <div class="form-group col">
+                      <div>
+                        <label>هل لديك اعاقة</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline ml-4">
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                          class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline1">نعم</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                          class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline2">لا</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- more info section -->
+            <section class="section py-4 pr-5">
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label>إرفاق السيرة الذاتية ( أختياري )</label>
+                  <span class="text-muted d-block mb-4">أنواع الملفات المسموح إرفاقها
+                    <span class="font-roboto">(word، pdf, bmp,
+                      jpg,).</span>
+                  </span>
+                  <div class="file-upload btn btn-lg btn-outline-primary">
+                    <h6 class="mx-4 my-2">
+                      <span class="ml-2">
+                        <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                      </span>
+                      إرفاق الملف</h6>
+                    <input type="file" name="file" />
+                  </div>
+                </div>
+                <div class="col-md-12 mt-4">
+                  <span class="text-muted d-block mb-4">هل تريد ملء الملف الخاص بك عن طريق الربط مع
+                    <span class="font-roboto">linkedin?</span></span>
+                  <div class="form-row">
+
+                    <div class="col-md-3 my-3">
+                      <div class="custom-control custom-radio custom-control-inline ml-4">
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                          class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline1">نعم</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                          class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline2">لا</label>
+                      </div>
+                    </div>
+                    <div class="col my-3">
+                      <a href="#">
+                        <img src="./../../../../assets/images/registration/linkedin-button.svg"
+                          alt="linkedin button"></a>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+
+            </section>
+            <!--next button -->
+            <div class="row">
+              <div class="col-md-3 mx-5">
+                <button class="btn btn-lg btn-primary my-4 py-2">
+                  <span class="mx-5">
+                    التالي
+                  </span>
+                </button> </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!-- Qualifications -->
+    <div class="col-md-12 my-3">
+      <section class="qualifications">
+        <div class="header">
+          <h4 class="py-4 pr-5 m-0">
+            <span class="ml-2">
+              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            </span>
+            المؤهلات العلمية</h4>
+          <p class="status">
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+          </p>
+        </div>
+        <div class="body">
+          <form #form="ngForm">
+            <!-- basic info section -->
+            <section class="section py-4 pr-5">
+
+              <div class="row">
+                <div class="form-group col-md-4">
+                  <label for="qualificationType">نوع المؤهل</label>
+                  <div class="input-group">
+                    <select class="form-control" id="qualificationType">
+                      <option>اختر</option>
+                      <option>اختر</option>
+                      <option>اختر</option>
+                      <option>اختر</option>
+
+                    </select>
+                    <span class="select-arrow position-absolute">
+                      <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-4">
+                  <label for="country">الدولة</label>
+                  <div class="input-group">
+                    <select class="form-control" id="country">
+                      <option>الدولة</option>
+                      <option>الدولة</option>
+                      <option>الدولة</option>
+                    </select>
+                    <span class="select-arrow position-absolute">
+                      <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                  </div>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="university">الجامعة</label>
+                  <input class="form-control" type="text" required ngModel name="university" #university="ngModel">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="faculty">الكلية</label>
+                  <input class="form-control" type="text" required ngModel name="faculty" #faculty="ngModel">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="form-group col-md-4">
+                  <label for="spacialization">التخصص</label>
+                  <input class="form-control" type="text" required ngModel name="spacialization"
+                    #spacialization="ngModel">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="gpa">التقدير</label>
+                  <div class="input-group">
+                    <select class="form-control" id="gpa">
+                      <option>التقدير</option>
+                      <option>التقدير</option>
+                      <option>التقدير</option>
+                    </select>
+                    <span class="select-arrow position-absolute">
+                      <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="form-group col-md-2">
+                  <div>
+                    <label>سنة البداية</label>
+                  </div>
+                  <div class="input-group">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>السنه</option>
+                      <option>السنه</option>
+                      <option>السنه</option>
+                    </select>
+                    <span class="select-arrow position-absolute">
+                      <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                  </div>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="id">سنة التخرج</label>
+                  <div class="d-flex">
+                    <div class="input-group ml-2">
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>السنه</option>
+                        <option>السنه</option>
+                        <option>السنه</option>
+
+                      </select>
+                      <span class="select-arrow position-absolute">
+                        <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                    </div>
+                    <div class="input-group ml-2">
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>هجري</option>
+                        <option>هجري</option>
+                        <option>هجري</option>
+                      </select>
+                      <span class="select-arrow position-absolute">
+                        <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <div>
+                    <label>إرفاق الملفات</label>
+
+                  </div>
+                  <div class="file-upload btn btn-lg btn-outline-primary">
+                    <h6 class="mx-4 my-2">
+                      <span class="ml-2">
+                        <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                      </span>
+                      إرفاق الملف</h6>
+                    <input type="file" name="file" />
+                  </div>
+                </div>
+                <div class="col-md-12 mt-4">
+                  <label for="">تفاصيل الدراسة</label>
+                  <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                  <button class="btn btn-lg mt-3 btn-outline-primary">
+                    <h6 class="mx-4 my-2">
+                      <span class="ml-2">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                      </span>
+                      أضافة مؤهل</h6>
+                  </button>
+                </div>
+
+              </div>
+
+
+            </section>
+            <!--next button -->
+            <div class="row">
+              <div class="col-md-12 mx-5">
+                <button class="btn btn-lg btn-primary my-4 py-2">
+                  <span class="mx-5">
+                    التالي
+                  </span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- Practical experiences -->
+    <div class="col-md-12 my-3">
+      <section class="practical-experiences">
+        <div class="header">
+          <h4 class="py-4 pr-5 m-0">
+            <span class="ml-2">
+              <i class="fa fa-briefcase" aria-hidden="true"></i>
+            </span>
+            الخبرات العملية</h4>
+          <p class="status">
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+          </p>
+        </div>
+        <div class="body">
+
+          <form #form="ngForm">
+            <!-- basic info section -->
+            <section class="section py-4 pr-5">
+
+              <!-- experiences card -->
+              <div class="jumbotron p-4">
+                <div class="d-flex flex-wrap justify-content-between">
+                  <div>
+                    <h3>صيدلي <span>دوام كامل</span></h3>
+                    <p>مستشفى السلام، القاهرة، مصر (صحة / مستشفيات / صيدلة)</p>
+                  </div>
+                  <div>
+                    <button class="btn btn-link text-primary">
+                      <i class="fa fa-pencil-square-o ml-2" aria-hidden="true"></i>
+                      تعديل
+                    </button>
+                    <button class="btn btn-link text-danger">
+                      <i class="fa fa-trash-o ml-2" aria-hidden="true"></i>
+                      حذف
+                    </button>
+
+                  </div>
+                </div>
+                <div class="d-flex flex-wrap justify-content-between mt-5">
+                  <p class="date">يناير 2018 - يناير 2019</p>
+                  <p>
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    لا يوجد ملف
+                  </p>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="form-group col-md-4">
+                  <label for="university">إسم الجهة</label>
+                  <input class="form-control" type="text" required ngModel name="university" #university="ngModel">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="qualificationType">قطاع عمل الجهة</label>
+                  <div class="input-group">
+                    <select class="form-control" id="qualificationType">
+                      <option>قطاع حكومي</option>
+
+                    </select>
+                    <span class="select-arrow position-absolute">
+                      <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                  </div>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="qualificationType">مجال عمل الجهة</label>
+                  <div class="input-group">
+                    <select class="form-control" id="qualificationType">
+                      <option>المقاولات</option>
+                    </select>
+                    <span class="select-arrow position-absolute">
+                      <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-4">
+                  <label for="university">المسمى الوظيفي</label>
+                  <input class="form-control" type="text" required ngModel name="university" #university="ngModel">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="qualificationType">التخصص</label>
+                  <div class="input-group">
+                    <select class="form-control" id="qualificationType">
+                      <option>محاسبة وإدارة اعمال</option>
+
+                    </select>
+                    <span class="select-arrow position-absolute">
+                      <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                  </div>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="qualificationType">نوع التوظيف</label>
+                  <div class="input-group">
+                    <select class="form-control" id="qualificationType">
+                      <option>جيد جداً</option>
+                    </select>
+                    <span class="select-arrow position-absolute">
+                      <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-7">
+                  <label for="gpa">عنوان الجهة</label>
+                  <div class="row">
+                    <div class="col-md-7 my-3">
+                      <div class="input-group">
+                        <select class="form-control" id="gpa">
+                          <option>المدينه</option>
+                        </select>
+                        <span class="select-arrow position-absolute">
+                          <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                      </div>
+                    </div>
+                    <div class="col-md-5 my-3">
+                      <div class="input-group">
+                        <select class="form-control" id="gpa">
+                          <option>المنطقه</option>
+                        </select>
+                        <span class="select-arrow position-absolute">
+                          <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="form-group col-md-4">
+                  <div>
+                    <label>تاريخ البداية</label>
+                  </div>
+                  <div class="d-flex">
+
+                    <div class="input-group ml-2">
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>شهر</option>
+                        <option>شهر</option>
+                        <option>شهر</option>
+                      </select>
+                      <span class="select-arrow position-absolute">
+                        <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                    </div>
+                    <div class="input-group">
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>السنه</option>
+                        <option>السنه</option>
+                        <option>السنه</option>
+                      </select>
+                      <span class="select-arrow position-absolute">
+                        <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="id">تاريخ الانتهاء</label>
+                  <div class="d-flex">
+                    <div class="input-group ml-2">
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>شهر</option>
+                        <option>شهر</option>
+                        <option>شهر</option>
+                      </select>
+                      <span class="select-arrow position-absolute">
+                        <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                    </div>
+                    <div class="input-group ml-2">
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>السنه</option>
+                        <option>السنه</option>
+                        <option>السنه</option>
+
+                      </select>
+                      <span class="select-arrow position-absolute">
+                        <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                    </div>
+                    <div class="input-group ml-2">
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>هجري</option>
+                        <option>هجري</option>
+                        <option>هجري</option>
+                      </select>
+                      <span class="select-arrow position-absolute">
+                        <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12 mt-3">
+                  <div>
+                    <label class="d-block">شهادة الخبرة</label>
+                    <span class="text-muted d-inline-block mt-2 mb-4">الملفات المسموح بها هي ، أقصى حجم للملف هالملفات
+                      المسموح بها هي ،
+                      أقصى حجم للملف 5mp</span>
+                  </div>
+                  <div class="file-upload btn btn-lg btn-outline-primary">
+                    <h6 class="mx-4 my-2">
+                      <span class="ml-2">
+                        <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                      </span>
+                      إرفاق الملف</h6>
+                    <input type="file" name="file" />
+                  </div>
+                </div>
+                <div class="col-md-12 mt-4">
+                  <label for=""> تفاصيل العمل</label>
+                  <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                  <button class="btn btn-lg mt-3 btn-outline-primary">
+                    <h6 class="mx-4 my-2">
+                      <span class="ml-2">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                      </span>
+                      أضافة وظيفة</h6>
+                  </button>
+                </div>
+
+              </div>
+
+
+            </section>
+            <!--next button -->
+            <div class="row">
+              <div class="col-md-12 mx-5">
+                <button class="btn btn-lg btn-primary my-4 py-2">
+                  <span class="mx-5">
+                    التالي
+                  </span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!-- Skills and interests -->
+    <div class="col-md-12 my-3">
+      <section class="skills-interests">
+        <div class="header">
+          <h4 class="py-4 pr-5 m-0">
+            <span class="ml-2">
+              <i class="fa fa-puzzle-piece" aria-hidden="true"></i>
+            </span>
+            المهارات والاهتمامات</h4>
+          <p class="status">
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+          </p>
+        </div>
+        <div class="body">
+
+          <form #form="ngForm">
+            <!-- basic info section -->
+            <section class="section py-4 pr-5">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label>سنوات الخبرة</label>
+                  <div class="input-group">
+                    <select class="form-control" id="gpa">
+                      <option>1</option>
+                    </select>
+                    <span class="select-arrow position-absolute">
+                      <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label>المجالات التي ترغب العمل بها <button type="button" tooltipClass="custom-tooltip"
+                      class="btn p-0 d-inline-block btn-link mr-2" placement="left"
+                      ngbTooltip="يمكنك أختيار ٣ مناطق بحد أقصي">
+                      <i class="fa  fa-exclamation-circle"></i>
+
+                    </button></label>
+
+                  <div class="input-group">
+                    <input class="form-control" type="text" />
+                    <span class="plus-btn position-absolute">
+                      <button class="btn btn-primary btn-add" type="button">
+                        <i class="fa  fa-plus"></i>
+                      </button>
+                    </span>
+                  </div>
+                  <div class="badges mt-3">
+                    <span class="badge badge-info p-2">الرياض
+                      <a href=""> <i class="fa  fa-close"></i></a>
+                    </span>
+                    <span class="badge badge-info p-2">القصيم
+                      <a href=""> <i class="fa  fa-close"></i></a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="form-group col-md-6 mt-3">
+                  <label for="">هل يمكنك السفر والانتقال إذا وجدت فرصة مناسبة؟</label>
+                  <div class="custom-control custom-radio custom-control-inline ml-4">
+                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline1">نعم</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline2">لا</label>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="form-group col-md-6  mt-3">
+                  <div>
+                    <label>اللغات التي تجيدها</label>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col-md-8 d-flex">
+                      <div class="input-group ml-2">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>اللغة</option>
+                          <option>اللغة</option>
+                          <option>اللغة</option>
+                        </select>
+                        <span class="select-arrow position-absolute">
+                          <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                      </div>
+                      <div class="input-group">
+                        <select class="form-control" disabled id="exampleFormControlSelect1">
+                          <option>الإجادة</option>
+                          <option>الإجادة</option>
+                          <option>الإجادة</option>
+                        </select>
+                        <span class="select-arrow position-absolute">
+                          <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-left my-2">
+                      <button class="btn btn-primary btn-add" type="button">
+                        <i class="fa  fa-plus"></i>
+                      </button>
+                    </div>
+                    <div class="badges mt-3">
+                      <span class="badge badge-info p-2">اللغة الأم العربية
+                        <a href=""> <i class="fa  fa-close"></i></a>
+                      </span>
+                      <span class="badge badge-info p-2">اللغة الثانية الالماني
+                        <a href=""> <i class="fa  fa-close"></i></a>
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="form-group col-md-6 mt-3">
+                  <label>المهارات/القدرات التي تملكها<button type="button" tooltipClass="custom-tooltip"
+                      class="btn p-0 d-inline-block btn-link mr-2" placement="left"
+                      ngbTooltip="يمكنك أختيار ٣ مناطق بحد أقصي">
+                      <i class="fa  fa-exclamation-circle"></i>
+
+                    </button></label>
+
+                  <div class="input-group">
+                    <input class="form-control" type="text" />
+                    <span class="plus-btn position-absolute">
+                      <button class="btn btn-primary btn-add" type="button">
+                        <i class="fa  fa-plus"></i>
+                      </button>
+                    </span>
+                  </div>
+                  <div class="badges mt-3">
+                    <span class="badge badge-info p-2">أدوبي فوتوشوب
+                      <a href=""> <i class="fa  fa-close"></i></a>
+                    </span>
+                    <span class="badge badge-info p-2">الميكانيكى
+                      <a href=""> <i class="fa  fa-close"></i></a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+            </section>
+          </form>
+
+
+
+
+        </div>
+      </section>
+    </div>
+
+
+  </div>
+  <!--Finish button -->
+  <div class="row justify-content-center">
+    <div class="col-md-5 mx-5 text-center">
+      <button class="btn btn-lg btn-block btn-primary my-4 py-2">
+        <span class="mx-5">
+          إكمال
+        </span>
+      </button>
+      <span class="text-info">حفظ التعديلات والإكمال لاحقًا</span>
+    </div>
+  </div>
+</div>

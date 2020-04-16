@@ -1,0 +1,62 @@
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+
+    <a class="navbar-brand m-0" routerLink="/">
+      <span>
+        <img src="./../../../../assets/images/logo.svg" alt="Patexs Logo">
+      </span>
+    </a>
+    <button class="navbar-toggler" (click)="isMenuCollapsed = !isMenuCollapsed" type="button">
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" [ngbCollapse]="isMenuCollapsed">
+      <ul class="navbar-nav w-100">
+        <li class="nav-item dropdown" ngbDropdown #myDrop="ngbDropdown" display="dynamic">
+          <a class="nav-link cursor-pointer" (mouseenter)="$event.stopPropagation(); myDrop.open();" id="dropdownBasic1"
+            ngbDropdownToggle>حول كفاءات العالمية</a>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <div class="p-2  ">
+
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link">خدمتنا</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">المركز الإعلامي</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">شركاءنا ورسالتنا</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">إتصل بنا</a>
+        </li>
+
+        <div class="mr-auto">
+          <li class="nav-item d-inline-block">
+            <a class="nav-link btn btn-outline-primary" [routerLink]="['auth']" routerLinkActive="active">دخول</a>
+          </li>
+          <li class="nav-item d-inline-block">
+            <a class="nav-link btn btn-primary mr-4" [routerLink]="['regs']" routerLinkActive="active">تسجيل</a>
+          </li>
+        </div>
+        <div class="mr-auto">
+          <li class="nav-item d-inline-block">
+            <a class="nav-link text-primary" [routerLink]="['auth']" routerLinkActive="active"><i
+                class="fa log-out fa-sign-out" aria-hidden="true"></i> خروج
+            </a>
+          </li>
+
+        </div>
+
+
+
+      </ul>
+
+    </div>
+  </div>
+
+</nav>

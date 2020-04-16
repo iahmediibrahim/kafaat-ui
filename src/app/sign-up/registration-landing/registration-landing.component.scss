@@ -1,0 +1,32 @@
+.card {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 35px #003F841A;
+  border: unset;
+
+
+  .card-body {
+    border: 1px solid #E2E2E2;
+    border-top: 0;
+
+    border-radius: .25rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+.heading,
+.card-title {
+  color: #003F84;
+}
+
+.cta {
+  a {
+    font-family: gulf-bold;
+    font-size: 16px;
+  }
+}
+
+ngb-carousel {
+  outline: none;
+
+}
