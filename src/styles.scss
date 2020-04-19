@@ -102,6 +102,15 @@ body {
   color: $main-color !important;
 }
 
+.text-info {
+  color: $info-color !important;
+
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
 .text-muted {
   color: #666666;
 }

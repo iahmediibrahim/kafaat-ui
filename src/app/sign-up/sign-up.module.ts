@@ -12,6 +12,8 @@ import { UserRegsDetailsComponent } from './user-registration/user-regs-details/
 import { NgxIntlTelInputModule } from 'ngx-intl-tel-input';
 import { RecruiterRegsDetailsComponent } from './recruiter-registration/recruiter-regs-details/recruiter-regs-details.component';
 import { CompanyRegsDetailsComponent } from './company-registration/company-regs-details/company-regs-details.component';
+import { ActivationModalComponent } from './activation-modal/activation-modal.component';
+import { CompletionComponent } from './completion/completion.component';
 
 @NgModule({
     declarations: [
@@ -23,6 +25,8 @@ import { CompanyRegsDetailsComponent } from './company-registration/company-regs
         UserRegsDetailsComponent,
         RecruiterRegsDetailsComponent,
         CompanyRegsDetailsComponent,
+        ActivationModalComponent,
+        CompletionComponent,
     ],
     imports: [ CommonModule, SignUpRoutingModule, SharedModule, NgxIntlTelInputModule ],
 })

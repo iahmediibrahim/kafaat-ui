@@ -7,6 +7,7 @@ import { RecruiterRegistrationComponent } from './recruiter-registration/recruit
 import { UserRegsDetailsComponent } from './user-registration/user-regs-details/user-regs-details.component';
 import { RecruiterRegsDetailsComponent } from './recruiter-registration/recruiter-regs-details/recruiter-regs-details.component';
 import { CompanyRegsDetailsComponent } from './company-registration/company-regs-details/company-regs-details.component';
+import { CompletionComponent } from './completion/completion.component';
 
 const routes: Routes = [
     {
@@ -16,12 +17,15 @@ const routes: Routes = [
 
             { path: 'user', component: UserRegistrationComponent },
             { path: 'user/details', component: UserRegsDetailsComponent },
+            { path: 'user/welcome', component: CompletionComponent },
 
             { path: 'company', component: CompanyRegistrationComponent },
             { path: 'company/details', component: CompanyRegsDetailsComponent },
+            { path: 'company/welcome', component: CompletionComponent },
 
             { path: 'recruiter', component: RecruiterRegistrationComponent },
             { path: 'recruiter/details', component: RecruiterRegsDetailsComponent },
+            { path: 'recruiter/welcome', component: CompletionComponent },
         ],
     },
 ];

@@ -203,7 +203,9 @@
 
                 </div>
                 <div class="col-md-3">
-                  <button class="btn btn-outline-dark btn-lg btn-block" style="margin-top: 2rem;">تأكيد</button>
+
+                  <button class="btn btn-outline-dark btn-lg btn-block" (click)="open()"
+                    style="margin-top: 2rem;">تأكيد</button>
                 </div>
                 <div class="col-md-6">
                   <label for="phoneNumber">رقم الهاتف (اختياري)</label>
@@ -913,7 +915,7 @@
   <!--Finish button -->
   <div class="row justify-content-center">
     <div class="col-md-5 mx-5 text-center">
-      <button class="btn btn-lg btn-block btn-primary my-4 py-2">
+      <button class="btn btn-lg btn-block btn-primary my-4 py-2" routerLink="/regs/user/welcome">
         <span class="mx-5">
           إكمال
         </span>

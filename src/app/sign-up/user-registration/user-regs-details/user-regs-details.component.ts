@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SearchCountryField, TooltipLabel, CountryISO } from 'ngx-intl-tel-input';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ActivationModalComponent } from '../../activation-modal/activation-modal.component';
 
 @Component({
     selector: 'app-user-regs-details',
@@ -12,7 +14,12 @@ export class UserRegsDetailsComponent implements OnInit {
     TooltipLabel = TooltipLabel;
     CountryISO = CountryISO;
     preferredCountries: CountryISO[] = [ CountryISO.UnitedStates, CountryISO.UnitedKingdom ];
-    constructor() {}
+    constructor(private modalService: NgbModal) {}
+
+    open() {
+        const modalRef = this.modalService.open(ActivationModalComponent, { centered: true });
+        modalRef.componentInstance.name = 'World';
+    }
 
     ngOnInit(): void {}
 }
