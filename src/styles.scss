@@ -107,6 +107,15 @@ body {
 
 }
 
+.badge-light {
+  color: $main-color;
+  background-color: #fff;
+  padding: .6em 1.6em;
+  font-size: 16px;
+  border-radius: 5px;
+
+}
+
 .text-underline {
   text-decoration: underline;
 }
@@ -122,6 +131,12 @@ h4,
 h5,
 h6 {
   font-family: gulf-bold;
+  line-height: 1.5em;
+}
+
+.btn {
+  border-radius: 5px;
+
 }
 
 .btn-primary {
@@ -432,5 +447,50 @@ div.file-upload {
   .flag-container {
     border-right: 1px solid #D8D8D8;
     z-index: 2;
+  }
+}
+
+ngb-carousel {
+  &:focus {
+    outline: none;
+  }
+}
+
+.img-fluid {
+  object-fit: contain;
+
+}
+
+.nav-tabs {
+
+
+  .nav-item {
+    margin: 0 2em;
+  }
+
+  .nav-link {
+    border: none;
+    font-family: gulf-bold;
+    font-size: 24px;
+    color: #CDCDCD;
+
+    &.active {
+      color: $main-color;
+      padding-bottom: 1em;
+      border-bottom: 5px solid $main-color;
+    }
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    display: flex;
+
+    .nav-item {
+      margin: 0;
+    }
+
+    .nav-link {
+
+      font-size: 16px;
+    }
   }
 }
