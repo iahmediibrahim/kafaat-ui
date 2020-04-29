@@ -1,0 +1,82 @@
+.chosen,
+.most-selling {
+  margin-top: -60px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+  p {
+    margin: 0;
+    font-size: 22px;
+  }
+}
+
+.chosen {
+  background-color: #003F84;
+
+}
+
+.most-selling {
+  background-color: #3F9BC8;
+
+}
+
+.heading {
+  margin-bottom: 80px;
+
+}
+
+.subscription {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 10px 35px #003F841A;
+  border-radius: 5px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .cta {
+    margin-top: auto;
+
+  }
+
+  .price {
+    height: 60px;
+    border-radius: 5px;
+    margin: 2em 0;
+
+    p {
+      font-size: 32px;
+      margin: 0;
+      font-family: gulf-semibold;
+
+      strong {
+        font-family: Roboto;
+        padding-left: 5px;
+
+      }
+
+      span {
+        font-size: 12px;
+        padding-right: 5px;
+      }
+    }
+  }
+
+  ul {
+    padding: 0;
+    font-size: 14px;
+    color: #666666;
+
+    li {
+      margin: .8em 0;
+
+      i {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+hr {
+  border: 1px solid #E2E2E2;
+
+}

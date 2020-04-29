@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg sticky-top">
+<nav class="navbar navbar-expand-xl sticky-top">
   <div class="container">
 
     <a class="navbar-brand m-0" routerLink="/">
@@ -12,45 +12,190 @@
 
     <div class="collapse navbar-collapse" [ngbCollapse]="isMenuCollapsed">
       <ul class="navbar-nav w-100">
-        <li class="nav-item dropdown" ngbDropdown #myDrop="ngbDropdown" display="dynamic">
-          <a class="nav-link cursor-pointer" (mouseenter)="$event.stopPropagation(); myDrop.open();" id="dropdownBasic1"
-            ngbDropdownToggle>حول كفاءات العالمية</a>
-          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <div class="p-2  ">
 
-            </div>
+
+        <!-- Seeker dashboard Links -->
+        <ng-container class="middle-links" *ngIf="false">
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['seeker-dashboard']" routerLinkActive="active"><i class="fa fa-home pl-2"
+                aria-hidden="true"></i>
+              لوحة التحكم </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"><i class="fa fa-arrows-h pl-2" aria-hidden="true"></i>
+              الطلبات</a> </li>
+          <li class="nav-item">
+            <a class="nav-link"><i class="fa fa-th-list pl-2" aria-hidden="true"></i>
+              خدماتي </a> </li>
+          <li class="nav-item">
+            <a class="nav-link"><i class="fa fa-database pl-2" aria-hidden="true"></i>
+              نقاطي </a> </li>
+        </ng-container>
+
+
+        <!-- Recruiter dashboard Links -->
+        <ng-container class="middle-links" *ngIf="false">
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['recruiter-dashboard']" routerLinkActive="active"><i
+                class="fa fa-home pl-2" aria-hidden="true"></i>
+              لوحة التحكم </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"><i class="fa fa-arrows-h pl-2" aria-hidden="true"></i>
+              الطلبات</a> </li>
+          <li class="nav-item">
+            <a class="nav-link"><i class="fa fa-th-list pl-2" aria-hidden="true"></i>
+              خدماتي </a> </li>
+          <li class="nav-item">
+            <a class="nav-link"><i class="fa fa-database pl-2" aria-hidden="true"></i>
+              نقاطي </a> </li>
+        </ng-container>
+
+        <!-- Company dashboard Links -->
+        <ng-container class="middle-links" *ngIf="true">
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['company-dashboard']" routerLinkActive="active"><i
+                class="fa fa-home pl-2" aria-hidden="true"></i>
+              لوحة التحكم </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"><i class="fa fa-file-text-o pl-2" aria-hidden="true"></i>
+              ملف الشركه</a> </li>
+          <li class="nav-item">
+            <a class="nav-link"><i class="fa fa-user  pl-2" aria-hidden="true"></i>
+              مديري الموارد البشرية </a> </li>
+          <li class="nav-item">
+            <a class="nav-link"><i class="fa fa-users pl-2" aria-hidden="true"></i>
+              طالبي العمل </a> </li>
+          <li class="nav-item">
+            <a class="nav-link"><i class="fa fa-database pl-2" aria-hidden="true"></i>
+              خدماتي </a> </li>
+        </ng-container>
+
+        <!-- dashboard Links -->
+        <ng-container *ngIf="true">
+          <div class="mr-auto d-flex align-items-center left-links user">
+            <!-- doesn't exist in company -->
+            <ng-container *ngIf="false">
+              <button class="btn alert ml-4 alert-primary" (click)="open()">
+                <i class="fa fa-gift pl-2" aria-hidden="true"></i>
+                أخبر صديقك
+              </button>
+            </ng-container>
+
+            <li class="nav-item dropdown" ngbDropdown #notification="ngbDropdown" display="dynamic">
+              <a class="nav-link cursor-pointer notification"
+                (mouseenter)="$event.stopPropagation(); notification.open();" id="notification" ngbDropdownToggle>
+                <span class="number">24</span>
+                <i class="fa fa-bell" aria-hidden="true"></i>
+              </a>
+              <div ngbDropdownMenu aria-labelledby="notification" class="p-0">
+                <button class="notification-item" ngbDropdownItem>قام <span class="font-bold">أحمد
+                    السيد</span> بدعوتك الي
+                  مقابله تليفونيه <span class="date">أمس</span></button>
+                <button class="notification-item" ngbDropdownItem>قام <span class="font-bold">أحمد
+                    السيد</span> بدعوتك الي
+                  مقابله تليفونيه <span class="date">أمس</span></button>
+                <button class="notification-item" ngbDropdownItem>قام <span class="font-bold">أحمد
+                    السيد</span> بدعوتك الي
+                  مقابله تليفونيه <span class="date">أمس</span></button>
+                <button class="notification-item" ngbDropdownItem>قام <span class="font-bold">أحمد
+                    السيد</span> بدعوتك الي
+                  مقابله تليفونيه <span class="date">أمس</span></button>
+                <a class="nav-link font-bold text-info text-center py-2 cursor-pointer"
+                  [routerLink]="['notifications']">عرض كل التنبيهات</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown" ngbDropdown #user="ngbDropdown" display="dynamic">
+              <a class="nav-link cursor-pointer py-2" (mouseenter)="$event.stopPropagation(); user.open();" id="user"
+                ngbDropdownToggle><img src="./../../../assets/images/user.png" alt="user" class="img-fluid pl-2"><span
+                  class="text-primary">محمد علي</span></a>
+              <div ngbDropdownMenu aria-labelledby="user" class="p-0">
+                <div ngbDropdownItem class="d-flex px-2 py-3 align-items-center user-content">
+                  <img src="./../../../assets/images/user.png" alt="user" class="img-fluid pl-2">
+                  <div class="pr-2">
+                    <p class="text-primary font-bold mb-0">محمد علي</p>
+                    <button class="btn btn-link text-info text-right px-0">الملف الشخصي</button>
+                  </div>
+                </div>
+                <button class="cta py-2 pr-3" ngbDropdownItem>
+                  <i class="fa fa-pencil pl-2" aria-hidden="true"></i>
+                  تعديل الملف الشخصي
+                </button>
+                <button class="cta py-2 pr-3" ngbDropdownItem>
+                  <i class="fa fa-exclamation-circle pl-2" aria-hidden="true"></i>
+                  الابلاغ عن مشكله
+                </button>
+                <button class="cta py-2 pr-3" ngbDropdownItem>
+                  <svg class="kafaat-icon pl-2">
+                    <use class="color" xlink:href="./../../../assets/images/kafaat-icon.svg#kafaat-icon"></use>
+                  </svg>
+                  بوابه كفائات الاخباريه
+                </button>
+                <button class="cta py-2 pr-3" ngbDropdownItem>
+                  <i class="fa fa-globe pl-2" aria-hidden="true"></i>
+                  مركز المساعده
+                </button>
+                <button class="cta py-2 pr-3 text-danger" ngbDropdownItem>
+                  <i class="fa fa-sign-out pl-2" aria-hidden="true"></i>
+                  تسجيل الخروج
+                </button>
+              </div>
+            </li>
+
           </div>
-        </li>
+        </ng-container>
 
-        <li class="nav-item">
-          <a class="nav-link">خدمتنا</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">المركز الإعلامي</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">شركاءنا ورسالتنا</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">إتصل بنا</a>
-        </li>
-
-        <div class="mr-auto">
-          <li class="nav-item d-inline-block">
-            <a class="nav-link btn btn-outline-primary" [routerLink]="['auth']" routerLinkActive="active">دخول</a>
-          </li>
-          <li class="nav-item d-inline-block">
-            <a class="nav-link btn btn-primary mr-4" [routerLink]="['regs']" routerLinkActive="active">تسجيل</a>
-          </li>
-        </div>
-        <div class="mr-auto">
-          <li class="nav-item d-inline-block">
-            <a class="nav-link text-primary" [routerLink]="['auth']" routerLinkActive="active"><i
-                class="fa log-out fa-sign-out" aria-hidden="true"></i> خروج
-            </a>
+        <!-- Landing page Links -->
+        <ng-container class="middle-links" *ngIf="false">
+          <li class="nav-item dropdown" ngbDropdown #aboutKafaat="ngbDropdown" display="dynamic">
+            <a class="nav-link cursor-pointer" (mouseenter)="$event.stopPropagation(); aboutKafaat.open();"
+              id="dropdownBasic1" ngbDropdownToggle>حول كفاءات العالمية</a>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <div class="p-2 text-right">
+                <button ngbDropdownItem [routerLink]="['about']" routerLinkActive="active"
+                  [routerLinkActiveOptions]="{exact: true}"> كفاءات</button>
+              </div>
+            </div>
           </li>
 
-        </div>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['our-services']" routerLinkActive="active">خدمتنا</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['media']" routerLinkActive="active">المركز الإعلامي</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['partners']" routerLinkActive="active">شركاءنا ورسالتنا</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['contact-us']" routerLinkActive="active">إتصل بنا</a>
+          </li>
+        </ng-container>
+
+        <!-- Login Register Links -->
+        <ng-container *ngIf="false">
+          <div class="mr-auto d-flex align-items-center left-links">
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-primary" [routerLink]="['auth/login']"
+                routerLinkActive="active">دخول</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-primary mr-4" [routerLink]="['regs']" routerLinkActive="active">تسجيل</a>
+            </li>
+          </div>
+        </ng-container>
+
+        <!-- Logout Links -->
+        <ng-container *ngIf="false">
+          <div class="mr-auto  d-flex align-items-center  left-links">
+            <li class="nav-item">
+              <a class="nav-link text-primary" [routerLink]="['auth']" routerLinkActive="active"><i
+                  class="fa log-out fa-sign-out" aria-hidden="true"></i> خروج
+              </a>
+            </li>
+          </div>
+        </ng-container>
 
 
 

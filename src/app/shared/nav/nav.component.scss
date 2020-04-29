@@ -1,6 +1,131 @@
+// colors
+$main-color: #003F84;
+$info-color: #3F9BC8;
+
 .navbar {
   background-color: #fff;
   box-shadow: 0px 10px 35px #003F841A;
+  padding: 0;
+
+  .dropdown-menu {
+    max-width: 360px;
+    width: 260px;
+    text-align: right;
+  }
+
+  .nav-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    &.btn {
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      &.active {
+        border-bottom: 0;
+      }
+    }
+
+  }
+
+  .nav-link.active {
+    color: $main-color;
+    border-bottom: 5px solid $info-color;
+  }
+
+  .left-links {
+    &.user {
+      .cta {
+        border-bottom: 1px solid #E5E5E5;
+        font-size: 14px;
+        color: #666666;
+
+        .kafaat-icon {
+          font-size: 14px;
+          width: 20px;
+          height: 20px;
+
+          .color {
+            fill: #666666;
+          }
+        }
+
+        &:active,
+        &:hover {
+          color: $main-color;
+          background: #F8F9FC;
+
+          .kafaat-icon {
+            .color {
+              fill: $main-color;
+            }
+          }
+        }
+      }
+
+      .user-content {
+        background: #F8F9FC;
+        border-bottom: 1px solid #E5E5E5;
+
+        .btn {
+          font-size: 12px;
+        }
+      }
+
+      a {
+        &::after {
+          color: $main-color;
+        }
+      }
+
+      .notification {
+        position: relative;
+
+        &::after {
+          display: none;
+        }
+
+        i {
+          font-size: 22px;
+          border-left: 1px solid #E5E5E5;
+          padding-left: 10px;
+        }
+
+        .number {
+          position: absolute;
+          top: 9px;
+          right: -6px;
+          padding: 2px 6px;
+          border-radius: 50%;
+          background: red;
+          color: white;
+          font-family: Roboto;
+          font-size: 15px;
+
+        }
+      }
+
+      .notification-item {
+        font-size: 14px;
+        color: #666666;
+        border-right: 4px solid $info-color;
+        padding-left: 2em;
+        white-space: normal;
+        margin-top: 5px;
+        border-bottom: 1px solid #F2F2F2;
+
+        &:active {
+          color: #fff;
+        }
+
+        .date {
+          opacity: 0.7;
+          font-size: 12px;
+        }
+      }
+
+    }
+  }
 
   .btn {
     width: 120px;

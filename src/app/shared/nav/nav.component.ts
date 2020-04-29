@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { InviteComponent } from '../invite/invite.component';
 
 @Component({
     selector: 'app-nav',
@@ -8,7 +10,12 @@ import { Component, OnInit } from '@angular/core';
 export class NavComponent implements OnInit {
     isMenuCollapsed = true;
 
-    constructor() {}
+    constructor(private modalService: NgbModal) {}
 
     ngOnInit(): void {}
+
+    open() {
+        const modalRef = this.modalService.open(InviteComponent);
+        modalRef.componentInstance.name = 'World';
+    }
 }

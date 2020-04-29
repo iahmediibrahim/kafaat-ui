@@ -1,0 +1,54 @@
+//responsive breakpoints
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+
+.header {
+  button {
+    font-size: 18px;
+
+  }
+}
+
+.card {
+  border-color: #CDCDCD;
+  border-radius: 5px;
+
+  &-head {
+    border-bottom: 1px solid #CDCDCD;
+
+    p {
+      font-size: 20px;
+    }
+
+    .btn {
+      font-size: 17px;
+
+    }
+  }
+
+  &-content:last-child {
+    border-bottom: 0;
+
+  }
+
+  &-content {
+    border-bottom: 1px solid #CDCDCD;
+
+    .d-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+
+      @media only screen and (max-width: $bp-small) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    i {
+      font-size: 20px;
+      padding-left: 10px;
+    }
+  }
+}

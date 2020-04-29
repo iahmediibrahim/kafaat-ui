@@ -1,0 +1,598 @@
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="header d-flex flex-wrap justify-content-between  align-items-center">
+        <h2 class="text-primary mb-4">
+          شركة الأمل
+          <span style="font-size: 20px;"> (محمد سالم)</span>
+        </h2>
+        <div>
+          <button class="btn btn-primary btn-lg px-4 mb-4">وظيفة شاغرة جديدة</button>
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-primary btn-lg px-4 mb-4 mr-3 more" id="more" ngbDropdownToggle>المزيد</button>
+            <div class=" text-right" ngbDropdownMenu aria-labelledby="more">
+              <button ngbDropdownItem>تدقيق طلبات التسجيل</button>
+              <button ngbDropdownItem>اضافه وصف وظيفي </button>
+              <button ngbDropdownItem>متابعه طلبات تقيم الاهليه</button>
+              <button ngbDropdownItem>متابعه طلبات تقيم موظف او مرشح</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card container-fluid mb-3">
+        <div class="card-head row p-3 flex-wrap justify-content-between align-items-center">
+          <p class="text-primary font-bold m-0">
+            <i class="fa fa-bar-chart pl-2" aria-hidden="true"></i>
+            نشاطي خلال الشهر الماضي</p>
+
+          <button class="btn btn-link text-info font-semibold">عرض الكل</button>
+        </div>
+        <div class="card-content row align-items-center activity">
+          <div class="col-md-3 py-3">
+            <div class="card py-3 pr-3">
+              <div class="alert alert-warning">
+                <i class="fa fa-briefcase" aria-hidden="true"></i>
+              </div>
+              <p>طلبات الترشيح</p>
+              <p class="count">4</p>
+            </div>
+          </div>
+          <div class="col-md-3 py-3">
+            <div class="card py-3 pr-3">
+              <div class="alert alert-success">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </div>
+              <p>عدد المرشحين</p>
+              <p class="count">18</p>
+            </div>
+          </div>
+          <div class="col-md-3 py-3">
+            <div class="card py-3 pr-3">
+              <div class="alert alert-gold">
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+              </div>
+              <p>عدد من تم توظيفهم</p>
+              <p class="count">4</p>
+            </div>
+          </div>
+          <div class="col-md-3 py-3">
+            <div class="card py-3 pr-3">
+              <div class="alert alert-primary">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+              </div>
+              <p>عدد تقييم الموظفين</p>
+              <p class="count">4</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="card container-fluid mb-3">
+        <div class="card-head row p-3 flex-wrap justify-content-between align-items-center">
+          <p class="text-primary font-bold m-0"><i class="fa fa-arrows-h pl-2" aria-hidden="true"></i>
+            الوظائف الشاغرة</p>
+          <button class="btn btn-link text-info font-semibold">عرض الكل</button>
+        </div>
+        <div class="card-content row align-items-center recruiter">
+          <ngb-tabset [justify]="'start'" class="w-100">
+            <ngb-tab title="المخصصة لأحد المديرين">
+              <ng-template ngbTabContent>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="table-responsive">
+
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">الوظيفه</th>
+                            <th scope="col">تحت متابعة</th>
+                            <th scope="col">الحالة</th>
+                            <th scope="col">نشط حتى</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>مدير حسابات</th>
+
+                            <td>ياسر أحمد السيد</td>
+                            <td>
+                              <p class="m-0">
+                                <i class="fa fa-check-circle text-success pl-2" aria-hidden="true"></i>
+                                تم ترشيح 4 أشخاص
+                              </p>
+                            </td>
+                            <td>
+                              17 مارس 2020 </td>
+                            <td>
+                              <button class="btn btn-outline-primary">تفاصيل</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">محاسب</th>
+
+                            <td>أحمد محمود</td>
+                            <td>
+                              <p class="m-0">
+                                <i class="fa fa-pencil-square text-danger pl-2" aria-hidden="true"></i>
+                                يحتاج إلى تعديل </p>
+                            </td>
+                            <td>
+                              17 مارس 2020 </td>
+                            <td>
+                              <button class="btn btn-outline-primary">تفاصيل</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>مصمم</th>
+
+                            <td>سالم محمود</td>
+                            <td>
+                              <p class="m-0">
+                                <i class="fa fa-hourglass-half pl-2 text-warning" aria-hidden="true"></i>
+                                قيد الدراسة</p>
+                            </td>
+                            <td>
+                              17 مارس 2020 </td>
+                            <td>
+                              <button class="btn btn-outline-primary">تفاصيل</button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                </div>
+
+              </ng-template>
+            </ngb-tab>
+
+            <ngb-tab title="المعروضة على الجميع">
+              <ng-template ngbTabContent>
+                <div class="container-fluid">
+
+                  <div class="row">
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">الوظيفه</th>
+                            <th scope="col">تحت متابعة</th>
+                            <th scope="col">الحالة</th>
+                            <th scope="col">نشط حتى</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>مدير حسابات</th>
+
+                            <td>ياسر أحمد السيد</td>
+                            <td>
+                              <p class="m-0">
+                                <i class="fa fa-check-circle text-success pl-2" aria-hidden="true"></i>
+                                تم ترشيح 4 أشخاص
+                              </p>
+                            </td>
+                            <td>
+                              17 مارس 2020 </td>
+                            <td>
+                              <button class="btn btn-outline-primary">تفاصيل</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">محاسب</th>
+
+                            <td>أحمد محمود</td>
+                            <td>
+                              <p class="m-0">
+                                <i class="fa fa-pencil-square text-danger pl-2" aria-hidden="true"></i>
+                                يحتاج إلى تعديل </p>
+                            </td>
+                            <td>
+                              17 مارس 2020 </td>
+                            <td>
+                              <button class="btn btn-outline-primary">تفاصيل</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>مصمم</th>
+
+                            <td>سالم محمود</td>
+                            <td>
+                              <p class="m-0">
+                                <i class="fa fa-hourglass-half pl-2 text-warning" aria-hidden="true"></i>
+                                قيد الدراسة</p>
+                            </td>
+                            <td>
+                              17 مارس 2020 </td>
+                            <td>
+                              <button class="btn btn-outline-primary">تفاصيل</button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                </div>
+
+              </ng-template>
+            </ngb-tab>
+            <ngb-tab title="غير النشطة">
+              <ng-template ngbTabContent>
+                <div class="container-fluid">
+
+                  <div class="row">
+                    <div class="table-responsive">
+
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">الوظيفه</th>
+                            <th scope="col">تحت متابعة</th>
+                            <th scope="col">تاريخ الانتهاء</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>مدير حسابات</th>
+
+                            <td>ياسر أحمد السيد</td>
+
+                            <td>
+                              17 مارس 2020 </td>
+                            <td>
+                              <button class="btn btn-outline-primary">إعادة تنشيط</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">محاسب</th>
+
+                            <td>أحمد محمود</td>
+
+                            <td>
+                              17 مارس 2020 </td>
+                            <td>
+                              <button class="btn btn-outline-primary">إعادة تنشيط</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>مصمم</th>
+
+                            <td>سالم محمود</td>
+
+                            <td>
+                              17 مارس 2020 </td>
+                            <td>
+                              <button class="btn btn-outline-primary">إعادة تنشيط</button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                </div>
+
+              </ng-template>
+            </ngb-tab>
+          </ngb-tabset>
+        </div>
+      </div>
+      <div class="card container-fluid mb-3">
+        <div class="card-head row p-3 flex-wrap justify-content-between align-items-center">
+          <p class="text-primary font-bold m-0"><i class="fa fa-pencil-square-o pl-2" aria-hidden="true"></i>
+            طلبات التقييم</p>
+          <button class="btn btn-link text-info font-semibold">عرض الكل</button>
+        </div>
+        <div class="card-content row align-items-center recruiter">
+          <ngb-tabset [justify]="'start'" class="w-100">
+            <ngb-tab title="المخصصة لأحد المديرين">
+              <ng-template ngbTabContent>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="table-responsive">
+
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">الوظيفه</th>
+                            <th scope="col">اسم الموظف</th>
+                            <th scope="col">تحت متابعة</th>
+                            <th scope="col">الحالة</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>مدير حسابات</th>
+                            <td>
+                              عبد الله فيحان
+                            </td>
+                            <td>ياسر أحمد السيد</td>
+                            <td>
+                              <p class="m-0">
+                                <i class="fa fa-check-circle text-success pl-2" aria-hidden="true"></i>
+                                تم ترشيح 4 أشخاص
+                              </p>
+                            </td>
+                            <td>
+                              <button class="btn btn-outline-primary">تفاصيل</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">محاسب</th>
+                            <td>
+                              محمود شهري </td>
+                            <td>أحمد محمود</td>
+                            <td>
+                              <p class="m-0">
+                                <i class="fa fa-minus-circle text-danger pl-2" aria-hidden="true"></i>
+                                تم رفض الطلب
+                              </p>
+                            </td>
+                            <td>
+                              <button class="btn btn-outline-primary">تفاصيل</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>مصمم</th>
+                            <td>
+                              سالم العودة </td>
+                            <td>سالم محمود</td>
+                            <td>
+                              <p class="m-0">
+                                <i class="fa fa-hourglass-half pl-2 text-warning" aria-hidden="true"></i>
+                                قيد التنفيذ </p>
+                            </td>
+                            <td>
+                              <button class="btn btn-outline-primary">تفاصيل</button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                </div>
+
+              </ng-template>
+            </ngb-tab>
+
+            <ngb-tab title="المعروضة على الجميع">
+              <ng-template ngbTabContent>
+                <div class="container-fluid">
+
+                  <div class="row">
+                    <div class="table-responsive">
+
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">الوظيفه</th>
+                            <th scope="col">اسم الموظف</th>
+                            <th scope="col">تحت متابعة</th>
+                            <th scope="col">الحالة</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th> حسابات</th>
+                            <td>
+                              عبد الله فيحان
+                            </td>
+                            <td>ياسر أحمد السيد</td>
+                            <td>
+                              <p class="m-0">
+                                <i class="fa fa-check-circle text-success pl-2" aria-hidden="true"></i>
+                                تم ترشيح 4 أشخاص
+                              </p>
+                            </td>
+                            <td>
+                              <button class="btn btn-outline-primary">تفاصيل</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">محاسب</th>
+                            <td>
+                              محمود شهري </td>
+                            <td>أحمد محمود</td>
+                            <td>
+                              <p class="m-0">
+                                <i class="fa fa-minus-circle text-danger pl-2" aria-hidden="true"></i>
+                                تم رفض الطلب
+                              </p>
+                            </td>
+                            <td>
+                              <button class="btn btn-outline-primary">تفاصيل</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>مصمم</th>
+                            <td>
+                              سالم العودة </td>
+                            <td>سالم محمود</td>
+                            <td>
+                              <p class="m-0">
+                                <i class="fa fa-hourglass-half pl-2 text-warning" aria-hidden="true"></i>
+                                قيد التنفيذ </p>
+                            </td>
+                            <td>
+                              <button class="btn btn-outline-primary">تفاصيل</button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                </div>
+
+              </ng-template>
+            </ngb-tab>
+          </ngb-tabset>
+        </div>
+      </div>
+      <div class="card container-fluid mb-3">
+        <div class="card-head row p-3 flex-wrap justify-content-between align-items-center">
+          <p class="text-primary font-bold m-0">
+            <i class="fa fa-users pl-2" aria-hidden="true"></i>
+
+            المقابلات</p>
+          <button class="btn btn-link text-info font-semibold">عرض الكل</button>
+        </div>
+        <div class="row">
+          <div class="table-responsive">
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">التاريخ</th>
+                  <th scope="col">اسم الموظف</th>
+                  <th scope="col">نوع الخدمة</th>
+                  <th scope="col">الحالة</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">20 مارس</th>
+                  <td>
+                    عبد الله فيحان
+                  </td>
+                  <td> ترشيح موظف</td>
+                  <td>
+                    <p class="m-0">
+                      <i class="fa fa-check-circle text-success pl-2" aria-hidden="true"></i>
+                      تمت
+                    </p>
+                  </td>
+                  <td>
+                    <button class="btn btn-outline-primary">تفاصيل</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">20 مارس</th>
+                  <td>
+                    عبد الله فيحان
+                  </td>
+                  <td> ترشيح موظف</td>
+                  <td>
+                    <p class="m-0">
+                      <i class="fa fa-check-circle text-success pl-2" aria-hidden="true"></i>
+                      تمت
+                    </p>
+                  </td>
+                  <td>
+                    <button class="btn btn-outline-primary">تفاصيل</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">20 مارس</th>
+                  <td>
+                    عبد الله فيحان
+                  </td>
+                  <td> ترشيح موظف</td>
+                  <td>
+                    <p class="m-0">
+                      <i class="fa fa-hourglass-half pl-2 text-warning" aria-hidden="true"></i>
+                      باقي 3 أيام
+                    </p>
+                  </td>
+                  <td>
+                    <button class="btn btn-outline-primary">تفاصيل</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="col-md-4">
+
+
+      <div class="card container-fluid mb-3">
+        <div class="card-head row p-3 flex-wrap justify-content-between align-items-center">
+          <p class="text-primary font-bold m-0"><i class="fa fa-user pl-2" aria-hidden="true"></i>
+            المستخدمون</p>
+        </div>
+        <div class="card-content">
+          <p class="text-dark font-bold mt-3">أنت المستخدم الرئيسي لشركة الأمل</p>
+
+          <div class="d-flex  flex-wrap justify-content-between align-items-center">
+            <p class="text-dark font-bold m-0">عدد المستخدمين: <span class="font-roboto">3</span>
+            </p>
+            <button class="btn btn-link text-info font-semibold">
+              <i class="fa fa-plus pl-2" aria-hidden="true"></i>
+              إضافة مستخدم</button>
+          </div>
+          <button class="btn btn-outline-primary my-3"><i aria-hidden="true" class="fa fa-clock-o pl-2"></i>
+            نشاط المستخدمين
+          </button>
+        </div>
+      </div>
+
+
+      <div class="card container-fluid mb-3">
+        <div class="card-head row p-3 flex-wrap justify-content-between align-items-center">
+          <a routerLink="/subscriptions">
+
+            <p class="text-primary font-bold m-0"> <i class="fa fa-bar-chart pl-2" aria-hidden="true"></i>
+              الاشتراك</p>
+          </a>
+
+          <button class="btn btn-link text-info font-semibold">تفاصيل الاشتراك</button>
+        </div>
+        <div class="card-content py-3">
+          <span class="text-primary font-bold mt-3 pl-3">باقة الاشتراك الحالية</span>
+          <span class="text-primary">الباقة المتقدمة</span>
+          <p class="text-info my-3">
+            <i aria-hidden="true" class="fa fa-exclamation-circle pl-2"></i>
+            تنتهي يوم 25 ديسمبر 2020 م
+          </p>
+        </div>
+      </div>
+
+
+
+      <ul class="list-group p-0 my-3">
+        <li class="list-group-item header">
+          <p class="text-primary font-bold m-0"><i class="fa fa-th-list pl-2" aria-hidden="true"></i>
+            الخدمات</p>
+        </li>
+        <li class="list-group-item text-dark"><i class="fa fa-circle pl-2" style="font-size: 8px;"
+            aria-hidden="true"></i>طلب مستشار مهني
+        </li>
+        <li class="list-group-item text-dark"><i class="fa fa-circle pl-2" style="font-size: 8px;"
+            aria-hidden="true"></i>طلب إيجاد وظيفة
+        </li>
+        <li class="list-group-item text-dark"><i class="fa fa-circle pl-2" style="font-size: 8px;"
+            aria-hidden="true"></i>طلب ترشيح عضو لجان
+        </li>
+        <li class="list-group-item text-dark"><i class="fa fa-circle pl-2" style="font-size: 8px;"
+            aria-hidden="true"></i>طلب تقييم موظف أو مرشح
+        </li>
+
+
+      </ul>
+    </div>
+  </div>
+</div>

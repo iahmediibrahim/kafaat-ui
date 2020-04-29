@@ -1,0 +1,33 @@
+.modal-header {
+  border-bottom: 0;
+
+  .close {
+    left: 0;
+
+    &:focus {
+      outline: none;
+      font-size: 36px;
+    }
+  }
+}
+
+.modal-body {
+  span {
+    font-size: 14px;
+  }
+
+  input {
+    height: 46px;
+  }
+
+  p.time-left {
+    font-size: 22px;
+    color: #003F84;
+  }
+
+  .cta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+}

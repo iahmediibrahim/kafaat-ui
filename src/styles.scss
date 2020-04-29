@@ -94,12 +94,44 @@ body {
   font-family: gulf-bold;
 }
 
+.font-semibold {
+  font-family: gulf-semibold;
+}
+
+.font-medium {
+  font-family: gulf-medium !important;
+}
+
 .font-roboto {
   font-family: Roboto;
 }
 
 .text-primary {
   color: $main-color !important;
+}
+
+.text-success {
+  color: #34cc61 !important;
+}
+
+.text-gold {
+  color: #C29E6F;
+}
+
+.bg-gold {
+  background-color: #C29E6F;
+}
+
+.bg-primary {
+  background-color: #ccd9e6 !important;
+}
+
+.bg-info {
+  background-color: #3F9BC8 !important;
+}
+
+.bg-muted {
+  background-color: #A9A9A9;
 }
 
 .text-info {
@@ -122,6 +154,10 @@ body {
 
 .text-muted {
   color: #666666;
+}
+
+.text-dark {
+  color: #333333;
 }
 
 h1,
@@ -179,6 +215,8 @@ h6 {
     border-color: rgba(0, 63, 132, .2);
     box-shadow: 0 0 0 0.2rem rgba(0, 63, 132, .2);
     color: #fff !important;
+    background-color: $main-color !important;
+
   }
 
 }
@@ -208,6 +246,39 @@ select.form-control {
   }
 }
 
+.alert {
+  padding: .2rem .5rem;
+  margin: 0;
+  border: 0;
+  border-radius: 5px;
+  font-size: 14px;
+
+  &.alert-primary {
+    background: rgb(63, 155, 200, .2);
+    color: #3F9BC8;
+  }
+
+  &.alert-gold {
+    background: rgb(194, 158, 111, .2);
+    color: #C29E6F;
+  }
+
+  &.alert-danger {
+    background: rgb(250, 100, 87, .2);
+    color: #FA6457;
+  }
+
+  &.alert-success {
+    background: rgb(52, 204, 97, .2);
+    color: #34CC61;
+  }
+
+  &.alert-warning {
+    background: rgb(255, 180, 75, .2);
+    color: #FFB44B;
+  }
+}
+
 .badges {
   .badge-info {
     background-color: rgb(63, 155, 200, .2);
@@ -222,6 +293,29 @@ select.form-control {
       color: inherit;
     }
   }
+}
+
+.breadcrumb {
+  background-color: transparent;
+}
+
+.breadcrumb-item {
+  p {
+    font-size: 18px;
+  }
+
+  &.active {
+    color: $main-color;
+  }
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: .5rem;
+  color: $main-color;
+  content: "\f053";
+  font-family: FontAwesome;
 }
 
 .dropdown-toggle::after {
@@ -461,36 +555,120 @@ ngb-carousel {
 
 }
 
-.nav-tabs {
+.home {
 
+  .nav-tabs {
 
-  .nav-item {
-    margin: 0 2em;
-  }
-
-  .nav-link {
-    border: none;
-    font-family: gulf-bold;
-    font-size: 24px;
-    color: #CDCDCD;
-
-    &.active {
-      color: $main-color;
-      padding-bottom: 1em;
-      border-bottom: 5px solid $main-color;
-    }
-  }
-
-  @media only screen and (max-width: $bp-large) {
-    display: flex;
 
     .nav-item {
-      margin: 0;
+      margin: 0 2em;
     }
 
     .nav-link {
+      border: none;
+      font-family: gulf-bold;
+      font-size: 24px;
+      color: #CDCDCD;
 
-      font-size: 16px;
+      &.active {
+        color: $main-color;
+        padding-bottom: 1em;
+        border-bottom: 5px solid $main-color;
+      }
     }
+
+    @media only screen and (max-width: $bp-large) {
+      display: flex;
+
+      .nav-item {
+        margin: 0;
+      }
+
+      .nav-link {
+
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.recruiter {
+  .tab-content {
+    .card-content {
+
+      &:hover {
+        border-right: 4px solid #3F9BC8;
+        transition: all .1s ease-in;
+      }
+
+    }
+  }
+
+  .nav-tabs {
+    padding: 0;
+
+    .nav-link {
+      border: none;
+      font-family: gulf-bold;
+      font-size: 16px;
+      color: #CDCDCD;
+      padding: 15px 30px;
+
+      &.active {
+        color: $main-color;
+        background: #e2f0f7;
+      }
+    }
+  }
+}
+
+#faqs.faqs {
+  .card {
+    border: unset;
+
+    .card-header {
+      padding: 0;
+      margin-bottom: 0;
+      background-color: unset;
+      border-bottom: unset;
+
+      p {
+        font-size: 18px;
+        font-family: gulf-semibold;
+        color: #333333;
+
+        i {
+          font-size: 20px;
+
+        }
+      }
+
+      button {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: unset;
+
+        &.closed {
+          border-bottom: 1px solid #CDCDCD;
+          color: #333333;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .card-body {
+      margin-top: 10px;
+      border: 0;
+      padding: 0;
+
+      p {
+        color: #666666;
+        line-height: 1.8rem;
+        font-size: 15px;
+      }
+    }
+
   }
 }

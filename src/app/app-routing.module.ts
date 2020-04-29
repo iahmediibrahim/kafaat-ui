@@ -8,11 +8,11 @@ const routes: Routes = [
     },
     {
         path: 'regs',
-        loadChildren: () => import('./sign-up/sign-up.module').then((m) => m.SignUpModule),
+        loadChildren: () => import('./modules/sign-up/sign-up.module').then((m) => m.SignUpModule),
     },
     {
         path: 'auth',
-        loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
+        loadChildren: () => import('./modules/auth/auth.module').then((m) => m.AuthModule),
     },
     {
         path: '',

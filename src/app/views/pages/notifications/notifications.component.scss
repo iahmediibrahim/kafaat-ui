@@ -1,0 +1,55 @@
+ .list-wrapper {
+   border: 1px solid #CDCDCD;
+   border-radius: 5px;
+
+   p {
+     margin: 0;
+     color: #666666;
+   }
+
+   hr {
+     border: 1px solid #E2E2E2;
+
+   }
+ }
+
+ // TIMELINE ORDERED LIST
+ ul.numbered {
+   $bullet-line-width: 2px;
+   $bullet-color: #CDCDCD;
+   $bullet-border-width: $bullet-line-width;
+   $bullet-background-color: white;
+   $bullet-size: 10px;
+   border-right: $bullet-line-width solid $bullet-color;
+   margin-right: 10px;
+   position: relative;
+
+   li {
+     font-size: 16px;
+     line-height: 1.2;
+     margin-bottom: 15px;
+
+     &:last-child {
+       border-right: $bullet-line-width solid $bullet-background-color;
+       margin-right: -$bullet-line-width;
+     }
+
+     &:before {
+       $half-of-font-size: -0.5em;
+       background-color: $bullet-color;
+       border: $bullet-border-width solid $bullet-color;
+       border-radius: 50%;
+       color: $bullet-background-color;
+       content: ' ';
+       display: block;
+       font-weight: bold;
+       width: $bullet-size;
+       height: $bullet-size;
+       margin-top: $half-of-font-size;
+       line-height: $bullet-size;
+       position: absolute;
+       right: -$bullet-size / 2 - $bullet-line-width / 2;
+       text-align: center;
+     }
+   }
+ }

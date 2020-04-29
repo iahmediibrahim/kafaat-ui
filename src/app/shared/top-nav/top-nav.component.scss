@@ -1,0 +1,35 @@
+.top-nav {
+  background-color: #003F84;
+  color: #fff;
+
+  .fa-search {
+    color: #fff;
+  }
+
+  input {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+  }
+
+  ::-webkit-input-placeholder {
+    /* Edge */
+    color: #fff;
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #fff;
+  }
+
+  ::placeholder {
+    color: #fff;
+  }
+
+  .list-unstyled {
+    i {
+      font-size: 22px;
+
+    }
+  }
+}
