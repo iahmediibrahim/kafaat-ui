@@ -1,0 +1,64 @@
+:host {
+  background-color: #FAFBFC;
+}
+
+.card {
+  border-radius: 5px;
+  border: 1px solid #E5E5E5;
+  height: 100%;
+  background-color: #fff;
+
+  .cta {
+    button {
+      height: 46px;
+    }
+
+  }
+}
+
+.subscription {
+  border: 1px solid #E5E5E5;
+  border-radius: 5px;
+
+  .price {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 100%;
+
+    p {
+      font-size: 32px;
+      margin: 0;
+      font-family: gulf-semibold;
+
+      &.desc {
+        font-size: 14px;
+      }
+
+      strong {
+        font-family: Roboto;
+        padding-left: 5px;
+
+      }
+
+      span {
+        font-size: 12px;
+        padding-right: 5px;
+      }
+    }
+  }
+
+  ul {
+    padding: 0;
+    font-size: 14px;
+    background-color: #fff;
+    color: #666666;
+
+    li {
+      margin: .8em 0;
+
+      i {
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -295,6 +295,22 @@ select.form-control {
   }
 }
 
+.breadcrumb-item+.breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: .5rem;
+  color: #343a40;
+  content: "\f053";
+  font-family: FontAwesome;
+}
+
+.dropdown-toggle::after {
+  margin-right: 10px;
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f107";
+  border: none;
+}
+
 .breadcrumb {
   background-color: transparent;
 }
@@ -305,26 +321,16 @@ select.form-control {
   }
 
   &.active {
+    &::before {
+      color: $main-color;
+
+    }
+
     color: $main-color;
   }
 }
 
-.breadcrumb-item+.breadcrumb-item::before {
-  display: inline-block;
-  padding-right: 1rem;
-  padding-left: .5rem;
-  color: $main-color;
-  content: "\f053";
-  font-family: FontAwesome;
-}
 
-.dropdown-toggle::after {
-  margin-right: 10px;
-  font: normal normal normal 14px/1 FontAwesome;
-  content: "\f107";
-
-  border: none;
-}
 
 .testemonials {
   background: #FAFBFC;

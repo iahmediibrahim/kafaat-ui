@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'app-subscriptions',
-    templateUrl: './subscriptions.component.html',
-    styleUrls: [ './subscriptions.component.scss' ],
+    selector: 'app-faqs',
+    templateUrl: './faqs.component.html',
+    styleUrls: [ './faqs.component.scss' ],
 })
-export class SubscriptionsComponent implements OnInit {
+export class FaqsComponent implements OnInit {
     faqs = {
-        title: 'FAQS',
         questions: [
             {
                 question: 'هل يمكن الاشتراك في أكثر من باقة؟',

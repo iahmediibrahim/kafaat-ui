@@ -10,8 +10,10 @@ import { AboutComponent } from './pages/about/about.component';
 import { RecruiterDashboardComponent } from './recruiter/recruiter-dashboard/recruiter-dashboard.component';
 import { CompanyDashboardComponent } from './company/company-dashboard/company-dashboard.component';
 import { NotificationsComponent } from './pages/notifications/notifications.component';
-import { SubscriptionsComponent } from './pages/subscriptions/subscriptions.component';
+import { SubscriptionsComponent } from './pages/subscriptions/subscriptions/subscriptions.component';
 import { RegistrationRequestsComponent } from './recruiter/registration-requests/registration-requests.component';
+import { SubscripeComponent } from './pages/subscriptions/subscripe/subscripe.component';
+import { RecRequestComponent } from './company/rec-request/rec-request.component';
 
 const routes: Routes = [
     {
@@ -27,8 +29,10 @@ const routes: Routes = [
             { path: 'recruiter-dashboard', component: RecruiterDashboardComponent },
             { path: 'recruiter-regs-req', component: RegistrationRequestsComponent },
             { path: 'company-dashboard', component: CompanyDashboardComponent },
+            { path: 'rec-request', component: RecRequestComponent },
             { path: 'notifications', component: NotificationsComponent },
             { path: 'subscriptions', component: SubscriptionsComponent },
+            { path: 'subscripe', component: SubscripeComponent },
         ],
     },
 ];

@@ -10,21 +10,44 @@
           </li>
         </ol>
       </nav>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item text-dark" aria-current="page">
+            <i class="fa fa-home" style="font-size: 28px;" aria-hidden="true"></i></li>
+          <li class="breadcrumb-item d-flex align-items-center" aria-current="page">
+            <p class="m-0 font-semibold">الاشتراك</p>
+          </li>
+          <li class="breadcrumb-item active d-flex align-items-center" aria-current="page">
+            <p class="m-0 font-semibold">تغيير الاشتراك</p>
+          </li>
+        </ol>
+      </nav>
 
       <div class="heading">
         <h3 class="text-primary">أنواع الاشتراكات</h3>
         <p class="text-muted">اختر باقة تناسب شركتك باقات اشتراكات تناسب الجميع</p>
       </div>
+      <div class="heading">
+        <h3 class="text-primary">تغيير الاشتراك</h3>
+        <div class="card flex-row flex-wrap p-3">
+          <p class="text-info  my-2 pr-3 pl-5">
+            <i class="fa fa-exclamation-circle pl-2" aria-hidden="true"></i>
+            أنت الآن مشترك في (الباقة الأساسية)
+          </p>
+          <p class="text-muted pr-3 my-2">
+            <i class="fa fa-calendar-o pl-2" aria-hidden="true"></i>
+            سارية حتى 25 ديسمبر 2020 م </p>
+        </div>
+      </div>
     </div>
     <div class="col-md-12 my-5">
       <div class="row">
 
-        <div class="col-md-3">
-          <div class="h-100">
+        <div class="col-lg-3 col-md-6 col-sm-6 my-3">
+          <div class="h-100 with-head">
             <div class="chosen d-flex align-items-center justify-content-center text-center">
               <p class="text-white p-3">الباقة الحالية</p>
             </div>
-
             <div class="subscription p-3">
               <h5 class="text-info">الباقة الأساسية</h5>
               <p class="text-muted">تناسب الشركات الناشئة والصغيرة وتركز على استقطاب الكوادر</p>
@@ -58,8 +81,8 @@
 
         </div>
 
-        <div class="col-md-3">
-          <div class="h-100">
+        <div class="col-lg-3 col-md-6 col-sm-6 my-3">
+          <div class="h-100 with-head">
             <div class="most-selling d-flex align-items-center justify-content-center text-center">
               <p class="text-white p-3">الأكثر مبيعًا</p>
             </div>
@@ -95,7 +118,7 @@
           </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6 col-sm-6 my-3">
           <div class="subscription p-3">
             <h5 class="text-muted">الباقة الفضية</h5>
             <p class="text-muted">تناسب الشركات الناشئة والصغيرة وتركز على استقطاب الكوادر</p>
@@ -136,7 +159,7 @@
         </div>
 
 
-        <div class="col-md-3">
+        <div class="col-lg-3 col-md-6 col-sm-6 my-3">
           <div class="subscription p-3">
             <h5 class="text-gold">الباقة الذهبية</h5>
             <p class="text-muted">تناسب الشركات الناشئة والصغيرة وتركز على استقطاب الكوادر</p>
@@ -184,48 +207,23 @@
 
 <section class="faqs my-5" id='faqs'>
   <div class="container">
-    <h1></h1>
     <div class="row">
       <div class="col-md-6 p-4">
-        <div class="my-3" *ngFor="let faq of faqs.questions;let i = index;">
-          <ngb-accordion [closeOthers]="true" #ccc="ngbAccordion" activeIds="custom-panel-0">
-            <ngb-panel id="custom-panel-{{i}}">
-              <ng-template ngbPanelHeader let-opened="opened">
-                <button ngbPanelToggle [ngClass]="{'closed': !opened}"
-                  class="d-flex align-items-center justify-content-between pb-3 w-100">
-                  <p [ngClass]="{'text-info' : opened}" class="m-0">{{faq.question}}</p>
-                  <i *ngIf="!opened" class="fa fa-plus" aria-hidden="true"></i>
-                  <i *ngIf="opened" class="fa fa-minus" aria-hidden="true"></i>
-
-                </button>
-              </ng-template>
-              <ng-template ngbPanelContent>
-                <p>{{faq.answer}}</p>
-              </ng-template>
-            </ngb-panel>
-          </ngb-accordion>
-        </div>
+        <app-faqs></app-faqs>
       </div>
       <div class="col-md-6 p-4">
-        <div class="my-3" *ngFor="let faq of faqs.questions;let i = index;">
-          <ngb-accordion [closeOthers]="true" #ccc="ngbAccordion" activeIds="custom-panel-0">
-            <ngb-panel id="custom-panel-{{i}}">
-              <ng-template ngbPanelHeader let-opened="opened">
-                <button ngbPanelToggle [ngClass]="{'closed': !opened}"
-                  class="d-flex align-items-center justify-content-between pb-3 w-100">
-                  <p [ngClass]="{'text-info' : opened}" class="m-0">{{faq.question}}</p>
-                  <i *ngIf="!opened" class="fa fa-plus" aria-hidden="true"></i>
-                  <i *ngIf="opened" class="fa fa-minus" aria-hidden="true"></i>
-
-                </button>
-              </ng-template>
-              <ng-template ngbPanelContent>
-                <p>{{faq.answer}}</p>
-              </ng-template>
-            </ngb-panel>
-          </ngb-accordion>
-        </div>
+        <app-faqs></app-faqs>
       </div>
+    </div>
+  </div>
+</section>
+<section class="inquiry w-100">
+  <div class="container h-100">
+    <div class="row align-items-center  h-100 justify-content-center">
+      <p class="text-white">
+        <i class="fa fa-question-circle pl-2" aria-hidden="true"></i>
+        لا يزال لديك تساؤل؟ تواصل معنا علي <span class="font-roboto">email@example.co</span>
+      </p>
     </div>
   </div>
 </section>

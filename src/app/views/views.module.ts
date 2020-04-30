@@ -13,8 +13,11 @@ import { AboutComponent } from './pages/about/about.component';
 import { CompanyDashboardComponent } from './company/company-dashboard/company-dashboard.component';
 import { RecruiterDashboardComponent } from './recruiter/recruiter-dashboard/recruiter-dashboard.component';
 import { NotificationsComponent } from './pages/notifications/notifications.component';
-import { SubscriptionsComponent } from './pages/subscriptions/subscriptions.component';
+import { SubscriptionsComponent } from './pages/subscriptions/subscriptions/subscriptions.component';
 import { RegistrationRequestsComponent } from './recruiter/registration-requests/registration-requests.component';
+import { FaqsComponent } from './pages/subscriptions/faqs/faqs.component';
+import { SubscripeComponent } from './pages/subscriptions/subscripe/subscripe.component';
+import { RecRequestComponent } from './company/rec-request/rec-request.component';
 
 @NgModule({
     declarations: [
@@ -30,6 +33,9 @@ import { RegistrationRequestsComponent } from './recruiter/registration-requests
         RecruiterDashboardComponent,
         SubscriptionsComponent,
         RegistrationRequestsComponent,
+        FaqsComponent,
+        SubscripeComponent,
+        RecRequestComponent,
     ],
     imports: [ CommonModule, ViewsRoutingModule, SharedModule, CarouselModule.forRoot() ],
 })

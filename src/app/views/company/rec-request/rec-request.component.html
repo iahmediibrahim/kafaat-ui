@@ -1,0 +1,157 @@
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item text-dark" aria-current="page">
+            <i class="fa fa-home" style="font-size: 28px;" aria-hidden="true"></i></li>
+          <li class="breadcrumb-item d-flex align-items-center" aria-current="page">
+            <p class="m-0 font-semibold">خدمات</p>
+          </li>
+          <li class="breadcrumb-item active d-flex align-items-center" aria-current="page">
+            <p class="m-0 font-semibold">طلب الإعلان عن وظيفة جديدة</p>
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <div class="col-md-12">
+      <section class="personal-info">
+        <div class="header">
+          <h4 class="py-4 pr-5 m-0">
+            <span class="ml-2">
+              <i class="fa fa-file-text-o" aria-hidden="true"></i>
+            </span>
+            البيانات الشخصية</h4>
+          <p class="status">
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+          </p>
+        </div>
+        <div class="body">
+          <form #form="ngForm">
+            <!-- email info section -->
+            <section class="section py-4 pr-5">
+
+              <div class="row">
+
+                <div class="col-md-4 mb-3">
+                  <label for="phoneNumber">مدة الإعلان</label>
+                  <div class="d-flex">
+
+                    <input class="form-control ml-3" type="text" required ngModel name="phoneNumber"
+                      #phoneNumber="ngModel">
+                    <div class="input-group ml-2">
+                      <select id="exampleFormControlSelect1" class="form-control">
+                        <option>يوم</option>
+                      </select>
+                      <span class="select-arrow position-absolute"><i class="fa fa-angle-down"
+                          style="color: inherit;"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-row my-3">
+                    <div class="col">
+                      <div>
+                        <label>هل تريد ملء بيانات الوظيفة يدويًا أم باستخدام أحد النماذج الجاهزة؟</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline ml-4">
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                          class="custom-control-input">
+                        <label class="custom-control-label text-muted" for="customRadioInline1">يدويًا</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                          class="custom-control-input">
+                        <label class="custom-control-label text-muted" for="customRadioInline2">باستخدام أحد
+                          النماذج</label>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </section>
+            <!-- basic info section -->
+            <section class="section py-4 pr-5">
+
+              <div class="row">
+                <div class="form-group col-md-4">
+                  <label for="firstName">المسمى الوظيفي</label>
+                  <input class="form-control" type="text" required ngModel name="firstName" #firstName="ngModel">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="middleName">التخصص</label>
+                  <input class="form-control" type="text" required ngModel name="middleName" #middleName="ngModel">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-8"><label>عنوان الجهة
+                  </label>
+                  <div class="d-flex">
+                    <div class="input-group ml-2">
+                      <select id="exampleFormControlSelect1" class="form-control">
+                        <option>الدولة</option>
+                      </select>
+                      <span class="select-arrow position-absolute"><i class="fa fa-angle-down"
+                          style="color: inherit;"></i></span>
+                    </div>
+                    <div class="input-group ml-2">
+                      <select id="exampleFormControlSelect1" class="form-control">
+                        <option>المدينة</option>
+                      </select>
+                      <span class="select-arrow position-absolute"><i class="fa fa-angle-down"
+                          style="color: inherit;"></i></span>
+                    </div>
+                    <div class="input-group ml-2">
+                      <select id="exampleFormControlSelect1" class="form-control">
+                        <option>المنطقة</option>
+                      </select>
+                      <span class="select-arrow position-absolute"><i class="fa fa-angle-down"
+                          style="color: inherit;"></i></span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="form-group col-md-4">
+                  <label for="firstName">نوع الدوام</label>
+                  <input class="form-control" type="text" required ngModel name="firstName" #firstName="ngModel">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="middleName">الراتب</label>
+                  <input class="form-control" type="text" required ngModel name="middleName" #middleName="ngModel">
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="middleName">مسئوليات الوظيفة</label>
+                  <textarea class="form-control" rows="6" required ngModel name="middleName"
+                    #middleName="ngModel"></textarea>
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="middleName">متطلبات الوظيفة</label>
+                  <textarea class="form-control" rows="6" required ngModel name="middleName"
+                    #middleName="ngModel"></textarea>
+                </div>
+              </div>
+
+            </section>
+
+
+
+            <!--next button -->
+            <div class="row">
+              <div class="col-md-3 mx-5">
+                <button class="btn btn-lg btn-primary my-4 py-2">
+                  <span class="mx-5">
+                    التالي
+                  </span>
+                </button> </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
