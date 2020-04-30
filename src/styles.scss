@@ -200,13 +200,24 @@ h6 {
 
 }
 
+.btn {
+  &.btn-outline-primary {
+    padding: 6px 25px 6px 25px !important;
+  }
+}
+
+.btn {
+  &.btn-primary {
+    padding: 6px 25px 6px 25px !important;
+  }
+}
+
 .btn-outline-primary {
   border-color: $main-color;
   color: $main-color !important;
 
   &.active {
     color: #fff !important;
-
   }
 
   &:hover,
@@ -216,9 +227,7 @@ h6 {
     box-shadow: 0 0 0 0.2rem rgba(0, 63, 132, .2);
     color: #fff !important;
     background-color: $main-color !important;
-
   }
-
 }
 
 select.form-control {
