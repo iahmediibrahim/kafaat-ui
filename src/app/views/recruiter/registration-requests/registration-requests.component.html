@@ -1,71 +1,313 @@
 <div class="container my-5">
   <div class="row">
     <div class="col-md-12">
-      <div class="row">
-        <div class="col-md-8">
-          <div class="card">
-            kjasdfkaskl
+      <p class="text-primary font-bold m-0 mb-3"><i aria-hidden="true" class="fa fa-users pl-2"></i>
+        طلبات التسجيل
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- right side -->
+    <div class="col-md-9">
+      <!-- seeker card -->
+      <div class="card-content">
+        <div class="row align-items-center">
+          <div class="col-md-10 d-flex text-right">
+            <p class="m-0 text-dark">محمد محمود سالم</p>
+            <div class="alert d-inline-block alert-primary mr-3">
+              <span>
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                اليوم
+              </span>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-outline-primary mt-2">تدقيق</button>
           </div>
         </div>
-        <div class="col-md-4">
-          <form (submit)="onApply(form)" #form="ngForm">
-
-
-            <div class="form-group   mb-3">
-              <label for="lastName">إسم العائلة</label>
-              <input class="form-control" type="text" required ngModel name="lastName" #lastName="ngModel">
-            </div>
-            <div class="form-group mb-3">
-              <label for="email">البريد الالكتروني</label>
-              <input class="form-control" type="email" required ngModel name="email" #email="ngModel">
-              <span class="text-muted d-inline-block my-2">ستصلك رابط تأكيد على بريدك الالكتروني لتفعيل حسابك</span>
-            </div>
-            <div class="form-group">
-              <label for="jobName">المسمى الوظيفي الخاص بك</label>
-              <div class="input-group">
-
-                <select class="form-control" id="jobName" ngModel name="jobName" #jobName="ngModel">
-                  <option>المسمى الوظيفي الخاص بك</option>
-                  <option>المسمى الوظيفي الخاص بك</option>
-                  <option>المسمى الوظيفي الخاص بك</option>
-                </select>
-                <span class="select-arrow position-absolute">
-                  <i class="fa fa-angle-down" style="color: inherit;"></i></span>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="speciality">التخصص</label>
-              <div class="input-group">
-
-                <select class="form-control" id="speciality" ngModel name="speciality" #speciality="ngModel">
-                  <option>التخصص</option>
-                  <option>التخصص</option>
-                  <option>التخصص</option>
-                </select>
-                <span class="select-arrow position-absolute">
-                  <i class="fa fa-angle-down" style="color: inherit;"></i></span>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="exp">سنوات الخبرة</label>
-              <div class="input-group">
-
-                <select class="form-control" id="exp" ngModel name="exp" #exp="ngModel">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>5+</option>
-                </select>
-                <span class="select-arrow position-absolute">
-                  <i class="fa fa-angle-down" style="color: inherit;"></i></span>
-              </div>
-            </div>
-            <div class="text-center mt-5 d-flex">
-              <button class="btn btn-primary btn-block btn-lg" type="submit">سجل الآن</button>
-              <button class="btn btn-primary btn-block btn-lg" type="submit">سجل الآن</button>
-            </div>
-          </form>
+        <div class="row">
+          <div class="col-md-2 mt-2">
+            <p class="m-0 text-muted">
+              <i class="fa fa-map-marker ml-1" aria-hidden="true"></i>
+              الرياض</p>
+          </div>
+          <div class="col-md-4 mt-2">
+            <p class="m-0 text-muted">
+              <i class="fa fa-briefcase ml-1" aria-hidden="true"></i>
+              أعمال مالية ومحاسبة</p>
+          </div>
+          <div class="col-md-4 mt-2">
+            <p class="m-0 text-muted">
+              <i class="fa fa-user ml-1" aria-hidden="true"></i>
+              خبرة 2-7 سنوات
+            </p>
+          </div>
         </div>
+
       </div>
+      <!-- /seeker card -->
+      <!-- seeker card -->
+      <div class="card-content">
+        <div class="row align-items-center">
+          <div class="col-md-10 d-flex text-right">
+            <p class="m-0 text-dark">محمد محمود سالم</p>
+            <div class="alert d-inline-block alert-primary mr-3">
+              <span>
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                اليوم
+              </span>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-outline-primary mt-2">تدقيق</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 mt-2">
+            <p class="m-0 text-muted">
+              <i class="fa fa-map-marker ml-1" aria-hidden="true"></i>
+              الرياض</p>
+          </div>
+          <div class="col-md-4 mt-2">
+            <p class="m-0 text-muted">
+              <i class="fa fa-briefcase ml-1" aria-hidden="true"></i>
+              أعمال مالية ومحاسبة</p>
+          </div>
+          <div class="col-md-4 mt-2">
+            <p class="m-0 text-muted">
+              <i class="fa fa-user ml-1" aria-hidden="true"></i>
+              خبرة 2-7 سنوات
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <!-- /seeker card -->
+      <!-- seeker card -->
+      <div class="card-content">
+        <div class="row align-items-center">
+          <div class="col-md-10 d-flex text-right">
+            <p class="m-0 text-dark">محمد محمود سالم</p>
+            <div class="alert d-inline-block alert-primary mr-3">
+              <span>
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                اليوم
+              </span>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-outline-primary mt-2">تدقيق</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 mt-2">
+            <p class="m-0 text-muted">
+              <i class="fa fa-map-marker ml-1" aria-hidden="true"></i>
+              الرياض</p>
+          </div>
+          <div class="col-md-4 mt-2">
+            <p class="m-0 text-muted">
+              <i class="fa fa-briefcase ml-1" aria-hidden="true"></i>
+              أعمال مالية ومحاسبة</p>
+          </div>
+          <div class="col-md-4 mt-2">
+            <p class="m-0 text-muted">
+              <i class="fa fa-user ml-1" aria-hidden="true"></i>
+              خبرة 2-7 سنوات
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <!-- /seeker card -->
+      <!-- seeker card -->
+      <div class="card-content">
+        <div class="row align-items-center">
+          <div class="col-md-10 d-flex text-right">
+            <p class="m-0 text-dark">محمد محمود سالم</p>
+            <div class="alert d-inline-block alert-primary mr-3">
+              <span>
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                اليوم
+              </span>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-outline-primary mt-2">تدقيق</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 mt-2">
+            <p class="m-0 text-muted">
+              <i class="fa fa-map-marker ml-1" aria-hidden="true"></i>
+              الرياض</p>
+          </div>
+          <div class="col-md-4 mt-2">
+            <p class="m-0 text-muted">
+              <i class="fa fa-briefcase ml-1" aria-hidden="true"></i>
+              أعمال مالية ومحاسبة</p>
+          </div>
+          <div class="col-md-4 mt-2">
+            <p class="m-0 text-muted">
+              <i class="fa fa-user ml-1" aria-hidden="true"></i>
+              خبرة 2-7 سنوات
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <!-- /seeker card -->
+      <!-- seeker card -->
+      <div class="card-content">
+        <div class="row align-items-center">
+          <div class="col-md-10 d-flex text-right">
+            <p class="m-0 text-dark">محمد محمود سالم</p>
+            <div class="alert d-inline-block alert-primary mr-3">
+              <span>
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                اليوم
+              </span>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-outline-primary mt-2">تدقيق</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 mt-2">
+            <p class="m-0 text-muted">
+              <i class="fa fa-map-marker ml-1" aria-hidden="true"></i>
+              الرياض</p>
+          </div>
+          <div class="col-md-4 mt-2">
+            <p class="m-0 text-muted">
+              <i class="fa fa-briefcase ml-1" aria-hidden="true"></i>
+              أعمال مالية ومحاسبة</p>
+          </div>
+          <div class="col-md-4 mt-2">
+            <p class="m-0 text-muted">
+              <i class="fa fa-user ml-1" aria-hidden="true"></i>
+              خبرة 2-7 سنوات
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <!-- /seeker card -->
+      <!-- seeker card -->
+      <div class="card-content">
+        <div class="row align-items-center">
+          <div class="col-md-10 d-flex text-right">
+            <p class="m-0 text-dark">محمد محمود سالم</p>
+            <div class="alert d-inline-block alert-primary mr-3">
+              <span>
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                اليوم
+              </span>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-outline-primary mt-2">تدقيق</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 mt-2">
+            <p class="m-0 text-muted">
+              <i class="fa fa-map-marker ml-1" aria-hidden="true"></i>
+              الرياض</p>
+          </div>
+
+          <div class="col-md-4 mt-2">
+            <p class="m-0 text-muted">
+              <i class="fa fa-briefcase ml-1" aria-hidden="true"></i>
+              أعمال مالية ومحاسبة</p>
+          </div>
+          <div class="col-md-4 mt-2">
+            <p class="m-0 text-muted">
+              <i class="fa fa-user ml-1" aria-hidden="true"></i>
+              خبرة 2-7 سنوات
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <!-- /seeker card -->
+      <!-- details button -->
+      <div class="text-center">
+        <button class="btn btn-primary">المزيد</button>
+      </div>
+      <!-- /details button -->
+
     </div>
+    <!-- /right side -->
+    <!-- left side -->
+    <div class="col-md-3">
+      <form (submit)="onApply(form)" #form="ngForm">
+        <div class="form-group   mb-3">
+          <label for="name">اسم المستخدم</label>
+          <input class="form-control" type="text" required ngModel name="name" #name="ngModel">
+        </div>
+        <div class="form-group">
+          <label for="jobName">الوظيفة</label>
+          <div class="input-group">
+
+            <select class="form-control" id="jobName" ngModel name="jobName" #jobName="ngModel">
+              <option>مهندس مدنى</option>
+              <option>مهندس مدنى</option>
+              <option>مهندس مدنى</option>
+            </select>
+            <span class="select-arrow position-absolute">
+              <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="speciality">مجالات العمل</label>
+          <div class="input-group">
+
+            <select class="form-control" id="speciality" ngModel name="speciality" #speciality="ngModel">
+              <option>أعمال محاسبة</option>
+              <option>أعمال محاسبة</option>
+              <option>أعمال محاسبة</option>
+
+            </select>
+            <span class="select-arrow position-absolute">
+              <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="speciality">الموقع</label>
+          <div class="input-group">
+
+            <select class="form-control" id="speciality" ngModel name="speciality" #speciality="ngModel">
+              <option>الرياض</option>
+              <option>الرياض</option>
+              <option>الرياض</option>
+            </select>
+            <span class="select-arrow position-absolute">
+              <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="exp">سنوات الخبرة</label>
+          <div class="input-group">
+
+            <select class="form-control" id="exp" ngModel name="exp" #exp="ngModel">
+              <option>1</option>
+              <option>2</option>
+              <option>5+</option>
+            </select>
+            <span class="select-arrow position-absolute">
+              <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+          </div>
+        </div>
+        <div class="text-center mt-5 d-flex">
+          <button class="btn btn-outline-primary">عرض الكل</button>
+          <button class="btn btn-primary mr-3" type="submit">سجل الآن</button>
+        </div>
+      </form>
+    </div>
+    <!--/left side -->
+
   </div>
 </div>
