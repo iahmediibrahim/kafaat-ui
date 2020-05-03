@@ -16,6 +16,7 @@ $bp-small: 37.5em; //600px
 
   .card-content {
     background: #FFFFFF;
+    height: max-content;
 
     @media only screen and (max-width: $bp-medium) {
       margin: .5rem !important;
@@ -37,4 +38,8 @@ $bp-small: 37.5em; //600px
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 15px;
+
+  &.small-card {
+    grid-column-gap: 0;
+  }
 }

@@ -15,6 +15,7 @@ import { RegistrationRequestsComponent } from './recruiter/registration-requests
 import { ReviewRequestComponent } from './recruiter/review-request/review-request.component';
 import { SubscripeComponent } from './pages/subscriptions/subscripe/subscripe.component';
 import { RecRequestComponent } from './company/rec-request/rec-request.component';
+import { RequestsComponent } from './company/requests/requests.component';
 
 const routes: Routes = [
     {
@@ -30,7 +31,8 @@ const routes: Routes = [
             { path: 'recruiter-dashboard', component: RecruiterDashboardComponent },
             { path: 'recruiter-regs-req', component: RegistrationRequestsComponent },
             { path: 'company-dashboard', component: CompanyDashboardComponent },
-            { path: 'rec-request', component: RecRequestComponent },
+            { path: 'company/rec-request', component: RecRequestComponent },
+            { path: 'company/requests', component: RequestsComponent },
             { path: 'review-request', component: ReviewRequestComponent },
             { path: 'notifications', component: NotificationsComponent },
             { path: 'subscriptions', component: SubscriptionsComponent },

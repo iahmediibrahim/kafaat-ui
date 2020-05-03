@@ -19,6 +19,7 @@ import { FaqsComponent } from './pages/subscriptions/faqs/faqs.component';
 import { SubscripeComponent } from './pages/subscriptions/subscripe/subscripe.component';
 import { RecRequestComponent } from './company/rec-request/rec-request.component';
 import { ReviewRequestComponent } from './recruiter/review-request/review-request.component';
+import { RequestsComponent } from './company/requests/requests.component';
 @NgModule({
 	declarations: [
 		LandingComponent,
@@ -36,7 +37,8 @@ import { ReviewRequestComponent } from './recruiter/review-request/review-reques
 		ReviewRequestComponent,
 		FaqsComponent,
 		SubscripeComponent,
-		RecRequestComponent
+		RecRequestComponent,
+		RequestsComponent
 	],
 	imports: [ CommonModule, ViewsRoutingModule, SharedModule, CarouselModule.forRoot() ]
 })
