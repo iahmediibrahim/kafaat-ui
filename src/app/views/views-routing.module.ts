@@ -17,31 +17,30 @@ import { SubscripeComponent } from './pages/subscriptions/subscripe/subscripe.co
 import { RecRequestComponent } from './company/rec-request/rec-request.component';
 
 const routes: Routes = [
-	{
-		path: '',
-		children: [
-			{ path: '', component: LandingComponent },
-			{ path: 'about', component: AboutComponent },
-			{ path: 'our-services', component: OurServicesComponent },
-			{ path: 'media', component: MediaComponent },
-			{ path: 'partners', component: PartnersComponent },
-			{ path: 'contact-us', component: ContactComponent },
-			{ path: 'seeker-dashboard', component: SeekerDashboardComponent },
-			{ path: 'recruiter-dashboard', component: RecruiterDashboardComponent },
-			{ path: 'recruiter-regs-req', component: RegistrationRequestsComponent },
-			{ path: 'company-dashboard', component: CompanyDashboardComponent },
-			{ path: 'rec-request', component: RecRequestComponent },
-			{ path: 'review-request', component: ReviewRequestComponent },
-			{ path: 'notifications', component: NotificationsComponent },
-			{ path: 'subscriptions', component: SubscriptionsComponent },
-			{ path: 'subscripe', component: SubscripeComponent },
-			{ path: 'subscriptions', component: SubscriptionsComponent }
-		]
-	}
+    {
+        path: '',
+        children: [
+            { path: '', component: LandingComponent },
+            { path: 'about', component: AboutComponent },
+            { path: 'our-services', component: OurServicesComponent },
+            { path: 'media', component: MediaComponent },
+            { path: 'partners', component: PartnersComponent },
+            { path: 'contact-us', component: ContactComponent },
+            { path: 'seeker-dashboard', component: SeekerDashboardComponent },
+            { path: 'recruiter-dashboard', component: RecruiterDashboardComponent },
+            { path: 'recruiter-regs-req', component: RegistrationRequestsComponent },
+            { path: 'company-dashboard', component: CompanyDashboardComponent },
+            { path: 'rec-request', component: RecRequestComponent },
+            { path: 'review-request', component: ReviewRequestComponent },
+            { path: 'notifications', component: NotificationsComponent },
+            { path: 'subscriptions', component: SubscriptionsComponent },
+            { path: 'subscripe', component: SubscripeComponent },
+        ],
+    },
 ];
 
 @NgModule({
-	imports: [ RouterModule.forChild(routes) ],
-	exports: [ RouterModule ]
+    imports: [ RouterModule.forChild(routes) ],
+    exports: [ RouterModule ],
 })
 export class ViewsRoutingModule {}

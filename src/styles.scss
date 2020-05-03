@@ -204,18 +204,6 @@ h6 {
 
 }
 
-.btn {
-  &.btn-outline-primary {
-    padding: 6px 25px 6px 25px !important;
-  }
-}
-
-.btn {
-  &.btn-primary {
-    padding: 6px 25px 6px 25px !important;
-  }
-}
-
 .btn-outline-primary {
   border-color: $main-color;
   color: $main-color !important;
@@ -342,6 +330,7 @@ select.form-control {
     color: $main-color;
   }
 }
+
 
 
 
