@@ -1,0 +1,18 @@
+ <div class="my-3" *ngFor="let faq of faqs.questions;let i = index;">
+   <ngb-accordion [closeOthers]="true" #ccc="ngbAccordion" activeIds="custom-panel-0">
+     <ngb-panel id="custom-panel-{{i}}">
+       <ng-template ngbPanelHeader let-opened="opened">
+         <button ngbPanelToggle [ngClass]="{'closed': !opened}"
+           class="d-flex align-items-center justify-content-between pb-3 w-100">
+           <p [ngClass]="{'text-info' : opened}" class="m-0">{{faq.question}}</p>
+           <i *ngIf="!opened" class="fa fa-plus" aria-hidden="true"></i>
+           <i *ngIf="opened" class="fa fa-minus" aria-hidden="true"></i>
+
+         </button>
+       </ng-template>
+       <ng-template ngbPanelContent>
+         <p>{{faq.answer}}</p>
+       </ng-template>
+     </ngb-panel>
+   </ngb-accordion>
+ </div>

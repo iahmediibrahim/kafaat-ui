@@ -1,3 +1,9 @@
+//responsive breakpoints
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+
 .chosen,
 .most-selling {
   margin-top: -60px;
@@ -21,8 +27,19 @@
 }
 
 .heading {
-  margin-bottom: 80px;
+  @media only screen and (min-width: $bp-medium) {
+    margin-bottom: 80px;
+  }
 
+  i {
+    font-size: 20px;
+  }
+}
+
+.with-head {
+  @media only screen and (max-width: $bp-medium) {
+    padding-top: 50px;
+  }
 }
 
 .subscription {
@@ -79,4 +96,17 @@
 hr {
   border: 1px solid #E2E2E2;
 
+}
+
+.inquiry {
+  background: url('../../../../../assets/images/inquiry.svg') center center no-repeat;
+  background-size: cover;
+  height: 200px;
+
+  p {
+    font-size: 30px;
+    line-height: 2rem;
+    padding: 1rem;
+    margin: 0;
+  }
 }
