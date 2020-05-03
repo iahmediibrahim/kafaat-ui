@@ -12,29 +12,30 @@ import { CompanyDashboardComponent } from './company/company-dashboard/company-d
 import { NotificationsComponent } from './pages/notifications/notifications.component';
 import { SubscriptionsComponent } from './pages/subscriptions/subscriptions.component';
 import { RegistrationRequestsComponent } from './recruiter/registration-requests/registration-requests.component';
-
+import { ReviewRequestComponent } from './recruiter/review-request/review-request.component';
 const routes: Routes = [
-    {
-        path: '',
-        children: [
-            { path: '', component: LandingComponent },
-            { path: 'about', component: AboutComponent },
-            { path: 'our-services', component: OurServicesComponent },
-            { path: 'media', component: MediaComponent },
-            { path: 'partners', component: PartnersComponent },
-            { path: 'contact-us', component: ContactComponent },
-            { path: 'seeker-dashboard', component: SeekerDashboardComponent },
-            { path: 'recruiter-dashboard', component: RecruiterDashboardComponent },
-            { path: 'recruiter-regs-req', component: RegistrationRequestsComponent },
-            { path: 'company-dashboard', component: CompanyDashboardComponent },
-            { path: 'notifications', component: NotificationsComponent },
-            { path: 'subscriptions', component: SubscriptionsComponent },
-        ],
-    },
+	{
+		path: '',
+		children: [
+			{ path: '', component: LandingComponent },
+			{ path: 'about', component: AboutComponent },
+			{ path: 'our-services', component: OurServicesComponent },
+			{ path: 'media', component: MediaComponent },
+			{ path: 'partners', component: PartnersComponent },
+			{ path: 'contact-us', component: ContactComponent },
+			{ path: 'seeker-dashboard', component: SeekerDashboardComponent },
+			{ path: 'recruiter-dashboard', component: RecruiterDashboardComponent },
+			{ path: 'recruiter-regs-req', component: RegistrationRequestsComponent },
+			{ path: 'review-request', component: ReviewRequestComponent },
+			{ path: 'company-dashboard', component: CompanyDashboardComponent },
+			{ path: 'notifications', component: NotificationsComponent },
+			{ path: 'subscriptions', component: SubscriptionsComponent }
+		]
+	}
 ];
 
 @NgModule({
-    imports: [ RouterModule.forChild(routes) ],
-    exports: [ RouterModule ],
+	imports: [ RouterModule.forChild(routes) ],
+	exports: [ RouterModule ]
 })
 export class ViewsRoutingModule {}

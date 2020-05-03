@@ -15,6 +15,7 @@ import { RecruiterDashboardComponent } from './recruiter/recruiter-dashboard/rec
 import { NotificationsComponent } from './pages/notifications/notifications.component';
 import { SubscriptionsComponent } from './pages/subscriptions/subscriptions.component';
 import { RegistrationRequestsComponent } from './recruiter/registration-requests/registration-requests.component';
+import { ReviewRequestComponent } from './recruiter/review-request/review-request.component';
 
 @NgModule({
     declarations: [
@@ -30,6 +31,7 @@ import { RegistrationRequestsComponent } from './recruiter/registration-requests
         RecruiterDashboardComponent,
         SubscriptionsComponent,
         RegistrationRequestsComponent,
+        ReviewRequestComponent,
     ],
     imports: [ CommonModule, ViewsRoutingModule, SharedModule, CarouselModule.forRoot() ],
 })

@@ -57,6 +57,7 @@ $bp-small: 37.5em; //600px
 // colors
 $main-color: #003F84;
 $info-color: #3F9BC8;
+$title-color:#0057FF;
 
 /*
   scroll-bar
@@ -118,6 +119,10 @@ body {
   color: #C29E6F;
 }
 
+.text-blue {
+  color: $title-color;
+}
+
 .bg-gold {
   background-color: #C29E6F;
 }
@@ -136,7 +141,6 @@ body {
 
 .text-info {
   color: $info-color !important;
-
 }
 
 .badge-light {
