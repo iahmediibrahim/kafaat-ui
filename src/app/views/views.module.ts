@@ -19,11 +19,17 @@ import { FaqsComponent } from './pages/subscriptions/faqs/faqs.component';
 import { SubscripeComponent } from './pages/subscriptions/subscripe/subscripe.component';
 import { RecRequestComponent } from './company/rec-request/rec-request.component';
 import { ReviewRequestComponent } from './recruiter/review-request/review-request.component';
+<<<<<<< HEAD
 import { AccReqComponent } from './recruiter/acc-request/acc-req/acc-req.component';
 import { RejectRequestComponent } from './recruiter/reject-request/reject-request.component';
 import { JobDescriptionComponent } from './recruiter/job-description/job-description.component';
 import { ViewJobDescriptionComponent } from './recruiter/view-job-description/view-job-description.component';
 import { SeekerReviewComponent } from './seeker/seeker-review/seeker-review.component';
+=======
+import { RequestsComponent } from './company/requests/requests.component';
+import { OrgRequestComponent } from './company/org-request/org-request.component';
+import { ReqConfirmComponent } from './company/req-confirm/req-confirm.component';
+>>>>>>> 45aec04cdafab2534a2df8f4fad9e719ef79b460
 @NgModule({
 	declarations: [
 		LandingComponent,
@@ -42,11 +48,17 @@ import { SeekerReviewComponent } from './seeker/seeker-review/seeker-review.comp
 		FaqsComponent,
 		SubscripeComponent,
 		RecRequestComponent,
+<<<<<<< HEAD
 		AccReqComponent,
 		RejectRequestComponent,
 		JobDescriptionComponent,
 		ViewJobDescriptionComponent,
 		SeekerReviewComponent
+=======
+		RequestsComponent,
+		OrgRequestComponent,
+		ReqConfirmComponent
+>>>>>>> 45aec04cdafab2534a2df8f4fad9e719ef79b460
 	],
 	imports: [ CommonModule, ViewsRoutingModule, SharedModule, CarouselModule.forRoot() ]
 })
