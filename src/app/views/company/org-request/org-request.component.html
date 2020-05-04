@@ -1,0 +1,284 @@
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item text-dark" aria-current="page">
+            <i class="fa fa-home" style="font-size: 28px;" aria-hidden="true"></i></li>
+          <li class="breadcrumb-item d-flex align-items-center" aria-current="page">
+            <p class="m-0 font-semibold">خدمات</p>
+          </li>
+          <li class="breadcrumb-item active d-flex align-items-center" aria-current="page">
+            <p class="m-0 font-semibold">طلب ترشيح عضو مجلس إدارة أو لجان</p>
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <div class="col-md-12">
+      <section class="personal-info">
+        <div class="header">
+          <h4 class="py-4 pr-5 m-0">
+            <span class="ml-2">
+              <i class="fa fa-file-text-o" aria-hidden="true"></i>
+            </span>
+            بيانات الوظيفة</h4>
+          <p class="status">
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+          </p>
+        </div>
+        <div class="body">
+          <form #form="ngForm">
+            <!-- email info section -->
+            <section class="section py-4 pr-5">
+
+              <div class="row">
+
+                <div class="col-md-12">
+                  <div class="form-row my-3">
+                    <div class="col">
+                      <div>
+                        <label>هل تريد ملء بيانات الوظيفة يدويًا أم باستخدام أحد النماذج الجاهزة؟</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline ml-4">
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                          class="custom-control-input">
+                        <label class="custom-control-label text-muted" for="customRadioInline1">يدويًا</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                          class="custom-control-input">
+                        <label class="custom-control-label text-muted" for="customRadioInline2">باستخدام أحد
+                          النماذج</label>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </section>
+            <!-- basic info section -->
+            <section class="section py-4 pr-5">
+
+              <div class="row mb-3">
+                <div class="form-group col-md-4">
+                  <label for="firstName">مسمى المنصب</label>
+                  <input class="form-control" type="text" required ngModel name="firstName" #firstName="ngModel">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="form-group col-md-4">
+                  <label>المؤهلات العلمية المطلوبة</label>
+                  <div class="input-group">
+                    <select class="form-control" id="gpa">
+                      <option>المؤهلات العلمية المطلوبة</option>
+                    </select>
+                    <span class="select-arrow position-absolute">
+                      <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                  </div>
+                </div>
+                <div class="form-group col-md-4">
+                  <label>سنوات الخبرة المطلوبة</label>
+                  <div class="input-group">
+                    <select class="form-control" id="gpa">
+                      <option>سنوات الخبرة المطلوبة</option>
+                    </select>
+                    <span class="select-arrow position-absolute">
+                      <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="form-group col-md-6">
+                  <label>المهارات المطلوبة</label>
+                  <div class="input-group">
+                    <input class="form-control" type="text" />
+                    <span class="plus-btn position-absolute">
+                      <button class="btn btn-primary btn-add" type="button">
+                        <i class="fa  fa-plus"></i>
+                      </button>
+                    </span>
+                  </div>
+                  <div class="badges mt-3">
+                    <span class="badge badge-info p-2">أدوبي فوتوشوب
+                      <a href=""> <i class="fa  fa-close"></i></a>
+                    </span>
+                    <span class="badge badge-info p-2">الميكانيكى
+                      <a href=""> <i class="fa  fa-close"></i></a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="form-group col-md-4">
+                  <label>السن</label>
+                  <div class="input-group">
+                    <select class="form-control" id="gpa">
+                      <option>السن</option>
+                    </select>
+                    <span class="select-arrow position-absolute">
+                      <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+                  </div>
+                </div>
+                <div class="form-group col-md-5">
+                  <div>
+                    <label>الجنس</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline ml-4 mt-4">
+                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label text-muted" for="customRadioInline1">ذكر</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline ml-4 mt-4">
+                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label text-muted" for="customRadioInline2"> أنثى
+                    </label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline  mt-4">
+                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label text-muted" for="customRadioInline2"> غير محدد
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="form-group col-md-12">
+                  <label for="middleName">تفاصيل مهام المنصب</label>
+                  <textarea class="form-control" rows="6" required ngModel name="middleName"
+                    #middleName="ngModel"></textarea>
+                </div>
+              </div>
+            </section>
+
+
+            <section class="container-fluid  py-4 px-5">
+              <div class="row">
+                <div class="col-md-12">
+                  <h5 class="text-primary">نماذج الوظائف الجاهزة</h5>
+                </div>
+              </div>
+              <div class="row border">
+                <div class="col-md-8 list d-grid small-card">
+                  <div class="card-content p-2 border m-4">
+                    <div>
+                      <h5 class="text-primary">مدير حسابات</h5>
+                      <p class="text-primary font-bold">خبرة 4 سنوات</p>
+                    </div>
+                    <div class="text-left mt-4">
+                      <button class="btn btn-link text-primary font-bold">عرض</button>
+                      <button class="btn btn-primary" type="submit">موافق</button>
+                    </div>
+                  </div>
+                  <div class="card-content p-2 border m-4">
+                    <div>
+                      <h5 class="text-primary">مدير حسابات</h5>
+                      <p class="text-primary font-bold">خبرة 4 سنوات</p>
+                    </div>
+                    <div class="text-left mt-4">
+                      <button class="btn btn-link text-primary font-bold">عرض</button>
+                      <button class="btn btn-primary" type="submit">موافق</button>
+                    </div>
+                  </div>
+                  <div class="card-content p-2 border m-4">
+                    <div>
+                      <h5 class="text-primary">مدير حسابات</h5>
+                      <p class="text-primary font-bold">خبرة 4 سنوات</p>
+                    </div>
+                    <div class="text-left mt-4">
+                      <button class="btn btn-link text-primary font-bold">عرض</button>
+                      <button class="btn btn-primary" type="submit">موافق</button>
+                    </div>
+                  </div>
+                  <div class="card-content p-2 border m-4">
+                    <div>
+                      <h5 class="text-primary">مدير حسابات</h5>
+                      <p class="text-primary font-bold">خبرة 4 سنوات</p>
+                    </div>
+                    <div class="text-left mt-4">
+                      <button class="btn btn-link text-primary font-bold">عرض</button>
+                      <button class="btn btn-primary" type="submit">موافق</button>
+                    </div>
+                  </div>
+                  <div class="card-content p-2 border m-4">
+                    <div>
+                      <h5 class="text-primary">مدير حسابات</h5>
+                      <p class="text-primary font-bold">خبرة 4 سنوات</p>
+                    </div>
+                    <div class="text-left mt-4">
+                      <button class="btn btn-link text-primary font-bold">عرض</button>
+                      <button class="btn btn-primary" type="submit">موافق</button>
+                    </div>
+                  </div>
+                  <div class="card-content p-2 border m-4">
+                    <div>
+                      <h5 class="text-primary">مدير حسابات</h5>
+                      <p class="text-primary font-bold">خبرة 4 سنوات</p>
+                    </div>
+                    <div class="text-left mt-4">
+                      <button class="btn btn-link text-primary font-bold">عرض</button>
+                      <button class="btn btn-primary" type="submit">موافق</button>
+                    </div>
+                  </div>
+                  <div class="card-content p-2 border m-4">
+                    <div>
+                      <h5 class="text-primary">مدير حسابات</h5>
+                      <p class="text-primary font-bold">خبرة 4 سنوات</p>
+                    </div>
+                    <div class="text-left mt-4">
+                      <button class="btn btn-link text-primary font-bold">عرض</button>
+                      <button class="btn btn-primary" type="submit">موافق</button>
+                    </div>
+                  </div>
+                  <div class="card-content p-2 border m-4">
+                    <div>
+                      <h5 class="text-primary">مدير حسابات</h5>
+                      <p class="text-primary font-bold">خبرة 4 سنوات</p>
+                    </div>
+                    <div class="text-left mt-4">
+                      <button class="btn btn-link text-primary font-bold">عرض</button>
+                      <button class="btn btn-primary" type="submit">موافق</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 p-4">
+                  <h6 class="text-primary mb-4">تصفية النتائج</h6>
+                  <form>
+                    <div class="form-group   mb-3">
+                      <label for="name">المسمى الوظيفي</label>
+                      <input class="form-control" type="text" required ngModel name="name" #name="ngModel">
+                    </div>
+                    <div class="form-group   mb-3">
+                      <label for="name">التخصص</label>
+                      <input class="form-control" type="text" required ngModel name="name" #name="ngModel">
+                    </div>
+                    <div class="form-group   mb-3">
+                      <label for="name">المؤهل</label>
+                      <input class="form-control" type="text" required ngModel name="name" #name="ngModel">
+                    </div>
+                    <div class="cta text-center my-4 d-grid">
+                      <button class="btn btn-outline-primary">عرض الكل</button>
+                      <button class="btn btn-primary" type="submit">موافق</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
+
+            <!--next button -->
+            <div class="row">
+              <div class="col-md-3 mx-5">
+                <button class="btn btn-lg btn-primary my-4 py-2" (click)="open()">
+                  <span class="mx-5">
+                    إرسال الطلب
+                  </span>
+                </button> </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+
+    </div>
+  </div>
+</div>

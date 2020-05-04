@@ -157,11 +157,12 @@ body {
 }
 
 .text-muted {
-  color: #666666;
+  color: #666666 !important;
 }
 
 .text-dark {
-  color: #333333;
+  color: #333333 !important;
+
 }
 
 h1,
@@ -678,5 +679,32 @@ ngb-carousel {
       }
     }
 
+  }
+}
+
+
+.requests {
+  .card-header {
+    background-color: #fff;
+
+  }
+
+  .accordion>.card {
+    overflow: unset;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #CDCDCD;
+  }
+
+  .user-tooltip {
+    .tooltip-inner {
+      background-color: #fff;
+      color: #666666;
+      border: 0.5px solid #E2E2E2;
+      box-shadow: 0px 10px 35px #003F841A;
+    }
+
+    .arrow::before {
+      border-color: #fff;
+    }
   }
 }
