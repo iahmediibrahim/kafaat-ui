@@ -16,8 +16,10 @@ import { ReviewRequestComponent } from './recruiter/review-request/review-reques
 import { JobDescriptionComponent } from './recruiter/job-description/job-description.component';
 import { SubscripeComponent } from './pages/subscriptions/subscripe/subscripe.component';
 import { RecRequestComponent } from './company/rec-request/rec-request.component';
-<<<<<<< HEAD
 import { SeekerReviewComponent } from './seeker/seeker-review/seeker-review.component';
+import { RequestsComponent } from './company/requests/requests.component';
+import { OrgRequestComponent } from './company/org-request/org-request.component';
+
 const routes: Routes = [
 	{
 		path: '',
@@ -33,47 +35,23 @@ const routes: Routes = [
 			{ path: 'recruiter-regs-req', component: RegistrationRequestsComponent },
 			{ path: 'company-dashboard', component: CompanyDashboardComponent },
 			{ path: 'rec-request', component: RecRequestComponent },
+			{ path: 'company/org-request', component: OrgRequestComponent },
+			{ path: 'company/rec-request', component: RecRequestComponent },
+			{ path: 'company/requests', component: RequestsComponent },
 			{ path: 'review-request', component: ReviewRequestComponent },
 			{ path: 'job-description', component: JobDescriptionComponent },
 			{ path: 'notifications', component: NotificationsComponent },
 			{ path: 'subscriptions', component: SubscriptionsComponent },
 			{ path: 'subscripe', component: SubscripeComponent },
 			{ path: 'subscriptions', component: SubscriptionsComponent },
-			{ path: 'seeker-review', component: SeekerReviewComponent }
+			{ path: 'seeker-review', component: SeekerReviewComponent },
+			{ path: 'subscripe', component: SubscripeComponent }
 		]
 	}
-=======
-import { RequestsComponent } from './company/requests/requests.component';
-import { OrgRequestComponent } from './company/org-request/org-request.component';
-
-const routes: Routes = [
-    {
-        path: '',
-        children: [
-            { path: '', component: LandingComponent },
-            { path: 'about', component: AboutComponent },
-            { path: 'our-services', component: OurServicesComponent },
-            { path: 'media', component: MediaComponent },
-            { path: 'partners', component: PartnersComponent },
-            { path: 'contact-us', component: ContactComponent },
-            { path: 'seeker-dashboard', component: SeekerDashboardComponent },
-            { path: 'recruiter-dashboard', component: RecruiterDashboardComponent },
-            { path: 'recruiter-regs-req', component: RegistrationRequestsComponent },
-            { path: 'company-dashboard', component: CompanyDashboardComponent },
-            { path: 'company/org-request', component: OrgRequestComponent },
-            { path: 'company/rec-request', component: RecRequestComponent },
-            { path: 'company/requests', component: RequestsComponent },
-            { path: 'review-request', component: ReviewRequestComponent },
-            { path: 'notifications', component: NotificationsComponent },
-            { path: 'subscriptions', component: SubscriptionsComponent },
-            { path: 'subscripe', component: SubscripeComponent },
-        ],
-    },
->>>>>>> 45aec04cdafab2534a2df8f4fad9e719ef79b460
 ];
 
 @NgModule({
-    imports: [ RouterModule.forChild(routes) ],
-    exports: [ RouterModule ],
+	imports: [ RouterModule.forChild(routes) ],
+	exports: [ RouterModule ]
 })
 export class ViewsRoutingModule {}
