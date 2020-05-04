@@ -9,6 +9,7 @@
   </div>
   <!--Content-->
   <div class="row">
+    <!--right side -->
     <div class="col-md-9">
       <div class="row">
         <!--job-card-content-box-->
@@ -41,11 +42,160 @@
           </div>
         </div>
         <!--/job-card-content-box-->
+
+         <!--job-card-content-box-->
+        <div class="col-xl-4 col-lg-4 0col-md-6 col-sm-12 col-xs-12">
+          <div class="job-card-content" (click)="viewJobDescription()">
+            <h5 class="">مدير حسابات
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </h5>
+            <p>خبرة 4 سنوات</p>
+          </div>
+        </div>
+        <!--/job-card-content-box-->
+         
+         <!--job-card-content-box-->
+         <div class="col-xl-4 col-lg-4 0col-md-6 col-sm-12 col-xs-12">
+          <div class="job-card-content" (click)="viewJobDescription()">
+            <h5 class="">مدير حسابات
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </h5>
+            <p>خبرة 4 سنوات</p>
+          </div>
+        </div>
+        <!--/job-card-content-box--> 
+         <!--job-card-content-box-->
+        <div class="col-xl-4 col-lg-4 0col-md-6 col-sm-12 col-xs-12">
+          <div class="job-card-content" (click)="viewJobDescription()">
+            <h5 class="">مدير حسابات
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </h5>
+            <p>خبرة 4 سنوات</p>
+          </div>
+        </div>
+        <!--/job-card-content-box--> 
+         <!--job-card-content-box-->
+        <div class="col-xl-4 col-lg-4 0col-md-6 col-sm-12 col-xs-12">
+          <div class="job-card-content" (click)="viewJobDescription()">
+            <h5 class="">مدير حسابات
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </h5>
+            <p>خبرة 4 سنوات</p>
+          </div>
+        </div>
+        <!--/job-card-content-box--> 
+         <!--job-card-content-box-->
+        <div class="col-xl-4 col-lg-4 0col-md-6 col-sm-12 col-xs-12">
+          <div class="job-card-content" (click)="viewJobDescription()">
+            <h5 class="">مدير حسابات
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </h5>
+            <p>خبرة 4 سنوات</p>
+          </div>
+        </div>
+        <!--/job-card-content-box--> 
+         <!--job-card-content-box-->
+        <div class="col-xl-4 col-lg-4 0col-md-6 col-sm-12 col-xs-12">
+          <div class="job-card-content" (click)="viewJobDescription()">
+            <h5 class="">مدير حسابات
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </h5>
+            <p>خبرة 4 سنوات</p>
+          </div>
+        </div>
+        <!--/job-card-content-box--> 
+         <!--job-card-content-box-->
+        <div class="col-xl-4 col-lg-4 0col-md-6 col-sm-12 col-xs-12">
+          <div class="job-card-content" (click)="viewJobDescription()">
+            <h5 class="">مدير حسابات
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </h5>
+            <p>خبرة 4 سنوات</p>
+          </div>
+        </div>
+        <!--/job-card-content-box--> 
+         <!--job-card-content-box-->
+        <div class="col-xl-4 col-lg-4 0col-md-6 col-sm-12 col-xs-12">
+          <div class="job-card-content" (click)="viewJobDescription()">
+            <h5 class="">مدير حسابات
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </h5>
+            <p>خبرة 4 سنوات</p>
+          </div>
+        </div>
+        <!--/job-card-content-box--> 
+         <!--job-card-content-box-->
+        <div class="col-xl-4 col-lg-4 0col-md-6 col-sm-12 col-xs-12">
+          <div class="job-card-content" (click)="viewJobDescription()">
+            <h5 class="">مدير حسابات
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </h5>
+            <p>خبرة 4 سنوات</p>
+          </div>
+        </div>
+        <!--/job-card-content-box--> 
+         <!--job-card-content-box-->
+        <div class="col-xl-4 col-lg-4 0col-md-6 col-sm-12 col-xs-12">
+          <div class="job-card-content" (click)="viewJobDescription()">
+            <h5 class="">مدير حسابات
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </h5>
+            <p>خبرة 4 سنوات</p>
+          </div>
+        </div>
+        <!--/job-card-content-box-->
+
       </div>
     </div>
+    <!--/right side -->
+    <!-- left side -->
     <div class="col-md-3">
-      b
+      <h6 class="main-title">تصفية النتائج</h6>
+      <form  #form="ngForm">
+        <div class="form-group">
+          <label for="jobName">المسمى الوظيفي</label>
+          <div class="input-group">
+            <select class="form-control" id="jobName" ngModel name="jobName" #jobName="ngModel">
+              <option> المقاولات</option>
+              <option> المقاولات</option>
+              <option> المقاولات</option>
+            </select>
+            <span class="select-arrow position-absolute">
+              <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="speciality"> التخصص</label>
+          <div class="input-group">
+            <select class="form-control" id="speciality" ngModel name="speciality" #speciality="ngModel">
+              <option>مهندس مدنى</option>
+              <option>مهندس مدنى</option>
+              <option>مهندس مدنى</option>
+            </select>
+            <span class="select-arrow position-absolute">
+              <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="speciality">المؤهل</label>
+          <div class="input-group">
+
+            <select class="form-control" id="speciality" ngModel name="speciality" #speciality="ngModel">
+              <option>المروة</option>
+              <option>المروة</option>
+              <option>المروة</option>
+            </select>
+            <span class="select-arrow position-absolute">
+              <i class="fa fa-angle-down" style="color: inherit;"></i></span>
+          </div>
+        </div>
+        <div class="text-center mt-5 d-flex">
+          <button class="btn btn-outline-primary">عرض الكل</button>
+          <button class="btn btn-primary mr-3" type="submit"> موافق</button>
+        </div>
+      </form>
     </div>
+    <!--/left side -->
   </div>
   <!--/Content-->
 

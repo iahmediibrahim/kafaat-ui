@@ -2,9 +2,10 @@
   padding: 15px;
   background-color: #fff;
   border-radius: 5px;
+  margin-bottom: 20px;
 
   h5 {
-    font-size: 14px;
+    font-size: 15px;
     font-family: gulf-bold;
     color: #003F84;
     letter-spacing: 0 !important;
@@ -22,4 +23,12 @@
     margin-top: 5px;
     margin-bottom: 0;
   }
+}
+
+h6 {
+  color: #003F84;
+  font-size: 16px;
+  font-family: gulf-medium !important;
+  letter-spacing: 0;
+  font-weight: bold;
 }

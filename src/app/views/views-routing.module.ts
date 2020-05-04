@@ -16,6 +16,7 @@ import { ReviewRequestComponent } from './recruiter/review-request/review-reques
 import { JobDescriptionComponent } from './recruiter/job-description/job-description.component';
 import { SubscripeComponent } from './pages/subscriptions/subscripe/subscripe.component';
 import { RecRequestComponent } from './company/rec-request/rec-request.component';
+import { SeekerReviewComponent } from './seeker/seeker-review/seeker-review.component';
 const routes: Routes = [
 	{
 		path: '',
@@ -36,7 +37,8 @@ const routes: Routes = [
 			{ path: 'notifications', component: NotificationsComponent },
 			{ path: 'subscriptions', component: SubscriptionsComponent },
 			{ path: 'subscripe', component: SubscripeComponent },
-			{ path: 'subscriptions', component: SubscriptionsComponent }
+			{ path: 'subscriptions', component: SubscriptionsComponent },
+			{ path: 'seeker-review', component: SeekerReviewComponent }
 		]
 	}
 ];

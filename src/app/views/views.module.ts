@@ -23,6 +23,7 @@ import { AccReqComponent } from './recruiter/acc-request/acc-req/acc-req.compone
 import { RejectRequestComponent } from './recruiter/reject-request/reject-request.component';
 import { JobDescriptionComponent } from './recruiter/job-description/job-description.component';
 import { ViewJobDescriptionComponent } from './recruiter/view-job-description/view-job-description.component';
+import { SeekerReviewComponent } from './seeker/seeker-review/seeker-review.component';
 @NgModule({
 	declarations: [
 		LandingComponent,
@@ -44,7 +45,8 @@ import { ViewJobDescriptionComponent } from './recruiter/view-job-description/vi
 		AccReqComponent,
 		RejectRequestComponent,
 		JobDescriptionComponent,
-		ViewJobDescriptionComponent
+		ViewJobDescriptionComponent,
+		SeekerReviewComponent
 	],
 	imports: [ CommonModule, ViewsRoutingModule, SharedModule, CarouselModule.forRoot() ]
 })

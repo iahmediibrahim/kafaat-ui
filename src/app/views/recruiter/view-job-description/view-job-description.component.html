@@ -8,34 +8,54 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-12">
-        <h5 class="text-primary">
-          <i class="fa fa-pencil-square" aria-hidden="true"></i>
-          رفض طلب التسجيل
-        </h5>
-        <p class="text-semiBold text-dark font-16">سنقوم بإرسال الملاحظات علي طلب التسجيل الي أحمد محمود</p>
-        <p class="text-muted mt-2">
-          <span class="text-info">
-            <i class="fa fa-info-circle" aria-hidden="true"></i>
-            ملاحظات
-          </span>
-          من فضلك ضع ملاحظاتك التي تمكن المستخدم من تقديم طلب تسجيل مقبول
-        </p>
-      </div>
-      <div class="col-md-12">
-        <form #form="ngForm">
-          <div class="form-group">
-            <textarea class="form-control" rows="4" required ngModel name="hintMessage"
-              #hintMessage="ngModel"></textarea>
-          </div>
-        </form>
+        <div class="view-details-header">
+          <h5>
+            عرض وصف وظيفي
+          </h5>
+          <h4>مدير حسابات </h4>
+          <p>
+            <i class="fa fa-user text-dark ml-1"></i>
+            أعمال مالية ومحاسبة
+          </p>
+          <p>
+            <i class="fa fa-user text-dark ml-1"></i>
+            مطلوب خبرة 1-3 سنوات
+          </p>
+        </div>
+        <div class="view-details-content">
+          <h6>
+            مسئوليات الوظيفة
+          </h6>
+          <p>مسئول عن ظبط النظام المحاسبى وتطبيقه طبقا للدورة المستندية </p>
+          <p>مسئول عن ظبط النظام المحاسبى وتطبيقه طبقا للدورة المستندية </p>
+          <p>مسئول عن ظبط النظام المحاسبى وتطبيقه طبقا للدورة المستندية </p>
+          <p>مسئول عن ظبط النظام المحاسبى وتطبيقه طبقا للدورة المستندية </p>
+          <p>مسئول عن ظبط النظام المحاسبى وتطبيقه طبقا للدورة المستندية </p>
+          <p>مسئول عن ظبط النظام المحاسبى وتطبيقه طبقا للدورة المستندية </p>
+          <p>مسئول عن ظبط النظام المحاسبى وتطبيقه طبقا للدورة المستندية </p>
+          <h6>
+            مسئوليات الوظيفة
+          </h6>
+          <p>مسئول عن ظبط النظام المحاسبى وتطبيقه طبقا للدورة المستندية </p>
+          <p>مسئول عن ظبط النظام المحاسبى وتطبيقه طبقا للدورة المستندية </p>
+          <p>مسئول عن ظبط النظام المحاسبى وتطبيقه طبقا للدورة المستندية </p>
+          <p>مسئول عن ظبط النظام المحاسبى وتطبيقه طبقا للدورة المستندية </p>
+          <p>مسئول عن ظبط النظام المحاسبى وتطبيقه طبقا للدورة المستندية </p>
+          <p>مسئول عن ظبط النظام المحاسبى وتطبيقه طبقا للدورة المستندية </p>
+          <p>مسئول عن ظبط النظام المحاسبى وتطبيقه طبقا للدورة المستندية </p>
+        </div>
       </div>
     </div>
 
   </div>
 </div>
-<div class="modal-footer text-center pt-0 ">
-  <div class="col-md-6 m-auto">
-    <button type="button" class="btn btn-primary btn-block" (click)="activeModal.close('Close click')">إرسال
-      الملاحظات</button>
+<div class="modal-footer text-center pt-0">
+  <!--  buttons-->
+  <div class="col-md-8 text-center mt-4">
+    <div class="d-grid">
+      <button class="btn btn-outline-primary" (click)="activeModal.close('Close click')"> تعديل</button>
+      <button class="btn btn-primary" (click)="activeModal.close('Close click')">إغلاق</button>
+    </div>
   </div>
+  <!-- / buttons -->
 </div>

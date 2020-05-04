@@ -131,8 +131,9 @@ body {
   color: $title-color;
 }
 
-.bg-gold {
-  background-color: #C29E6F;
+
+.text-warning {
+  color: #FFB44B;
 }
 
 .bg-primary {
@@ -147,8 +148,24 @@ body {
   background-color: #A9A9A9;
 }
 
+.bg-gold {
+  background-color: #C29E6F;
+}
+
+.bg-success {
+  color: #34cc61 !important;
+}
+
+.bg-light-grey {
+  background-color: #CDCDCD;
+}
+
 .text-info {
   color: $info-color !important;
+}
+
+.text-light-grey {
+  color: #CDCDCD;
 }
 
 .badge-light {
@@ -715,10 +732,23 @@ ngb-carousel {
   }
 }
 
+.d-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 15px;
+}
+
 .modal-footer {
   border-top: 0 !important;
 }
 
 textarea {
   resize: none !important;
+}
+
+label {
+  color: #333333;
+  font-size: 14px;
+  letter-spacing: 0;
+  font-family: gulf-semibold;
 }
