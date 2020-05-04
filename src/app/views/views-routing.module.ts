@@ -13,9 +13,9 @@ import { NotificationsComponent } from './pages/notifications/notifications.comp
 import { SubscriptionsComponent } from './pages/subscriptions/subscriptions/subscriptions.component';
 import { RegistrationRequestsComponent } from './recruiter/registration-requests/registration-requests.component';
 import { ReviewRequestComponent } from './recruiter/review-request/review-request.component';
+import { JobDescriptionComponent } from './recruiter/job-description/job-description.component';
 import { SubscripeComponent } from './pages/subscriptions/subscripe/subscripe.component';
 import { RecRequestComponent } from './company/rec-request/rec-request.component';
-
 const routes: Routes = [
 	{
 		path: '',
@@ -32,6 +32,7 @@ const routes: Routes = [
 			{ path: 'company-dashboard', component: CompanyDashboardComponent },
 			{ path: 'rec-request', component: RecRequestComponent },
 			{ path: 'review-request', component: ReviewRequestComponent },
+			{ path: 'job-description', component: JobDescriptionComponent },
 			{ path: 'notifications', component: NotificationsComponent },
 			{ path: 'subscriptions', component: SubscriptionsComponent },
 			{ path: 'subscripe', component: SubscripeComponent },

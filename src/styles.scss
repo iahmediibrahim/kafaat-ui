@@ -88,7 +88,7 @@ body {
   color: #121315;
   direction: rtl;
   text-align: right;
-
+  background-color: #FAFBFC;
 }
 
 .font-bold {
@@ -105,6 +105,14 @@ body {
 
 .font-roboto {
   font-family: Roboto;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-18 {
+  font-size: 18px;
 }
 
 .text-primary {
@@ -149,7 +157,6 @@ body {
   padding: .6em 1.6em;
   font-size: 16px;
   border-radius: 5px;
-
 }
 
 .text-underline {
@@ -172,6 +179,14 @@ h5,
 h6 {
   font-family: gulf-bold;
   line-height: 1.5em;
+}
+
+.main-title {
+  color: $main-color;
+  font-size: 20px;
+  font-family: gulf-medium !important;
+  letter-spacing: 0;
+  font-weight: bold;
 }
 
 .btn {
@@ -204,17 +219,6 @@ h6 {
 
 }
 
-.btn {
-  &.btn-outline-primary {
-    padding: 6px 25px 6px 25px !important;
-  }
-}
-
-.btn {
-  &.btn-primary {
-    padding: 6px 25px 6px 25px !important;
-  }
-}
 
 .btn-outline-primary {
   border-color: $main-color;
@@ -233,6 +237,25 @@ h6 {
     background-color: $main-color !important;
   }
 }
+
+.btn-outline-danger {
+  border-color: #FA6457;
+  color: #FA6457 !important;
+
+  &.active {
+    color: #fff !important;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: #FA6457;
+    box-shadow: 0 0 0 0.2rem #FA6457;
+    color: #fff !important;
+    background-color: #FA6457 !important;
+  }
+}
+
 
 select.form-control {
   appearance: none;
@@ -690,4 +713,12 @@ ngb-carousel {
     }
 
   }
+}
+
+.modal-footer {
+  border-top: 0 !important;
+}
+
+textarea {
+  resize: none !important;
 }

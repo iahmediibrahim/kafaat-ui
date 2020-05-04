@@ -1,0 +1,25 @@
+.job-card-content {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+
+  h5 {
+    font-size: 14px;
+    font-family: gulf-bold;
+    color: #003F84;
+    letter-spacing: 0 !important;
+    margin-bottom: 0;
+
+    .fa {
+      float: left;
+      margin-top: 3px;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    color: #3F9BC8;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+}
