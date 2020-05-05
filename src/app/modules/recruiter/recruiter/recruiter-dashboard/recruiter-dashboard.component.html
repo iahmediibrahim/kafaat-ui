@@ -10,7 +10,7 @@
             <button class="btn btn-primary btn-lg px-4 mb-4 mr-3 more" id="more" ngbDropdownToggle>المزيد</button>
             <div class=" text-right" ngbDropdownMenu aria-labelledby="more">
               <button ngbDropdownItem>تدقيق طلبات التسجيل</button>
-              <button ngbDropdownItem [routerLink]="['/job-description']">اضافه وصف وظيفي </button>
+              <button ngbDropdownItem [routerLink]="['/recruiter/job-description']">اضافه وصف وظيفي </button>
               <button ngbDropdownItem>متابعه طلبات تقيم الاهليه</button>
               <button ngbDropdownItem>متابعه طلبات تقيم موظف او مرشح</button>
             </div>
@@ -32,7 +32,8 @@
           </button>
         </div>
         <div class="card container-fluid mr-3">
-          <button routerLink="" class="btn btn-link d-flex flex-wrap text-info font-semibold">
+          <button routerLink="/recruiter/hr-review-request"
+            class="btn btn-link d-flex flex-wrap text-info font-semibold">
             <p class="text-primary font-bold my-2">
               طلبات تقييم الأهلية</p>
             <div class="alert alert-primary mr-4 mt-2" role="alert">

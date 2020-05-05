@@ -12,6 +12,7 @@ import { RecruiterDashboardComponent } from './recruiter/recruiter-dashboard/rec
 import { RegistrationRequestsComponent } from './recruiter/registration-requests/registration-requests/registration-requests.component';
 import { ReviewRequestComponent } from './recruiter/registration-requests/review-request/review-request.component';
 import { SeekerReviewComponent } from './recruiter/registration-requests/seeker-review/seeker-review.component';
+import { HrReviewRequestComponent } from './recruiter/eligibility-evaluation/modules/recruiter/recruiter/hr-review-request/hr-review-request/hr-review-request.component';
 
 @NgModule({
     declarations: [
@@ -25,6 +26,7 @@ import { SeekerReviewComponent } from './recruiter/registration-requests/seeker-
         JobDescriptionConfirmComponent,
         RejectRequestComponent,
         ViewJobDescriptionComponent,
+        HrReviewRequestComponent,
     ],
     imports: [ CommonModule, RecruiterRoutingModule, SharedModule ],
 })
