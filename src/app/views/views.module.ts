@@ -22,28 +22,30 @@ import { ReviewRequestComponent } from './recruiter/review-request/review-reques
 import { RequestsComponent } from './company/requests/requests.component';
 import { OrgRequestComponent } from './company/org-request/org-request.component';
 import { ReqConfirmComponent } from './company/req-confirm/req-confirm.component';
+import { RecommendationRequestComponent } from './recruiter/recommendation-request/recommendation-request/recommendation-request.component';
 @NgModule({
-	declarations: [
-		LandingComponent,
-		SeekerDashboardComponent,
-		OurServicesComponent,
-		MediaComponent,
-		PartnersComponent,
-		ContactComponent,
-		AboutComponent,
-		NotificationsComponent,
-		CompanyDashboardComponent,
-		RecruiterDashboardComponent,
-		SubscriptionsComponent,
-		RegistrationRequestsComponent,
-		ReviewRequestComponent,
-		FaqsComponent,
-		SubscripeComponent,
-		RecRequestComponent,
-		RequestsComponent,
-		OrgRequestComponent,
-		ReqConfirmComponent
-	],
-	imports: [ CommonModule, ViewsRoutingModule, SharedModule, CarouselModule.forRoot() ]
+    declarations: [
+        LandingComponent,
+        SeekerDashboardComponent,
+        OurServicesComponent,
+        MediaComponent,
+        PartnersComponent,
+        ContactComponent,
+        AboutComponent,
+        NotificationsComponent,
+        CompanyDashboardComponent,
+        RecruiterDashboardComponent,
+        SubscriptionsComponent,
+        RegistrationRequestsComponent,
+        ReviewRequestComponent,
+        FaqsComponent,
+        SubscripeComponent,
+        RecRequestComponent,
+        RequestsComponent,
+        OrgRequestComponent,
+        ReqConfirmComponent,
+        RecommendationRequestComponent,
+    ],
+    imports: [ CommonModule, ViewsRoutingModule, SharedModule, CarouselModule.forRoot() ],
 })
 export class ViewsModule {}
