@@ -8,10 +8,19 @@ import { RouterModule } from '@angular/router';
 import { TestemonialsComponent } from './testemonials/testemonials.component';
 import { InviteComponent } from './invite/invite.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
     declarations: [ NavComponent, FooterComponent, TestemonialsComponent, InviteComponent, TopNavComponent ],
-    imports: [ CommonModule, RouterModule, FormsModule, NgbModule ],
-    exports: [ NavComponent, FooterComponent, NgbModule, FormsModule, TestemonialsComponent, TopNavComponent ],
+    imports: [ CommonModule, RouterModule, FormsModule, NgbModule, CarouselModule.forRoot() ],
+    exports: [
+        NavComponent,
+        FooterComponent,
+        NgbModule,
+        FormsModule,
+        TestemonialsComponent,
+        TopNavComponent,
+        CarouselModule,
+    ],
 })
 export class SharedModule {}
