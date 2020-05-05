@@ -19,6 +19,11 @@ import { FaqsComponent } from './pages/subscriptions/faqs/faqs.component';
 import { SubscripeComponent } from './pages/subscriptions/subscripe/subscripe.component';
 import { RecRequestComponent } from './company/rec-request/rec-request.component';
 import { ReviewRequestComponent } from './recruiter/review-request/review-request.component';
+import { AccReqComponent } from './recruiter/acc-request/acc-req/acc-req.component';
+import { RejectRequestComponent } from './recruiter/reject-request/reject-request.component';
+import { JobDescriptionComponent } from './recruiter/job-description/job-description.component';
+import { ViewJobDescriptionComponent } from './recruiter/view-job-description/view-job-description.component';
+import { SeekerReviewComponent } from './seeker/seeker-review/seeker-review.component';
 import { RequestsComponent } from './company/requests/requests.component';
 import { OrgRequestComponent } from './company/org-request/org-request.component';
 import { ReqConfirmComponent } from './company/req-confirm/req-confirm.component';
@@ -45,6 +50,11 @@ import { RecommendationRequestComponent } from './recruiter/recommendation-reque
         OrgRequestComponent,
         ReqConfirmComponent,
         RecommendationRequestComponent,
+        SeekerReviewComponent,
+        ViewJobDescriptionComponent,
+        JobDescriptionComponent,
+        RejectRequestComponent,
+        AccReqComponent,
     ],
     imports: [ CommonModule, ViewsRoutingModule, SharedModule, CarouselModule.forRoot() ],
 })

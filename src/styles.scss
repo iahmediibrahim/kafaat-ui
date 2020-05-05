@@ -88,7 +88,7 @@ body {
   color: #121315;
   direction: rtl;
   text-align: right;
-
+  background-color: #FAFBFC;
 }
 
 .font-bold {
@@ -107,6 +107,14 @@ body {
   font-family: Roboto;
 }
 
+.font-16 {
+  font-size: 16px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
 .text-primary {
   color: $main-color !important;
 }
@@ -123,8 +131,9 @@ body {
   color: $title-color;
 }
 
-.bg-gold {
-  background-color: #C29E6F;
+
+.text-warning {
+  color: #FFB44B;
 }
 
 .bg-primary {
@@ -139,8 +148,20 @@ body {
   background-color: #A9A9A9;
 }
 
+.bg-gold {
+  background-color: #C29E6F;
+}
+
+.bg-success {
+  color: #34cc61 !important;
+}
+
 .text-info {
   color: $info-color !important;
+}
+
+.text-light-grey {
+  color: #CDCDCD;
 }
 
 .badge-light {
@@ -149,7 +170,6 @@ body {
   padding: .6em 1.6em;
   font-size: 16px;
   border-radius: 5px;
-
 }
 
 .text-underline {
@@ -157,12 +177,11 @@ body {
 }
 
 .text-muted {
-  color: #666666 !important;
+  color: #666666;
 }
 
 .text-dark {
-  color: #333333 !important;
-
+  color: #333333;
 }
 
 h1,
@@ -173,6 +192,14 @@ h5,
 h6 {
   font-family: gulf-bold;
   line-height: 1.5em;
+}
+
+.main-title {
+  color: $main-color;
+  font-size: 20px;
+  font-family: gulf-medium !important;
+  letter-spacing: 0;
+  font-weight: bold;
 }
 
 .btn {
@@ -205,6 +232,7 @@ h6 {
 
 }
 
+
 .btn-outline-primary {
   border-color: $main-color;
   color: $main-color !important;
@@ -222,6 +250,25 @@ h6 {
     background-color: $main-color !important;
   }
 }
+
+.btn-outline-danger {
+  border-color: #FA6457;
+  color: #FA6457 !important;
+
+  &.active {
+    color: #fff !important;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: #FA6457;
+    box-shadow: 0 0 0 0.2rem #FA6457;
+    color: #fff !important;
+    background-color: #FA6457 !important;
+  }
+}
+
 
 select.form-control {
   appearance: none;
@@ -331,7 +378,6 @@ select.form-control {
     color: $main-color;
   }
 }
-
 
 
 
@@ -682,29 +728,23 @@ ngb-carousel {
   }
 }
 
+.d-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 15px;
+}
 
-.requests {
-  .card-header {
-    background-color: #fff;
+.modal-footer {
+  border-top: 0 !important;
+}
 
-  }
+textarea {
+  resize: none !important;
+}
 
-  .accordion>.card {
-    overflow: unset;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #CDCDCD;
-  }
-
-  .user-tooltip {
-    .tooltip-inner {
-      background-color: #fff;
-      color: #666666;
-      border: 0.5px solid #E2E2E2;
-      box-shadow: 0px 10px 35px #003F841A;
-    }
-
-    .arrow::before {
-      border-color: #fff;
-    }
-  }
+label {
+  color: #333333;
+  font-size: 14px;
+  letter-spacing: 0;
+  font-family: gulf-semibold;
 }

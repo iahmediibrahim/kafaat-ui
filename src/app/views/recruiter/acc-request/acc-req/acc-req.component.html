@@ -1,0 +1,26 @@
+<div class="modal-header border-0" dir="ltr">
+  <button type="button" class="close position-absolute font-roboto" aria-label="Close"
+    (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="container">
+    <div class="row justify-content-cente text-center">
+      <div class="col-md-12 text-center">
+        <div class="icon-checked">
+          <img src="../../../../../assets/images/pages/recuiter/action-check-circle-checkmark.svg">
+        </div>
+        <p class="text-primary text-semiBold mt-2">تم قبول طلبك</p>
+        <p class="text-muted"> تم إضافة 50 نقطة الي رصيدك</p>
+        <p class="text-muted">رصيد نقاطك الحالي 860 نقطة</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="modal-footer text-center pt-0 ">
+  <div class="col-md-4 m-auto">
+    <button type="button" class="btn btn-primary btn-block" (click)="activeModal.close('Close click')">موافق</button>
+  </div>
+</div>

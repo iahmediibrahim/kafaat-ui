@@ -13,8 +13,10 @@ import { NotificationsComponent } from './pages/notifications/notifications.comp
 import { SubscriptionsComponent } from './pages/subscriptions/subscriptions/subscriptions.component';
 import { RegistrationRequestsComponent } from './recruiter/registration-requests/registration-requests.component';
 import { ReviewRequestComponent } from './recruiter/review-request/review-request.component';
+import { JobDescriptionComponent } from './recruiter/job-description/job-description.component';
 import { SubscripeComponent } from './pages/subscriptions/subscripe/subscripe.component';
 import { RecRequestComponent } from './company/rec-request/rec-request.component';
+import { SeekerReviewComponent } from './seeker/seeker-review/seeker-review.component';
 import { RequestsComponent } from './company/requests/requests.component';
 import { OrgRequestComponent } from './company/org-request/org-request.component';
 import { RecommendationRequestComponent } from './recruiter/recommendation-request/recommendation-request/recommendation-request.component';
@@ -41,6 +43,9 @@ const routes: Routes = [
             { path: 'notifications', component: NotificationsComponent },
             { path: 'subscriptions', component: SubscriptionsComponent },
             { path: 'subscripe', component: SubscripeComponent },
+            { path: 'seeker-review', component: SeekerReviewComponent },
+            { path: 'job-description', component: JobDescriptionComponent },
+            { path: 'review-request', component: ReviewRequestComponent },
         ],
     },
 ];

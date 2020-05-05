@@ -1,0 +1,49 @@
+  button:focus {
+    outline: unset;
+  }
+
+
+  .view-details-header {
+    border-bottom: 1px solid #CDCDCD;
+    cursor: pointer;
+
+    h5 {
+      color: #003F84;
+      font-family: gulf-medium;
+      font-size: 14px;
+      letter-spacing: 0;
+    }
+
+    h4 {
+      color: #333333;
+      letter-spacing: 0;
+      font-size: 17px;
+      font-family: gulf-semibold;
+    }
+
+    p {
+      color: #666666;
+      font-size: 15px;
+      font-family: gulf-text;
+      display: inline-block;
+      margin-left: 40px;
+    }
+  }
+
+  .view-details-content {
+    margin-top: 25px;
+
+    h6 {
+      font-family: gulf-semibold;
+      font-size: 14px;
+      letter-spacing: 0;
+    }
+
+    p {
+      color: #666666;
+      letter-spacing: 0;
+      font-family: gulf-text;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
