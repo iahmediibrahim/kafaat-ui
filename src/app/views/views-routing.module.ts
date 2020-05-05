@@ -19,6 +19,7 @@ import { RecRequestComponent } from './company/rec-request/rec-request.component
 import { SeekerReviewComponent } from './seeker/seeker-review/seeker-review.component';
 import { RequestsComponent } from './company/requests/requests.component';
 import { OrgRequestComponent } from './company/org-request/org-request.component';
+import { AddJobDescriptionComponent } from './recruiter/add-job-description/add-job-description.component';
 
 const routes: Routes = [
 	{
@@ -45,7 +46,8 @@ const routes: Routes = [
 			{ path: 'subscripe', component: SubscripeComponent },
 			{ path: 'subscriptions', component: SubscriptionsComponent },
 			{ path: 'seeker-review', component: SeekerReviewComponent },
-			{ path: 'subscripe', component: SubscripeComponent }
+			{ path: 'subscripe', component: SubscripeComponent },
+			{ path: 'hr-add-new-job-description', component: AddJobDescriptionComponent }
 		]
 	}
 ];

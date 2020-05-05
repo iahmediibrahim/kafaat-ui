@@ -27,6 +27,8 @@ import { SeekerReviewComponent } from './seeker/seeker-review/seeker-review.comp
 import { RequestsComponent } from './company/requests/requests.component';
 import { OrgRequestComponent } from './company/org-request/org-request.component';
 import { ReqConfirmComponent } from './company/req-confirm/req-confirm.component';
+import { AddJobDescriptionComponent } from './recruiter/add-job-description/add-job-description.component';
+import { JobDescriptionConfirmComponent } from './recruiter/job-description-confirm/job-description-confirm.component';
 @NgModule({
 	declarations: [
 		LandingComponent,
@@ -52,7 +54,9 @@ import { ReqConfirmComponent } from './company/req-confirm/req-confirm.component
 		SeekerReviewComponent,
 		RequestsComponent,
 		OrgRequestComponent,
-		ReqConfirmComponent
+		ReqConfirmComponent,
+		AddJobDescriptionComponent,
+		JobDescriptionConfirmComponent
 	],
 	imports: [ CommonModule, ViewsRoutingModule, SharedModule, CarouselModule.forRoot() ]
 })

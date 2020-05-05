@@ -10,7 +10,7 @@ import { ViewJobDescriptionComponent } from '../view-job-description/view-job-de
 export class JobDescriptionComponent implements OnInit {
 	constructor(private modalService: NgbModal) {}
 	viewJobDescription() {
-		const modalRef = this.modalService.open(ViewJobDescriptionComponent);
+		const modalRef = this.modalService.open(ViewJobDescriptionComponent, { size: 'lg' });
 		modalRef.componentInstance.name = 'World';
 	}
 	ngOnInit(): void {}

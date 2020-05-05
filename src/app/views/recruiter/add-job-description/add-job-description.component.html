@@ -1,0 +1,66 @@
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item text-dark" aria-current="page">
+            <i class="fa fa-home" style="font-size: 28px;" aria-hidden="true"></i></li>
+          <li class="breadcrumb-item d-flex align-items-center" aria-current="page">
+            <p class="m-0 font-semibold">الشركات</p>
+          </li>
+          <li class="breadcrumb-item d-flex align-items-center" aria-current="page">
+            <p class="m-0 font-semibold">الأوصاف الوظيفية</p>
+          </li>
+          <li class="breadcrumb-item active d-flex align-items-center" aria-current="page">
+            <p class="m-0 font-semibold">إضافة وصف وظيفي جديد</p>
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <div class="col-md-12">
+      <h4 class="main-title m-0 mb-3">
+        <i class="fa fa-user-o" aria-hidden="true"></i>
+        قائمة الأوصاف الوظيفية
+      </h4>
+    </div>
+    <div class="col-md-12">
+      <div class="card-content">
+        <div class="row">
+          <div class="form-group col-md-4">
+            <label for="firstName">المسمى الوظيفي</label>
+            <input class="form-control" type="text" required ngModel name="firstName" #firstName="ngModel">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="middleName">التخصص</label>
+            <input class="form-control" type="text" required ngModel name="middleName" #middleName="ngModel">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-8">
+            <label for="middleName">مسئوليات الوظيفة</label>
+            <textarea class="form-control" rows="6" required ngModel name="middleName" #middleName="ngModel"></textarea>
+          </div>
+          <div class="form-group col-md-8">
+            <label for="middleName">متطلبات الوظيفة</label>
+            <textarea class="form-control" rows="6" required ngModel name="middleName" #middleName="ngModel"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <button class="btn btn-lg btn-outline-primary my-4">
+              <span class="font-16 mx-4">
+                <i class="fa fa-plus font-16" aria-hidden="true"></i>
+                إضافة حقل آخر
+              </span>
+            </button> </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-2">
+      <button class="btn btn-block btn-primary my-4" (click)="open()">
+        حفظ
+      </button>
+    </div>
+  </div>
+</div>
