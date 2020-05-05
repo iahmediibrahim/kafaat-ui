@@ -3,16 +3,16 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { JobDescriptionConfirmComponent } from '../../modals/job-description-confirm/job-description-confirm.component';
 
 @Component({
-	selector: 'app-add-job-description',
-	templateUrl: './add-job-description.component.html',
-	styleUrls: [ './add-job-description.component.scss' ]
+    selector: 'app-add-job-description',
+    templateUrl: './add-job-description.component.html',
+    styleUrls: [ './add-job-description.component.scss' ],
 })
 export class AddJobDescriptionComponent implements OnInit {
-	constructor(private modalService: NgbModal) {}
+    constructor(private modalService: NgbModal) {}
 
-	open() {
-		const modalRef = this.modalService.open(JobDescriptionConfirmComponent);
-		modalRef.componentInstance.name = 'World';
-	}
-	ngOnInit(): void {}
+    open() {
+        const modalRef = this.modalService.open(JobDescriptionConfirmComponent);
+        modalRef.componentInstance.name = 'World';
+    }
+    ngOnInit(): void {}
 }
