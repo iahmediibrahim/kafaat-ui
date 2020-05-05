@@ -13,6 +13,7 @@ import { RegistrationRequestsComponent } from './recruiter/registration-requests
 import { ReviewRequestComponent } from './recruiter/registration-requests/review-request/review-request.component';
 import { SeekerReviewComponent } from './recruiter/registration-requests/seeker-review/seeker-review.component';
 import { HrReviewRequestComponent } from './recruiter/eligibility-evaluation/hr-review-request/hr-review-request.component';
+import { HrRequestRecomendationComponent } from './recruiter/eligibility-evaluation/hr-request-recomendation/hr-request-recomendation/hr-request-recomendation.component';
 
 @NgModule({
     declarations: [
@@ -27,6 +28,7 @@ import { HrReviewRequestComponent } from './recruiter/eligibility-evaluation/hr-
         RejectRequestComponent,
         ViewJobDescriptionComponent,
         HrReviewRequestComponent,
+        HrRequestRecomendationComponent,
     ],
     imports: [ CommonModule, RecruiterRoutingModule, SharedModule ],
 })

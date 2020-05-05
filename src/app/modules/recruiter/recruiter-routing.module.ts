@@ -6,27 +6,30 @@ import { RecommendationRequestComponent } from './recruiter/recommendation-reque
 import { ReviewRequestComponent } from './recruiter/registration-requests/review-request/review-request.component';
 import { SeekerReviewComponent } from './recruiter/registration-requests/seeker-review/seeker-review.component';
 import { JobDescriptionComponent } from './recruiter/job-description/job-description/job-description.component';
-import { AddJobDescriptionComponent } from './recruiter/job-description/add-job-description/add-job-description.component';
 import { HrReviewRequestComponent } from './recruiter/eligibility-evaluation/hr-review-request/hr-review-request.component';
+import { HrRequestRecomendationComponent } from './recruiter/eligibility-evaluation/hr-request-recomendation/hr-request-recomendation/hr-request-recomendation.component';
+import { AddJobDescriptionComponent } from './recruiter/job-description/add-job-description/add-job-description.component';
+
 const routes: Routes = [
-    {
-        path: '',
-        children: [
-            { path: '', component: RecruiterDashboardComponent },
-            { path: 'regs-req', component: RegistrationRequestsComponent },
-            { path: 'recommendation-req', component: RecommendationRequestComponent },
-            { path: 'review-request', component: ReviewRequestComponent },
-            { path: 'seeker-review', component: SeekerReviewComponent },
-            { path: 'job-description', component: JobDescriptionComponent },
-            { path: 'hr-review-request', component: HrReviewRequestComponent },
-            { path: 'hr-add-new-job-description', component: AddJobDescriptionComponent },
-            { path: '**', redirectTo: '' },
-        ],
-    },
+	{
+		path: '',
+		children: [
+			{ path: '', component: RecruiterDashboardComponent },
+			{ path: 'regs-req', component: RegistrationRequestsComponent },
+			{ path: 'recommendation-req', component: RecommendationRequestComponent },
+			{ path: 'review-request', component: ReviewRequestComponent },
+			{ path: 'seeker-review', component: SeekerReviewComponent },
+			{ path: 'job-description', component: JobDescriptionComponent },
+			{ path: 'hr-review-request', component: HrReviewRequestComponent },
+			{ path: 'hr-request-recomendation', component: HrRequestRecomendationComponent },
+			{ path: 'hr-add-new-job-description', component: AddJobDescriptionComponent },
+			{ path: '**', redirectTo: '' }
+		]
+	}
 ];
 
 @NgModule({
-    imports: [ RouterModule.forChild(routes) ],
-    exports: [ RouterModule ],
+	imports: [ RouterModule.forChild(routes) ],
+	exports: [ RouterModule ]
 })
 export class RecruiterRoutingModule {}
