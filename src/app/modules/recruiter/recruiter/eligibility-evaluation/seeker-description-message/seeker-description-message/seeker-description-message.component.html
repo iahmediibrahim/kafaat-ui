@@ -1,0 +1,25 @@
+<div class="modal-header border-0" dir="ltr">
+  <button type="button" class="close position-absolute font-roboto" aria-label="Close"
+    (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 text-center">
+        <h5 class="text-primary text-semiBold mt-2">
+          #003F84
+        </h5>
+        <p class="text-muted"> تم إضافة 50 نقطة الي رصيدك</p>
+        <p class="text-muted">رصيد نقاطك الحالي 860 نقطة</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="modal-footer text-center pt-0 ">
+  <div class="col-md-4 m-auto">
+    <button type="button" class="btn btn-primary btn-block" (click)="activeModal.close('Close click')">موافق</button>
+  </div>
+</div>

@@ -14,6 +14,9 @@ import { ReviewRequestComponent } from './recruiter/registration-requests/review
 import { SeekerReviewComponent } from './recruiter/registration-requests/seeker-review/seeker-review.component';
 import { HrReviewRequestComponent } from './recruiter/eligibility-evaluation/hr-review-request/hr-review-request.component';
 import { HrRequestRecomendationComponent } from './recruiter/eligibility-evaluation/hr-request-recomendation/hr-request-recomendation/hr-request-recomendation.component';
+import { RequestProblemComponent } from './recruiter/eligibility-evaluation/request-problem/request-problem/request-problem.component';
+import { SearchRecomendedComponent } from './recruiter/eligibility-evaluation/search-recomended/search-recomended/search-recomended.component';
+import { SeekerDescriptionMessageComponent } from './recruiter/eligibility-evaluation/seeker-description-message/seeker-description-message/seeker-description-message.component';
 
 @NgModule({
     declarations: [
@@ -29,6 +32,9 @@ import { HrRequestRecomendationComponent } from './recruiter/eligibility-evaluat
         ViewJobDescriptionComponent,
         HrReviewRequestComponent,
         HrRequestRecomendationComponent,
+        RequestProblemComponent,
+        SearchRecomendedComponent,
+        SeekerDescriptionMessageComponent,
     ],
     imports: [ CommonModule, RecruiterRoutingModule, SharedModule ],
 })
