@@ -12,11 +12,15 @@ export class ReviewRequestComponent implements OnInit {
     constructor(private modalService: NgbModal) {}
 
     open() {
-        const modalRef = this.modalService.open(AccReqComponent);
+        const modalRef = this.modalService.open(AccReqComponent, { centered: true });
         modalRef.componentInstance.name = 'World';
     }
     openRejRequest() {
-        const modalRef = this.modalService.open(RejectRequestComponent);
+        const modalRef = this.modalService.open(RejectRequestComponent, {
+            size: 'lg',
+            windowClass: 'big-modal',
+            centered: true,
+        });
         modalRef.componentInstance.name = 'World';
     }
     ngOnInit(): void {}

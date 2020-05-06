@@ -107,13 +107,6 @@ body {
   font-family: Roboto;
 }
 
-.font-16 {
-  font-size: 16px;
-}
-
-.font-18 {
-  font-size: 18px;
-}
 
 .text-primary {
   color: $main-color !important;
@@ -198,13 +191,6 @@ h6 {
   line-height: 1.5em;
 }
 
-.main-title {
-  color: $main-color;
-  font-size: 20px;
-  font-family: gulf-medium !important;
-  letter-spacing: 0;
-  font-weight: bold;
-}
 
 .btn {
   border-radius: 5px;
@@ -750,4 +736,23 @@ label {
   font-family: gulf-semibold;
   font-size: 17px;
   color: #333333;
+}
+
+.big-modal {
+  .modal-content {
+    max-width: 665px;
+    margin: 0 auto;
+
+  }
+}
+
+.modal-content {
+  button:focus {
+    outline: unset !important;
+  }
+
+  textarea {
+    border: 1px solid #666666;
+    border-radius: 5px;
+  }
 }
