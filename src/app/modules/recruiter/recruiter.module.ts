@@ -13,10 +13,10 @@ import { RegistrationRequestsComponent } from './recruiter/registration-requests
 import { ReviewRequestComponent } from './recruiter/registration-requests/review-request/review-request.component';
 import { SeekerReviewComponent } from './recruiter/registration-requests/seeker-review/seeker-review.component';
 import { HrReviewRequestComponent } from './recruiter/eligibility-evaluation/hr-review-request/hr-review-request.component';
-import { HrRequestRecomendationComponent } from './recruiter/eligibility-evaluation/hr-request-recomendation/hr-request-recomendation/hr-request-recomendation.component';
-import { RequestProblemComponent } from './recruiter/eligibility-evaluation/request-problem/request-problem/request-problem.component';
-import { SearchRecomendedComponent } from './recruiter/eligibility-evaluation/search-recomended/search-recomended/search-recomended.component';
-import { SeekerDescriptionMessageComponent } from './recruiter/eligibility-evaluation/seeker-description-message/seeker-description-message/seeker-description-message.component';
+import { HrRequestRecomendationComponent } from './recruiter/eligibility-evaluation/hr-request-recomendation/hr-request-recomendation.component';
+import { RequestProblemComponent } from './recruiter/eligibility-evaluation/request-problem/request-problem.component';
+import { SearchRecomendedComponent } from './recruiter/eligibility-evaluation/search-recomended/search-recomended.component';
+import { SeekerDescriptionMessageComponent } from './recruiter/eligibility-evaluation/seeker-description-message/seeker-description-message.component';
 
 @NgModule({
     declarations: [
