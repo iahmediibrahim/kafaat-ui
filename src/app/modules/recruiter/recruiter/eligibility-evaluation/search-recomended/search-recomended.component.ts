@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { SeekerDescriptionMessageComponent } from '../seeker-description-message/seeker-description-message.component';
+import { SeekerDescriptionMessageComponent } from '../../modals/seeker-description-message/seeker-description-message.component';
 
 @Component({
     selector: 'app-search-recomended',

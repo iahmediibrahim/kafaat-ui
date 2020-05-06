@@ -7,7 +7,7 @@ import { ReviewRequestComponent } from './recruiter/registration-requests/review
 import { SeekerReviewComponent } from './recruiter/registration-requests/seeker-review/seeker-review.component';
 import { JobDescriptionComponent } from './recruiter/job-description/job-description/job-description.component';
 import { HrReviewRequestComponent } from './recruiter/eligibility-evaluation/hr-review-request/hr-review-request.component';
-import { HrRequestRecomendationComponent } from './recruiter/eligibility-evaluation/hr-request-recomendation/hr-request-recomendation.component';
+import { HrRequestRecomendationComponent } from './recruiter/recommendation-request/hr-request-recomendation/hr-request-recomendation.component';
 import { AddJobDescriptionComponent } from './recruiter/job-description/add-job-description/add-job-description.component';
 import { SearchRecomendedComponent } from './recruiter/eligibility-evaluation/search-recomended/search-recomended.component';
 const routes: Routes = [

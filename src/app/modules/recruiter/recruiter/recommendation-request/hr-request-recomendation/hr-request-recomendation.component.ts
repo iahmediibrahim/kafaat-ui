@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { RequestProblemComponent } from '../request-problem/request-problem.component';
+import { RequestProblemComponent } from '../../eligibility-evaluation/request-problem/request-problem.component';
 @Component({
     selector: 'app-hr-request-recomendation',
     templateUrl: './hr-request-recomendation.component.html',
