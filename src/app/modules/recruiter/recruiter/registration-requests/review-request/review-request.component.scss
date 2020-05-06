@@ -1,10 +1,19 @@
 .card-content {
+  background: #FFFFFF;
   border: 1px solid #CDCDCD;
+  border-radius: 5px;
   padding: 20px;
   margin-top: 15px;
 
   .info-card {
     padding-top: 15px;
+    border-bottom: 1px solid #CDCDCD;
+    margin: 15px;
+
+    span.text-blue {
+      font-family: gulf-bold;
+
+    }
 
     &:first-child {
       padding-top: 0 !important;
