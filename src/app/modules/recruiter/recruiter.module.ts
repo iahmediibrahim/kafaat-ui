@@ -17,6 +17,7 @@ import { HrRequestRecomendationComponent } from './recruiter/recommendation-requ
 import { RequestProblemComponent } from './recruiter/modals/request-problem/request-problem.component';
 import { SearchRecomendedComponent } from './recruiter/recommendation-request/search-recomended/search-recomended.component';
 import { SeekerDescriptionMessageComponent } from './recruiter/modals/seeker-description-message/seeker-description-message.component';
+import { ReqMeetupComponent } from './recruiter/modals/req-meetup/req-meetup.component';
 
 @NgModule({
     declarations: [
@@ -35,6 +36,7 @@ import { SeekerDescriptionMessageComponent } from './recruiter/modals/seeker-des
         RequestProblemComponent,
         SearchRecomendedComponent,
         SeekerDescriptionMessageComponent,
+        ReqMeetupComponent,
     ],
     imports: [ CommonModule, RecruiterRoutingModule, SharedModule ],
 })

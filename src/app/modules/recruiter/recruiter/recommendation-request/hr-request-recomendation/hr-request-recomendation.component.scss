@@ -1,3 +1,9 @@
+//responsive breakpoints
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+
 .card-content {
   border: unset;
   background: #FFFFFF;
@@ -14,19 +20,19 @@
 
 }
 
-.view-details-content {
-  ul {
-    li {
-      padding: 5px 0;
-      color: #666666;
-      font-size: 15px;
-    }
-  }
-}
 
 a {
   align-self: center;
   text-decoration: underline;
   color: #FA6457;
   cursor: pointer;
+}
+
+.d-grid {
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: 1fr;
+  }
+
+
 }

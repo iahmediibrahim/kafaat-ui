@@ -11,7 +11,7 @@ export class SearchRecomendedComponent implements OnInit {
     constructor(private modalService: NgbModal) {}
 
     openSeekerDescription() {
-        const modalRef = this.modalService.open(SeekerDescriptionMessageComponent, { size: 'lg' });
+        const modalRef = this.modalService.open(SeekerDescriptionMessageComponent, { size: 'lg', centered: true });
         modalRef.componentInstance.name = 'World';
     }
     ngOnInit(): void {}

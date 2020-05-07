@@ -24,14 +24,66 @@
   </div>
 
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 mb-4">
+      <div class="my-3 requests recommended">
+        <ngb-accordion [closeOthers]="true" #ccc="ngbAccordion" activeIds="custom-panel-0">
+          <ngb-panel id="custom-panel-0">
+            <ng-template ngbPanelHeader let-opened="opened">
+              <div class="d-grid panel-header w-100">
+                <div class="d-flex flex-column my-2">
+                  <h5> البحث عن مرشحين لوظيفة <span class="text-primary">مدير حسابات</span> لصالح <span
+                      class="text-primary">شركة
+                      الأمل</span>
+                  </h5>
+                  <div class="d-flex items flex-wrap pb-2">
+                    <p class="my-1 text-muted pl-2"><i aria-hidden="true" class="fa fa-map-marker pl-1"></i> الرياض
+                    </p>
+                    <p class="my-1 text-muted pl-2"><i aria-hidden="true" class="fa fa-building-o pl-1"></i> تشييد /
+                      مقاولات</p>
+                    <p class="my-1 text-muted pl-2"><i aria-hidden="true" class="fa fa-user pl-1"></i> خبرة 4 سنوات</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-end my-2">
+                  <button ngbPanelToggle class="btn "
+                    [ngClass]="{'btn-primary': opened, 'btn-outline-primary': !opened}">
+                    <i class="fa fa-arrows-v pl-2" aria-hidden="true"></i>
+                    <span *ngIf="!opened">تفاصيل أكثر</span>
+                    <span *ngIf="opened">تفاصيل أقل</span>
+                  </button>
+                </div>
+              </div>
+
+            </ng-template>
+            <ng-template ngbPanelContent>
+              <div class="row">
+                <div class="col-md-3">
+                  <h6 class="text-dark">ملاحظات الوظيفه</h6>
+                </div>
+                <div class="col-md-9">
+                  <ul class="list-unstyled p-0">
+                    <li class="text-muted"> - من فضلك أرفق
+                      صورة واضحة لشهادة الخبرة المتعلقة بـ (مدير حسابات في شركة الحياة)</li>
+                    <li class="text-muted"> - من فضلك أرفق
+                      صورة واضحة لشهادة الخبرة المتعلقة بـ (مدير حسابات في شركة الحياة)</li>
+                    <li class="text-muted"> - من فضلك أرفق
+                      صورة واضحة لشهادة الخبرة المتعلقة بـ (مدير حسابات في شركة الحياة)</li>
+                    <li class="text-muted"> - من فضلك أرفق
+                      صورة واضحة لشهادة الخبرة المتعلقة بـ (مدير حسابات في شركة الحياة)</li>
+                  </ul>
+                </div>
+              </div>
+            </ng-template>
+          </ngb-panel>
+
+        </ngb-accordion>
+      </div>
+
+    </div>
+    <!-- right side -->
+
+    <div class="col-md-9 list mt-3">
       <h4 class="text-primary font-bold"><i aria-hidden="true" class="fa fa-user pl-2"></i>
         قائمة المرشحين </h4>
-    </div>
-  </div>
-  <div class="row">
-    <!-- right side -->
-    <div class="col-md-9 list">
       <!-- seeker card -->
       <div class="card-content">
         <div class="row align-items-center">
@@ -43,7 +95,7 @@
               </span>
             </div>
           </div>
-          <div class="col-md-2 text-center">
+          <div class="col-md-2 text-center my-3">
             <button class="btn btn-outline-primary" (click)="openSeekerDescription()">تفاصيل</button>
           </div>
           <div class="col-md-10 d-flex items flex-wrap pb-2">
@@ -79,7 +131,7 @@
               </span>
             </div>
           </div>
-          <div class="col-md-2 text-center">
+          <div class="col-md-2 text-center my-3">
             <button class="btn btn-outline-primary" (click)="openSeekerDescription()">تفاصيل</button>
           </div>
           <div class="col-md-10 d-flex items flex-wrap pb-2">
@@ -115,7 +167,7 @@
               </span>
             </div>
           </div>
-          <div class="col-md-2 text-center">
+          <div class="col-md-2 text-center my-3">
             <button class="btn btn-outline-primary" (click)="openSeekerDescription()">تفاصيل</button>
           </div>
           <div class="col-md-10 d-flex items flex-wrap pb-2">
@@ -151,7 +203,7 @@
               </span>
             </div>
           </div>
-          <div class="col-md-2 text-center">
+          <div class="col-md-2 text-center my-3">
             <button class="btn btn-outline-primary" (click)="openSeekerDescription()">تفاصيل</button>
           </div>
           <div class="col-md-10 d-flex items flex-wrap pb-2">
@@ -187,7 +239,7 @@
               </span>
             </div>
           </div>
-          <div class="col-md-2 text-center">
+          <div class="col-md-2 text-center my-3">
             <button class="btn btn-outline-primary" (click)="openSeekerDescription()">تفاصيل</button>
           </div>
           <div class="col-md-10 d-flex items flex-wrap pb-2">
@@ -210,10 +262,15 @@
         </div>
       </div>
       <!-- /seeker card -->
+      <div class="row justify-content-center">
+        <div class="col-md-3 mx-5 text-center"><button class="btn btn-lg btn-primary my-4 py-2"><span class="mx-5">
+              المزيد </span></button>
+        </div>
+      </div>
     </div>
     <!-- /right side -->
     <!-- left side -->
-    <div class="col-md-3">
+    <div class="col-md-3 mt-3">
       <form>
         <div class="form-group">
           <label for="speciality">قطاع عمل الشركة</label>

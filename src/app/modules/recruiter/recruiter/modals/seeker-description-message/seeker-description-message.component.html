@@ -7,35 +7,39 @@
 <div class="modal-body">
   <div class="container">
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-7">
         <h5 class="text-primary text-semiBold font-16">
           عمار عبد العزيز راشد
         </h5>
-        <p class="my-1 text-dark">
-          <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+        <p class="my-2 text-dark">
+          <i class="fa fa-briefcase pl-1" aria-hidden="true"></i>
+          عمل لدى شركة أرامكو حتى يناير 2020 </p>
+        <p class="my-2 text-dark">
+          <i class="fa fa-graduation-cap pl-1" aria-hidden="true"></i>
           دبلومة التجارة من جامعة القاهرة
         </p>
         <div class="d-flex items flex-wrap pb-2">
-          <p class="my-1 text-muted pl-3">
+          <p class="my-1 text-dark pl-3">
             <i class="fa fa-map-marker pl-1" aria-hidden="true"></i>
             الرياض</p>
-          <p class="my-1 text-muted  pl-3">
-            <i class="fa fa-building-o pl-1" aria-hidden="true"></i>
-            تشييد / مقاولات</p>
-          <p class="my-1 text-muted  pl-3">
+
+          <p class="my-1 text-dark  pl-3">
             <i class="fa fa-user pl-1" aria-hidden="true"></i>
             خبرة 1 -3 سنوات</p>
-          <p class="my-1 text-muted  pl-3">
-            <i class="fa fa-address-book" aria-hidden="true"></i>
+          <p class="my-1 text-dark  pl-3">
+            <i class="fa fa-user-circle-o pl-1" aria-hidden="true"></i>
             35 عام</p>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="bg-primary text-primary text-center pt-4 pb-3">
-          <p>نسبة مناسبته للوظيفة</p>
-          <p>
-            <strong style="font-size: 30px;">98%</strong>
-          </p>
+      <div class="col-md-5 ">
+        <div class="bg-primary d-flex align-items-center ml-4">
+          <div class="w-100 text-primary text-center">
+            <p class="mb-4">نسبة مناسبته للوظيفة</p>
+            <p>
+              <strong class="font-roboto" style="font-size: 46px;">98%</strong>
+            </p>
+          </div>
+
         </div>
       </div>
       <div class="col-md-12">
@@ -66,7 +70,18 @@
   </div>
 </div>
 <div class="modal-footer text-center pt-0 ">
-  <div class="col-md-4 m-auto">
-    <button type="button" class="btn btn-primary btn-block" (click)="activeModal.close('Close click')">موافق</button>
+  <div class="col-md-12">
+    <div class="mt-4">
+      <div class="d-grid">
+        <div class="text-right my-2">
+          <button class="btn btn-primary py-2 px-4  btn-lg">الملف الشخصي</button>
+        </div>
+        <div class="d-grid">
+          <button class="btn btn-outline-primary btn-lg py-2 px-4 my-2" (click)="openReqMeetup()">
+            طلب مقابلة
+          </button>
+          <button class="btn btn-outline-primary btn-lg py-2 px-4  my-2"> ترشيح </button></div>
+      </div>
+    </div>
   </div>
 </div>
