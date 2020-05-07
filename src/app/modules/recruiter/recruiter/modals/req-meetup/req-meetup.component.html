@@ -1,0 +1,113 @@
+<div class="modal-header border-0" dir="ltr">
+  <button type="button" class="close position-absolute font-roboto" aria-label="Close"
+    (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body p-0">
+  <div class="container">
+    <div class="row justify-content-center px-3">
+      <div class="col-md-12">
+        <h6 class="text-primary mb-3">
+          <span class="text-primary font-medium">طلب مقابلة مع</span> أحمد محمد
+        </h6>
+        <p class="text-muted mt-2">
+          <span class="text-info pl-2">
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+            تحديد الموعد
+          </span>
+          <span style="font-size: 13px;"> يمكنك تحديد أكثر من موعد ليختار المستخدم المناسب منهم
+          </span>
+        </p>
+      </div>
+      <div class="col-md-12">
+        <div class="text-dark new-date font-bold d-flex align-items-center justify-content-between">
+          <p class="pl-2">
+            <i class="fa fa-calendar pl-2" aria-hidden="true"></i>
+            الموعد الاول</p>
+          <p class="px-2">12 يناير</p>
+          <p class="px-2">11-12 AM</p>
+          <p class="px-2">بعد 5 أيام</p>
+          <div class="mr-auto">
+            <a href="" class="btn btn-link text-primary p-1">
+              <i class="fa fa-edit" aria-hidden="true"></i>
+            </a>
+            <a href="" class="btn btn-link text-danger p-1">
+              <i class="fa fa-trash-o" aria-hidden="true"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="text-dark new-date font-bold d-flex align-items-center justify-content-between">
+          <p class="pl-2">
+            <i class="fa fa-calendar pl-2" aria-hidden="true"></i>
+            الموعد الاول</p>
+          <p class="px-2">12 يناير</p>
+          <p class="px-2">11-12 AM</p>
+          <p class="px-2">بعد 5 أيام</p>
+          <div class="mr-auto">
+            <a href="" class="btn btn-link text-primary p-1">
+              <i class="fa fa-edit" aria-hidden="true"></i>
+            </a>
+            <a href="" class="btn btn-link text-danger p-1">
+              <i class="fa fa-trash-o" aria-hidden="true"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="col-md-12">
+        <form>
+          <div class="form-group row">
+            <div class="col-md-8">
+              <label for="id">
+                اليوم</label>
+              <div class="d-flex">
+                <div class="input-group ml-2"><select id="exampleFormControlSelect1" class="form-control">
+                    <option>يوم</option>
+
+                  </select><span class="select-arrow position-absolute"><i class="fa fa-angle-down"
+                      style="color: inherit;"></i></span></div>
+                <div class="input-group ml-2"><select id="exampleFormControlSelect1" class="form-control">
+                    <option>شهر</option>
+
+                  </select><span class="select-arrow position-absolute"><i class="fa fa-angle-down"
+                      style="color: inherit;"></i></span></div>
+
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="id">
+                الساعة</label>
+              <input type="time" class="form-control">
+            </div>
+          </div>
+          <a href="" class="btn btn-link text-info">
+            <i class="fa fa-plus pl-2" aria-hidden="true"></i>
+            إضافة موعد جديد
+          </a>
+        </form>
+      </div>
+    </div>
+    <div class="row justify-content-cente text-center">
+      <div class="col-md-12 text-center">
+        <div class="icon-checked mb-3">
+          <img src="../../../../../assets/images/pages/recuiter/action-check-circle-checkmark.svg">
+        </div>
+        <h6 class="text-primary mb-3">
+          <span class="text-primary font-medium">طلب مقابلة مع</span> أحمد محمد
+        </h6>
+        <p class="text-muted mt-2">تم ارسال الطلب. سيصلك تنبيه عندما يرد احمد علي الطلب</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="modal-footer row justify-content-center text-center pt-4">
+  <div class="col-md-4 mb-3">
+    <button type="button" class="btn btn-primary btn-block py-2" (click)="activeModal.close('Close click')">إرسال
+    </button>
+  </div>
+</div>

@@ -1,3 +1,30 @@
+//responsive breakpoints
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+
 button:focus {
   outline: unset;
+}
+
+.bg-primary {
+  border-radius: 5px;
+  background: rgb(63, 155, 200, .2) !important;
+  height: 170px;
+
+}
+
+.badges .badge-info {
+
+  font-size: 16px;
+}
+
+.d-grid {
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: 1fr;
+  }
+
+
 }

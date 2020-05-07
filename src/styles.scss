@@ -174,11 +174,11 @@ body {
 }
 
 .text-muted {
-  color: #666666;
+  color: #666666 !important;
 }
 
 .text-dark {
-  color: #333333;
+  color: #333333 !important;
 }
 
 h1,
@@ -754,5 +754,23 @@ label {
   textarea {
     border: 1px solid #666666;
     border-radius: 5px;
+  }
+}
+
+.requests.recommended {
+  .card-header {
+    background: #fff !important;
+
+  }
+}
+
+.view-details-content {
+  ul {
+
+    li {
+      padding: 5px 0;
+      color: #666666;
+      font-size: 15px;
+    }
   }
 }

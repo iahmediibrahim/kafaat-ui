@@ -1,3 +1,9 @@
+//responsive breakpoints
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+
 .card-content {
   background-color: #fff;
   box-shadow: 0px 10px 35px #003F841A;
@@ -5,4 +11,46 @@
   padding: 25px;
   margin-bottom: 15px;
   border-radius: 5px;
+}
+
+.requests {
+
+
+  .alert.err {
+    margin: -1.25rem;
+
+    i {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  ul {
+    li {
+      font-size: 16px;
+
+    }
+  }
+
+  .d-grid {
+    display: grid;
+    grid-column-gap: 15px;
+
+    &.panel-header {
+      grid-template-columns: 2fr 1fr;
+
+      @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: 1fr;
+      }
+
+      img {
+        width: 33px;
+        height: 33px;
+      }
+    }
+  }
+
 }
