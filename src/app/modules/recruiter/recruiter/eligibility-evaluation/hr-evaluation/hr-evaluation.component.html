@@ -34,21 +34,17 @@
                 <div class="media">
                   <div class="media-body mr-3">
                     <div class="header d-flex flex-wrap justify-content-between  align-items-center">
-                      <h2 class="text-primary mb-4">أهلا بك يا محمد</h2>
+                      <h4 class="text-primary mb-4">أحمد محمد أحمد</h4>
                       <div>
-                        <button class="btn btn-primary btn-lg px-4 mb-4"
-                          routerLink="/recruiter/recommendation-req">متابعة طلب
-                          ترشيح</button>
-                        <div ngbDropdown class="d-inline-block">
-                          <button class="btn btn-primary btn-lg px-4 mb-4 mr-3 more" id="more"
-                            ngbDropdownToggle>المزيد</button>
-                          <div class=" text-right" ngbDropdownMenu aria-labelledby="more">
-                            <button ngbDropdownItem>تدقيق طلبات التسجيل</button>
-                            <button ngbDropdownItem [routerLink]="['/recruiter/job-description']">اضافه وصف وظيفي
-                            </button>
-                            <button ngbDropdownItem>متابعه طلبات تقيم الاهليه</button>
-                            <button ngbDropdownItem>متابعه طلبات تقيم موظف او مرشح</button>
-                          </div>
+                        <button class="btn btn-primary px-4 mb-4" routerLink="/recruiter/recommendation-req">السيرة
+                          الذاتية
+                        </button>
+                        <div class="d-inline-block">
+                          <button class="btn btn-outline-primary text-info px-4 mb-4 mr-3">
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+
+                            linkedIn
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -82,7 +78,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-12 m-3  text-primary">
+              <div class="col-md-12 text-primary">
                 <h4>
                   <i class="fa fa-graduation-cap  ml-2" aria-hidden="true"></i>
                   المؤهلات العملية
@@ -92,10 +88,17 @@
               <div class="col-md-12 card-content-item p-4">
                 <!-- Media middle -->
                 <div class="media">
-                  <img src="../../../../assets/images/c-image.png" class="align-self-top" style="width:60px">
+                  <img src="../../../../../../assets/images/pages/recuiter/university_logo.png" class="align-self-top"
+                    style="width:60px">
 
                   <div class="media-body mr-3">
-                    <p class="text-dark">درجة البكالوريوس في الصيدلة</p>
+                    <div class="header d-flex flex-wrap justify-content-between  align-items-center">
+                      <p class="text-dark">درجة البكالوريوس في الصيدلة</p>
+                      <div>
+                        <a class=""> عرض الشهادة
+                        </a>
+                      </div>
+                    </div>
                     <div class="d-flex items flex-wrap pb-2">
                       <p class="my-1 text-muted ml-4">
                         جامعة الملك فهد ، المملكة العربية السعودية</p>
@@ -117,10 +120,17 @@
               <div class="col-md-12 card-content-item p-4">
                 <!-- Media middle -->
                 <div class="media">
-                  <img src="../../../../assets/images/c-image.png" class="align-self-top" style="width:60px">
+                  <img src="../../../../../../assets/images/pages/recuiter/university_logo.png" class="align-self-top"
+                    style="width:60px">
 
                   <div class="media-body mr-3">
-                    <p class="text-dark">درجة الماجستير في الصيدلة</p>
+                    <div class="header d-flex flex-wrap justify-content-between  align-items-center">
+                      <p class="text-dark">درجة البكالوريوس في الصيدلة</p>
+                      <div>
+                        <a class="" routerLink="/recruiter/recommendation-req"> عرض الشهادة
+                        </a>
+                      </div>
+                    </div>
                     <div class="d-flex items flex-wrap pb-2">
                       <p class="my-1 text-muted ml-4">
                         جامعة الملك فهد ، المملكة العربية السعودية</p>
@@ -150,10 +160,17 @@
               <div class="col-md-12 card-content-item p-4">
                 <!-- Media middle -->
                 <div class="media">
-                  <img src="../../../../assets/images/c-image.png" class="align-self-top" style="width:60px">
+                  <img src="../../../../../../assets/images/pages/recuiter/company_logo.png" class="align-self-top"
+                    style="width:60px">
 
                   <div class="media-body mr-3">
-                    <p class="text-dark">صيدلي</p>
+                    <div class="header d-flex flex-wrap justify-content-between  align-items-center">
+                      <p class="text-dark">صيدلي</p>
+                      <div>
+                        <a class=""> عرض شهادة الخبرة
+                        </a>
+                      </div>
+                    </div>
                     <div class="d-flex items flex-wrap pb-2">
                       <p class="my-1 text-muted ml-4">
                         مستشفى السلام، القاهرة، مصر
@@ -199,11 +216,14 @@
       </div>
       <!--next button -->
       <div class="row">
-        <div class="col-md-3">
-          <button class="btn btn-lg btn-primary my-4 py-2">
-            طلب مقابلة
-          </button>
+        <!--  buttons-->
+        <div class="col-md-4 text-center mt-4">
+          <div class="d-grid">
+            <button class="btn btn-primary py-2" (click)="openReqMeetup()"> طلب مقابلة</button>
+            <button class="btn btn-outline-primary py-2" (click)="DirectEvaluate()"> تقييم مباشر</button>
+          </div>
         </div>
+        <!-- / buttons -->
       </div>
     </div>
   </div>
