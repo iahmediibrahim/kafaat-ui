@@ -1,7 +1,27 @@
 .card-content {
   border: unset;
-  padding: 25px 25px 25px 25px;
-  background-color: #fff;
+  background: #FFFFFF;
+  border: 1px solid #CDCDCD;
+  border-radius: 5px;
+}
+
+.items {
+  font-size: 15px;
+}
+
+.media {
+  padding: 1rem 2rem;
+
+}
+
+.view-details-content {
+  ul {
+    li {
+      padding: 5px 0;
+      color: #666666;
+      font-size: 15px;
+    }
+  }
 }
 
 a {
