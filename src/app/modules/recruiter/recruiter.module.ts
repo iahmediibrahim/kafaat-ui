@@ -20,24 +20,24 @@ import { SeekerDescriptionMessageComponent } from './recruiter/modals/seeker-des
 import { HrEvaluationComponent } from './recruiter/eligibility-evaluation/hr-evaluation/hr-evaluation.component';
 
 @NgModule({
-    declarations: [
-        RecruiterDashboardComponent,
-        RegistrationRequestsComponent,
-        RecommendationRequestComponent,
-        ReviewRequestComponent,
-        SeekerReviewComponent,
-        JobDescriptionComponent,
-        AccReqComponent,
-        JobDescriptionConfirmComponent,
-        RejectRequestComponent,
-        ViewJobDescriptionComponent,
-        HrReviewRequestComponent,
-        HrRequestRecomendationComponent,
-        RequestProblemComponent,
-        SearchRecomendedComponent,
-        SeekerDescriptionMessageComponent,
-        HrEvaluationComponent,
-    ],
-    imports: [ CommonModule, RecruiterRoutingModule, SharedModule ],
+	declarations: [
+		RecruiterDashboardComponent,
+		RegistrationRequestsComponent,
+		RecommendationRequestComponent,
+		ReviewRequestComponent,
+		SeekerReviewComponent,
+		JobDescriptionComponent,
+		AccReqComponent,
+		JobDescriptionConfirmComponent,
+		RejectRequestComponent,
+		ViewJobDescriptionComponent,
+		HrReviewRequestComponent,
+		HrRequestRecomendationComponent,
+		RequestProblemComponent,
+		SearchRecomendedComponent,
+		SeekerDescriptionMessageComponent,
+		HrEvaluationComponent
+	],
+	imports: [ CommonModule, RecruiterRoutingModule, SharedModule ]
 })
 export class RecruiterModule {}

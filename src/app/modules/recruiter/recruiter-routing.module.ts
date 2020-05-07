@@ -10,6 +10,7 @@ import { HrReviewRequestComponent } from './recruiter/eligibility-evaluation/hr-
 import { HrRequestRecomendationComponent } from './recruiter/recommendation-request/hr-request-recomendation/hr-request-recomendation.component';
 import { AddJobDescriptionComponent } from './recruiter/job-description/add-job-description/add-job-description.component';
 import { SearchRecomendedComponent } from './recruiter/recommendation-request/search-recomended/search-recomended.component';
+import { HrEvaluationComponent } from './recruiter/eligibility-evaluation/hr-evaluation/hr-evaluation.component';
 const routes: Routes = [
 	{
 		path: '',
@@ -24,6 +25,7 @@ const routes: Routes = [
 			{ path: 'hr-request-recomendation', component: HrRequestRecomendationComponent },
 			{ path: 'hr-search-recomended', component: SearchRecomendedComponent },
 			{ path: 'hr-add-new-job-description', component: AddJobDescriptionComponent },
+			{ path: 'hr-evaluationt', component: HrEvaluationComponent },
 			{ path: '**', redirectTo: '' }
 		]
 	}

@@ -1,1 +1,210 @@
-<p>hr-evaluation works!</p>
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item text-dark" aria-current="page">
+            <i class="fa fa-home" style="font-size: 28px;" aria-hidden="true"></i></li>
+          <li class="breadcrumb-item d-flex align-items-center" aria-current="page">
+            <p class="m-0 font-semibold">طالبى العمل</p>
+          </li>
+          <li class="breadcrumb-item d-flex align-items-center" aria-current="page">
+            <p class="m-0 font-semibold">طلبات التقييم</p>
+          </li>
+          <li class="breadcrumb-item active d-flex align-items-center" aria-current="page">
+            <p class="m-0 font-semibold">طلب تقييم جديد</p>
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <div class="col-md-12">
+
+      <!-- basic info section -->
+      <div class="col-md-12">
+        <h5 class="text-primary"> طلب تقييم الأهليه لسوق العمل / رقم 125478 </h5>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <!--card content-->
+          <div class="card-content mx-2 my-3">
+
+            <div class="row">
+              <div class="col-md-12 card-content-item ">
+                <!-- Media middle -->
+                <div class="media">
+                  <div class="media-body mr-3">
+                    <div class="header d-flex flex-wrap justify-content-between  align-items-center">
+                      <h2 class="text-primary mb-4">أهلا بك يا محمد</h2>
+                      <div>
+                        <button class="btn btn-primary btn-lg px-4 mb-4"
+                          routerLink="/recruiter/recommendation-req">متابعة طلب
+                          ترشيح</button>
+                        <div ngbDropdown class="d-inline-block">
+                          <button class="btn btn-primary btn-lg px-4 mb-4 mr-3 more" id="more"
+                            ngbDropdownToggle>المزيد</button>
+                          <div class=" text-right" ngbDropdownMenu aria-labelledby="more">
+                            <button ngbDropdownItem>تدقيق طلبات التسجيل</button>
+                            <button ngbDropdownItem [routerLink]="['/recruiter/job-description']">اضافه وصف وظيفي
+                            </button>
+                            <button ngbDropdownItem>متابعه طلبات تقيم الاهليه</button>
+                            <button ngbDropdownItem>متابعه طلبات تقيم موظف او مرشح</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex items flex-wrap pb-2">
+                      <p class="my-1 text-muted ml-4">
+                        <i class="fa fa-map-marker pl-1" aria-hidden="true"></i>
+                        الرياض , الرياض</p>
+                      <p class="my-1 text-muted ml-4">
+                        <i class="fa fa-user pl-1" aria-hidden="true"></i>
+                        سنوات الخبرة 3</p>
+                      <p class="my-1 text-muted ml-4">
+                        <i class="fa fa-file pl-1" aria-hidden="true"></i>
+                        ذكر / 24 سنة</p>
+                    </div>
+                    <div class="d-flex items flex-wrap pb-2">
+                      <p class="my-1 text-muted ml-4">
+                        <i class="fa fa-map-marker pl-1" aria-hidden="true"></i>
+                        يمكنني العمل في أماكن
+                        <span class="text-dark">
+                          الرياض , الدمام
+                        </span>
+                      </p>
+                      <p class="my-1 text-muted ml-4">
+                        <i class="fa fa-map-marker pl-1" aria-hidden="true"></i>
+                        يمكنني العمل في مجالات
+                        <span class="text-dark">
+                          طب/ مستشفيات
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 m-3  text-primary">
+                <h4>
+                  <i class="fa fa-graduation-cap  ml-2" aria-hidden="true"></i>
+                  المؤهلات العملية
+                </h4>
+
+              </div>
+              <div class="col-md-12 card-content-item p-4">
+                <!-- Media middle -->
+                <div class="media">
+                  <img src="../../../../assets/images/c-image.png" class="align-self-top" style="width:60px">
+
+                  <div class="media-body mr-3">
+                    <p class="text-dark">درجة البكالوريوس في الصيدلة</p>
+                    <div class="d-flex items flex-wrap pb-2">
+                      <p class="my-1 text-muted ml-4">
+                        جامعة الملك فهد ، المملكة العربية السعودية</p>
+
+                      <p class="my-1 text-dark">
+                        تقدير
+                        <span class="text-muted">جيد جدا</span>
+                      </p>
+                    </div>
+                    <div class="d-flex items flex-wrap pb-2">
+                      <p class="my-1 text-muted">
+                        يناير 2012 - يناير 2019
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 card-content-item p-4">
+                <!-- Media middle -->
+                <div class="media">
+                  <img src="../../../../assets/images/c-image.png" class="align-self-top" style="width:60px">
+
+                  <div class="media-body mr-3">
+                    <p class="text-dark">درجة الماجستير في الصيدلة</p>
+                    <div class="d-flex items flex-wrap pb-2">
+                      <p class="my-1 text-muted ml-4">
+                        جامعة الملك فهد ، المملكة العربية السعودية</p>
+
+                      <p class="my-1 text-dark">
+                        تقدير
+                        <span class="text-muted">جيد جدا</span>
+                      </p>
+                    </div>
+                    <div class="d-flex items flex-wrap pb-2">
+                      <p class="my-1 text-muted">
+                        يناير 2012 - يناير 2019
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12 m-3  text-primary">
+                <h4>
+                  <i class="fa fa-graduation-cap  ml-2" aria-hidden="true"></i>
+                  الخبرات العملية
+                </h4>
+
+              </div>
+              <div class="col-md-12 card-content-item p-4">
+                <!-- Media middle -->
+                <div class="media">
+                  <img src="../../../../assets/images/c-image.png" class="align-self-top" style="width:60px">
+
+                  <div class="media-body mr-3">
+                    <p class="text-dark">صيدلي</p>
+                    <div class="d-flex items flex-wrap pb-2">
+                      <p class="my-1 text-muted ml-4">
+                        مستشفى السلام، القاهرة، مصر
+                      </p>
+
+                      <p class="my-1 text-muted">
+                        دوام كامل
+                      </p>
+                      <p class="my-1 text-muted  ml-4">
+                        (صحة / مستشفيات / صيدلة)
+                      </p>
+                    </div>
+                    <div class="d-flex items flex-wrap pb-2">
+                      <p class="my-1 text-muted  ml-4">
+                        يناير 2012 - يناير 2019
+                      </p>
+                    </div>
+                    <ul>
+                      <li>
+                        مراجعة وتنفيذ وصفات الطبيب للتحقق من ملاءمتها.
+                      </li>
+                      <li>
+                        مراجعة وتنفيذ وصفات الطبيب للتحقق من ملاءمتها مراجعة وتنفيذ وصفات الطبيب للتحقق من ملاءمتها.
+                      </li>
+                      <li>
+                        مراجعة وتنفيذ وصفات الطبيب للتحقق من ملاءمتها.
+                      </li>
+                      <li>
+                        مراجعة وتنفيذ وصفات الطبيب للتحقق من ملاءمتها مراجعة وتنفيذ وصفات الطبيب للتحقق من ملاءمتها.
+                      </li>
+                    </ul>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--/card content-->
+        </div>
+
+      </div>
+      <!--next button -->
+      <div class="row">
+        <div class="col-md-3">
+          <button class="btn btn-lg btn-primary my-4 py-2">
+            طلب مقابلة
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
