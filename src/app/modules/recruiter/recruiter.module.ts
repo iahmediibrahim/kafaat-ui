@@ -18,8 +18,8 @@ import { RequestProblemComponent } from './recruiter/modals/request-problem/requ
 import { SearchRecomendedComponent } from './recruiter/recommendation-request/search-recomended/search-recomended.component';
 import { SeekerDescriptionMessageComponent } from './recruiter/modals/seeker-description-message/seeker-description-message.component';
 import { ReqMeetupComponent } from './recruiter/modals/req-meetup/req-meetup.component';
-import { SeekerRequestEvaluationComponent } from './recruiter/eligibility-evaluation/seeker-request-evaluation/seeker-request-evaluation/seeker-request-evaluation.component';
-
+import { SeekerRequestEvaluationComponent } from './recruiter/eligibility-evaluation/seeker-request-evaluation/seeker-request-evaluation.component';
+import { DoneMessageComponent } from './recruiter/modals/done-message/done-message.component';
 @NgModule({
 	declarations: [
 		RecruiterDashboardComponent,
@@ -41,7 +41,8 @@ import { SeekerRequestEvaluationComponent } from './recruiter/eligibility-evalua
 		SearchRecomendedComponent,
 		SeekerDescriptionMessageComponent,
 		ReqMeetupComponent,
-		SeekerRequestEvaluationComponent
+		SeekerRequestEvaluationComponent,
+		DoneMessageComponent
 	],
 	imports: [ CommonModule, RecruiterRoutingModule, SharedModule ]
 })
