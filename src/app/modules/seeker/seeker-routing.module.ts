@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { SeekerDashboardComponent } from './seeker/seeker-dashboard/seeker-dashboard.component';
+import { SeekerDashboardComponent } from './seeker-dashboard/seeker-dashboard.component';
 
 const routes: Routes = [
     {
